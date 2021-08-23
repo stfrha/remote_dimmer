@@ -1,0 +1,13 @@
+* Version 1.0: Started on Wednesday, November 17, 1999 16:21:13
+* Current design file is: D:\libraries\CentralLibrary\LayoutTemplates\Europa\Work\local.rec
+*
+w 0 0 0 2 3 <338,342><1280,1024><-1,-1>
+*
+* Set Mouse Buttons For New Mapping
+c 0 33156
+v 0 2 local:1 <0, 0, 0, 0>, 0
+*
+* Display Control
+c 0 33127
+i 0 1131 0
+* 

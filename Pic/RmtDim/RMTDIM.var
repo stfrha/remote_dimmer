@@ -1,0 +1,81 @@
+
+CC5X Version 3.1C, Copyright (c) B Knudsen Data.
+* VARIABLE LIST FILE
+Source 'C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C'
+Chip = 16F84
+
+=== Sorted by address ===
+
+   [-] 0x000   :  0:  INDF
+   [0] 0x001   :  2:  TMR0
+   [-] 0x002   :  0:  PCL
+   [-] 0x003   :  0:  STATUS
+   [-] 0x003.0 :  8:  Carry
+   [-] 0x003.1 :  0:  DC
+   [-] 0x003.2 : 31:  Zero_
+   [-] 0x003.3 :  0:  PD
+   [-] 0x003.4 :  0:  TO
+   [-] 0x003.5 : 14:  RP0
+   [-] 0x003.6 :  0:  RP1
+   [-] 0x003.7 :  0:  IRP
+   [-] 0x004   :  0:  FSR
+   [0] 0x005   :  0:  PORTA
+ P [0] 0x005.0 :  0:  RA0
+ P [0] 0x005.1 :  0:  RA1
+ P [0] 0x005.2 :  0:  RA2
+ P [0] 0x005.3 :  0:  RA3
+ P [0] 0x005.4 :  0:  RA4
+   [0] 0x006   :  1:  PORTB
+ P [0] 0x006.0 :  4:  RB0
+ P [0] 0x006.1 :  2:  RB1
+ P [0] 0x006.2 :  3:  RB2
+ P [0] 0x006.3 :  2:  RB3
+ P [0] 0x006.4 :  4:  RB4
+ P [0] 0x006.5 :  4:  RB5
+ P [0] 0x006.6 :  0:  RB6
+ P [0] 0x006.7 :  0:  RB7
+ P [0] 0x008   :  0:  EEDATA
+ P [0] 0x009   :  0:  EEADR
+   [-] 0x00A   :  0:  PCLATH
+   [-] 0x00A.3 :  0:  PA0
+   [-] 0x00A.4 :  0:  PA1
+   [-] 0x00B   :  0:  INTCON
+   [-] 0x00B.0 :  0:  RBIF
+   [-] 0x00B.1 :  0:  INTF
+   [-] 0x00B.2 :  1:  T0IF
+   [-] 0x00B.3 :  0:  RBIE
+   [-] 0x00B.4 :  0:  INTE
+   [-] 0x00B.5 :  1:  RTIE
+   [-] 0x00B.5 :  0:  T0IE
+ P [-] 0x00B.6 :  0:  EEIE
+   [-] 0x00B.7 :  1:  GIE
+ G [-] 0x00C   :  9:  irState
+ G [-] 0x00D   : 15:  irData
+ G [-] 0x00F   :  5:  irOnCount
+ G [-] 0x010   :  5:  irOffCount
+ G [-] 0x011   : 18:  remoteCode
+ G [-] 0x012   :  7:  irTemp
+ G [-] 0x014   : 24:  dimState
+ G [-] 0x015   :  9:  dimValue
+ G [-] 0x016   : 16:  cyclesToChange
+ G [-] 0x018.0 :  6:  oldZeroDetect
+ G [-] 0x018.1 :  4:  armHoldOff
+ G [-] 0x019   :  7:  lightCounter
+   [1] 0x081   :  1:  OPTION
+   [1] 0x081.0 :  0:  PS0
+   [1] 0x081.1 :  0:  PS1
+   [1] 0x081.2 :  0:  PS2
+   [1] 0x081.3 :  0:  PSA
+   [1] 0x081.4 :  0:  T0SE
+   [1] 0x081.5 :  0:  T0CS
+   [1] 0x081.6 :  0:  INTEDG
+   [1] 0x081.7 :  0:  RBPU_
+   [1] 0x085   :  0:  TRISA
+   [1] 0x086   :  1:  TRISB
+ P [1] 0x088   :  0:  EECON1
+ P [1] 0x088.0 :  0:  RD
+ P [1] 0x088.1 :  0:  WR
+ P [1] 0x088.2 :  0:  WREN
+ P [1] 0x088.3 :  0:  WRERR
+ P [1] 0x088.4 :  0:  EEIF
+ P [1] 0x089   :  0:  EECON2

@@ -1,0 +1,2226 @@
+.FILETYPE PADSTACK_LIBRARY
+.VERSION "VB99.0"
+.SCHEMA_VERSION 1
+.JOB "europa"
+.CREATOR "lrpa"
+.DATE "Thu Jan 15 12:10:24 1970"
+.UNITS th
+
+.Pad "Round 10"
+	..ROUND
+		...DIAMETER 10
+	..OFFSET (0,0)
+.Pad "Round 40"
+	..ROUND
+		...DIAMETER 40
+	..OFFSET (0,0)
+.Pad "Round 1"
+	..ROUND
+		...DIAMETER 1
+	..OFFSET (0,0)
+.Pad "Round 2"
+	..ROUND
+		...DIAMETER 2
+	..OFFSET (0,0)
+.Pad "Round 3"
+	..ROUND
+		...DIAMETER 3
+	..OFFSET (0,0)
+.Pad "Round 4"
+	..ROUND
+		...DIAMETER 4
+	..OFFSET (0,0)
+.Pad "Round 5"
+	..ROUND
+		...DIAMETER 5
+	..OFFSET (0,0)
+.Pad "Round 6"
+	..ROUND
+		...DIAMETER 6
+	..OFFSET (0,0)
+.Pad "Round 7"
+	..ROUND
+		...DIAMETER 7
+	..OFFSET (0,0)
+.Pad "Round 8"
+	..ROUND
+		...DIAMETER 8
+	..OFFSET (0,0)
+.Pad "Round 9"
+	..ROUND
+		...DIAMETER 9
+	..OFFSET (0,0)
+.Pad "Round 10 _1"
+	..ROUND
+		...DIAMETER 10
+	..OFFSET (0,0)
+.Pad "Round 11"
+	..ROUND
+		...DIAMETER 11
+	..OFFSET (0,0)
+.Pad "Round 12"
+	..ROUND
+		...DIAMETER 12
+	..OFFSET (0,0)
+.Pad "Round 13"
+	..ROUND
+		...DIAMETER 13
+	..OFFSET (0,0)
+.Pad "Round 14"
+	..ROUND
+		...DIAMETER 14
+	..OFFSET (0,0)
+.Pad "Round 15"
+	..ROUND
+		...DIAMETER 15
+	..OFFSET (0,0)
+.Pad "Round 16"
+	..ROUND
+		...DIAMETER 16
+	..OFFSET (0,0)
+.Pad "Round 17"
+	..ROUND
+		...DIAMETER 17
+	..OFFSET (0,0)
+.Pad "Round 18"
+	..ROUND
+		...DIAMETER 18
+	..OFFSET (0,0)
+.Pad "Round 19"
+	..ROUND
+		...DIAMETER 19
+	..OFFSET (0,0)
+.Pad "Round 20"
+	..ROUND
+		...DIAMETER 20
+	..OFFSET (0,0)
+.Pad "Round 22"
+	..ROUND
+		...DIAMETER 22
+	..OFFSET (0,0)
+.Pad "Round 24"
+	..ROUND
+		...DIAMETER 24
+	..OFFSET (0,0)
+.Pad "Round 26"
+	..ROUND
+		...DIAMETER 26
+	..OFFSET (0,0)
+.Pad "Round 28"
+	..ROUND
+		...DIAMETER 28
+	..OFFSET (0,0)
+.Pad "Round 30"
+	..ROUND
+		...DIAMETER 30
+	..OFFSET (0,0)
+.Pad "Round 31"
+	..ROUND
+		...DIAMETER 31
+	..OFFSET (0,0)
+.Pad "Round 33"
+	..ROUND
+		...DIAMETER 33
+	..OFFSET (0,0)
+.Pad "Round 35"
+	..ROUND
+		...DIAMETER 35
+	..OFFSET (0,0)
+.Pad "Round 37"
+	..ROUND
+		...DIAMETER 37
+	..OFFSET (0,0)
+.Pad "Round 39"
+	..ROUND
+		...DIAMETER 39
+	..OFFSET (0,0)
+.Pad "Round 40 _1"
+	..ROUND
+		...DIAMETER 40
+	..OFFSET (0,0)
+.Pad "Round 41"
+	..ROUND
+		...DIAMETER 41
+	..OFFSET (0,0)
+.Pad "Round 43"
+	..ROUND
+		...DIAMETER 43
+	..OFFSET (0,0)
+.Pad "Round 45"
+	..ROUND
+		...DIAMETER 45
+	..OFFSET (0,0)
+.Pad "Round 47"
+	..ROUND
+		...DIAMETER 47
+	..OFFSET (0,0)
+.Pad "Round 49"
+	..ROUND
+		...DIAMETER 49
+	..OFFSET (0,0)
+.Pad "Round 50"
+	..ROUND
+		...DIAMETER 50
+	..OFFSET (0,0)
+.Pad "Round 51"
+	..ROUND
+		...DIAMETER 51
+	..OFFSET (0,0)
+.Pad "Round 53"
+	..ROUND
+		...DIAMETER 53
+	..OFFSET (0,0)
+.Pad "Round 55"
+	..ROUND
+		...DIAMETER 55
+	..OFFSET (0,0)
+.Pad "Round 57"
+	..ROUND
+		...DIAMETER 57
+	..OFFSET (0,0)
+.Pad "Round 59"
+	..ROUND
+		...DIAMETER 59
+	..OFFSET (0,0)
+.Pad "Round 60"
+	..ROUND
+		...DIAMETER 60
+	..OFFSET (0,0)
+.Pad "Round 61"
+	..ROUND
+		...DIAMETER 61
+	..OFFSET (0,0)
+.Pad "Round 63"
+	..ROUND
+		...DIAMETER 63
+	..OFFSET (0,0)
+.Pad "Round 65"
+	..ROUND
+		...DIAMETER 65
+	..OFFSET (0,0)
+.Pad "Round 67"
+	..ROUND
+		...DIAMETER 67
+	..OFFSET (0,0)
+.Pad "Round 69"
+	..ROUND
+		...DIAMETER 69
+	..OFFSET (0,0)
+.Pad "Round 70"
+	..ROUND
+		...DIAMETER 70
+	..OFFSET (0,0)
+.Pad "Round 71"
+	..ROUND
+		...DIAMETER 71
+	..OFFSET (0,0)
+.Pad "Round 73"
+	..ROUND
+		...DIAMETER 73
+	..OFFSET (0,0)
+.Pad "Round 75"
+	..ROUND
+		...DIAMETER 75
+	..OFFSET (0,0)
+.Pad "Round 77"
+	..ROUND
+		...DIAMETER 77
+	..OFFSET (0,0)
+.Pad "Round 79"
+	..ROUND
+		...DIAMETER 79
+	..OFFSET (0,0)
+.Pad "Round 80"
+	..ROUND
+		...DIAMETER 80
+	..OFFSET (0,0)
+.Pad "Round 81"
+	..ROUND
+		...DIAMETER 81
+	..OFFSET (0,0)
+.Pad "Round 83"
+	..ROUND
+		...DIAMETER 83
+	..OFFSET (0,0)
+.Pad "Round 85"
+	..ROUND
+		...DIAMETER 85
+	..OFFSET (0,0)
+.Pad "Round 87"
+	..ROUND
+		...DIAMETER 87
+	..OFFSET (0,0)
+.Pad "Round 89"
+	..ROUND
+		...DIAMETER 89
+	..OFFSET (0,0)
+.Pad "Round 90"
+	..ROUND
+		...DIAMETER 90
+	..OFFSET (0,0)
+.Pad "Round 91"
+	..ROUND
+		...DIAMETER 91
+	..OFFSET (0,0)
+.Pad "Round 94"
+	..ROUND
+		...DIAMETER 94
+	..OFFSET (0,0)
+.Pad "Round 98"
+	..ROUND
+		...DIAMETER 98
+	..OFFSET (0,0)
+.Pad "Round 100"
+	..ROUND
+		...DIAMETER 100
+	..OFFSET (0,0)
+.Pad "Round 102"
+	..ROUND
+		...DIAMETER 102
+	..OFFSET (0,0)
+.Pad "Round 106"
+	..ROUND
+		...DIAMETER 106
+	..OFFSET (0,0)
+.Pad "Round 110"
+	..ROUND
+		...DIAMETER 110
+	..OFFSET (0,0)
+.Pad "Round 114"
+	..ROUND
+		...DIAMETER 114
+	..OFFSET (0,0)
+.Pad "Round 118"
+	..ROUND
+		...DIAMETER 118
+	..OFFSET (0,0)
+.Pad "Round 122"
+	..ROUND
+		...DIAMETER 122
+	..OFFSET (0,0)
+.Pad "Round 126"
+	..ROUND
+		...DIAMETER 126
+	..OFFSET (0,0)
+.Pad "Round 130"
+	..ROUND
+		...DIAMETER 130
+	..OFFSET (0,0)
+.Pad "Round 134"
+	..ROUND
+		...DIAMETER 134
+	..OFFSET (0,0)
+.Pad "Round 138"
+	..ROUND
+		...DIAMETER 138
+	..OFFSET (0,0)
+.Pad "Round 142"
+	..ROUND
+		...DIAMETER 142
+	..OFFSET (0,0)
+.Pad "Round 146"
+	..ROUND
+		...DIAMETER 146
+	..OFFSET (0,0)
+.Pad "Round 150"
+	..ROUND
+		...DIAMETER 150
+	..OFFSET (0,0)
+.Pad "Round 154"
+	..ROUND
+		...DIAMETER 154
+	..OFFSET (0,0)
+.Pad "Round 157"
+	..ROUND
+		...DIAMETER 157
+	..OFFSET (0,0)
+.Pad "Round 161"
+	..ROUND
+		...DIAMETER 161
+	..OFFSET (0,0)
+.Pad "Round 165"
+	..ROUND
+		...DIAMETER 165
+	..OFFSET (0,0)
+.Pad "Round 169"
+	..ROUND
+		...DIAMETER 169
+	..OFFSET (0,0)
+.Pad "Round 173"
+	..ROUND
+		...DIAMETER 173
+	..OFFSET (0,0)
+.Pad "Round 177"
+	..ROUND
+		...DIAMETER 177
+	..OFFSET (0,0)
+.Pad "Round 181"
+	..ROUND
+		...DIAMETER 181
+	..OFFSET (0,0)
+.Pad "Round 185"
+	..ROUND
+		...DIAMETER 185
+	..OFFSET (0,0)
+.Pad "Round 189"
+	..ROUND
+		...DIAMETER 189
+	..OFFSET (0,0)
+.Pad "Round 193"
+	..ROUND
+		...DIAMETER 193
+	..OFFSET (0,0)
+.Pad "Round 197"
+	..ROUND
+		...DIAMETER 197
+	..OFFSET (0,0)
+.Pad "Round 207"
+	..ROUND
+		...DIAMETER 207
+	..OFFSET (0,0)
+.Pad "Round 217"
+	..ROUND
+		...DIAMETER 217
+	..OFFSET (0,0)
+.Pad "Round 226"
+	..ROUND
+		...DIAMETER 226
+	..OFFSET (0,0)
+.Pad "Round 236"
+	..ROUND
+		...DIAMETER 236
+	..OFFSET (0,0)
+.Pad "Round 246"
+	..ROUND
+		...DIAMETER 246
+	..OFFSET (0,0)
+.Pad "Round 256"
+	..ROUND
+		...DIAMETER 256
+	..OFFSET (0,0)
+.Pad "Round 266"
+	..ROUND
+		...DIAMETER 266
+	..OFFSET (0,0)
+.Pad "Round 276"
+	..ROUND
+		...DIAMETER 276
+	..OFFSET (0,0)
+.Pad "Round 285"
+	..ROUND
+		...DIAMETER 285
+	..OFFSET (0,0)
+.Pad "Round 295"
+	..ROUND
+		...DIAMETER 295
+	..OFFSET (0,0)
+.Pad "Oblong 32x50"
+	..OBLONG
+		...WIDTH 32
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Oblong 36x50 Off 0x-7"
+	..OBLONG
+		...WIDTH 36
+		...HEIGHT 50
+	..OFFSET (0,-7)
+.Pad "Rectangle 25x90"
+	..RECTANGLE
+		...WIDTH 25
+		...HEIGHT 90
+	..OFFSET (0,0)
+.Pad "Rectangle 90x25"
+	..RECTANGLE
+		...WIDTH 90
+		...HEIGHT 25
+	..OFFSET (0,0)
+.Pad "Rectangle 25x75"
+	..RECTANGLE
+		...WIDTH 25
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 75x25"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 25
+	..OFFSET (0,0)
+.Pad "Rectangle 50x125"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 125x50"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 50x75"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 75x50"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 25x60"
+	..RECTANGLE
+		...WIDTH 25
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 60x25"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 25
+	..OFFSET (0,0)
+.Pad "Rectangle 50x150"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 150
+	..OFFSET (0,0)
+.Pad "Rectangle 150x50"
+	..RECTANGLE
+		...WIDTH 150
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 100x225"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 225
+	..OFFSET (0,0)
+.Pad "Rectangle 225x100"
+	..RECTANGLE
+		...WIDTH 225
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 25x50"
+	..RECTANGLE
+		...WIDTH 25
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 50x25"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 25
+	..OFFSET (0,0)
+.Pad "Rectangle 50x100"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x50"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 110x175"
+	..RECTANGLE
+		...WIDTH 110
+		...HEIGHT 175
+	..OFFSET (0,0)
+.Pad "Rectangle 175x110"
+	..RECTANGLE
+		...WIDTH 175
+		...HEIGHT 110
+	..OFFSET (0,0)
+.Pad "Rectangle 75x100"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x75"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 100x125"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 125x100"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 30x80"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 80
+	..OFFSET (0,0)
+.Pad "Rectangle 80x30"
+	..RECTANGLE
+		...WIDTH 80
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 65x125"
+	..RECTANGLE
+		...WIDTH 65
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 125x65"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 65
+	..OFFSET (0,0)
+.Pad "Rectangle 46x200"
+	..RECTANGLE
+		...WIDTH 46
+		...HEIGHT 200
+	..OFFSET (0,0)
+.Pad "Rectangle 200x46"
+	..RECTANGLE
+		...WIDTH 200
+		...HEIGHT 46
+	..OFFSET (0,0)
+.Pad "Rectangle 113x200"
+	..RECTANGLE
+		...WIDTH 113
+		...HEIGHT 200
+	..OFFSET (0,0)
+.Pad "Rectangle 200x113"
+	..RECTANGLE
+		...WIDTH 200
+		...HEIGHT 113
+	..OFFSET (0,0)
+.Pad "Rectangle 60x200"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 200
+	..OFFSET (0,0)
+.Pad "Rectangle 200x60"
+	..RECTANGLE
+		...WIDTH 200
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 24x125"
+	..RECTANGLE
+		...WIDTH 24
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 125x24"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 24
+	..OFFSET (0,0)
+.Pad "Rectangle 24x150"
+	..RECTANGLE
+		...WIDTH 24
+		...HEIGHT 150
+	..OFFSET (0,0)
+.Pad "Rectangle 150x24"
+	..RECTANGLE
+		...WIDTH 150
+		...HEIGHT 24
+	..OFFSET (0,0)
+.Pad "Rectangle 24x100"
+	..RECTANGLE
+		...WIDTH 24
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x24"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 24
+	..OFFSET (0,0)
+.Pad "Rectangle 80x200"
+	..RECTANGLE
+		...WIDTH 80
+		...HEIGHT 200
+	..OFFSET (0,0)
+.Pad "Rectangle 200x80"
+	..RECTANGLE
+		...WIDTH 200
+		...HEIGHT 80
+	..OFFSET (0,0)
+.Pad "Rectangle 30x150"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 150
+	..OFFSET (0,0)
+.Pad "Rectangle 150x30"
+	..RECTANGLE
+		...WIDTH 150
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 30x100"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x30"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 95x130"
+	..RECTANGLE
+		...WIDTH 95
+		...HEIGHT 130
+	..OFFSET (0,0)
+.Pad "Rectangle 130x95"
+	..RECTANGLE
+		...WIDTH 130
+		...HEIGHT 95
+	..OFFSET (0,0)
+.Pad "Rectangle 50x65"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 65
+	..OFFSET (0,0)
+.Pad "Rectangle 65x50"
+	..RECTANGLE
+		...WIDTH 65
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 40x400"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 400
+	..OFFSET (0,0)
+.Pad "Rectangle 400x40"
+	..RECTANGLE
+		...WIDTH 400
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 55x75"
+	..RECTANGLE
+		...WIDTH 55
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 75x55"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 55
+	..OFFSET (0,0)
+.Pad "Rectangle 40x110"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 110
+	..OFFSET (0,0)
+.Pad "Rectangle 110x40"
+	..RECTANGLE
+		...WIDTH 110
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 18x60"
+	..RECTANGLE
+		...WIDTH 18
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 60x18"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 18
+	..OFFSET (0,0)
+.Pad "Rectangle 12x80"
+	..RECTANGLE
+		...WIDTH 12
+		...HEIGHT 80
+	..OFFSET (0,0)
+.Pad "Rectangle 80x12"
+	..RECTANGLE
+		...WIDTH 80
+		...HEIGHT 12
+	..OFFSET (0,0)
+.Pad "Rectangle 16x75"
+	..RECTANGLE
+		...WIDTH 16
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 75x16"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 16
+	..OFFSET (0,0)
+.Pad "Rectangle 65x105"
+	..RECTANGLE
+		...WIDTH 65
+		...HEIGHT 105
+	..OFFSET (0,0)
+.Pad "Rectangle 105x65"
+	..RECTANGLE
+		...WIDTH 105
+		...HEIGHT 65
+	..OFFSET (0,0)
+.Pad "Rectangle 16x100"
+	..RECTANGLE
+		...WIDTH 16
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x16"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 16
+	..OFFSET (0,0)
+.Pad "Rectangle 30x66"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 66
+	..OFFSET (0,0)
+.Pad "Rectangle 66x30"
+	..RECTANGLE
+		...WIDTH 66
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 50x60"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 60x50"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 60x80"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 80
+	..OFFSET (0,0)
+.Pad "Rectangle 80x60"
+	..RECTANGLE
+		...WIDTH 80
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 75x125"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 125x75"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 80x150"
+	..RECTANGLE
+		...WIDTH 80
+		...HEIGHT 150
+	..OFFSET (0,0)
+.Pad "Rectangle 150x80"
+	..RECTANGLE
+		...WIDTH 150
+		...HEIGHT 80
+	..OFFSET (0,0)
+.Pad "Rectangle 40x75"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 75x40"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 80x125"
+	..RECTANGLE
+		...WIDTH 80
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 125x80"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 80
+	..OFFSET (0,0)
+.Pad "Rectangle 80x100"
+	..RECTANGLE
+		...WIDTH 80
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x80"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 80
+	..OFFSET (0,0)
+.Pad "Rectangle 60x100"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x60"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 40x66"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 66
+	..OFFSET (0,0)
+.Pad "Rectangle 66x40"
+	..RECTANGLE
+		...WIDTH 66
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 12x60"
+	..RECTANGLE
+		...WIDTH 12
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 60x12"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 12
+	..OFFSET (0,0)
+.Pad "Rectangle 40x90"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 90
+	..OFFSET (0,0)
+.Pad "Rectangle 90x40"
+	..RECTANGLE
+		...WIDTH 90
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 125x138"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 138
+	..OFFSET (0,0)
+.Pad "Rectangle 138x125"
+	..RECTANGLE
+		...WIDTH 138
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 20x75"
+	..RECTANGLE
+		...WIDTH 20
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 75x20"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 20
+	..OFFSET (0,0)
+.Pad "Rectangle 34x40"
+	..RECTANGLE
+		...WIDTH 34
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 40x34"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 34
+	..OFFSET (0,0)
+.Pad "Rectangle 40x50"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 50x40"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 60x140"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 140
+	..OFFSET (0,0)
+.Pad "Rectangle 140x60"
+	..RECTANGLE
+		...WIDTH 140
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 44x48"
+	..RECTANGLE
+		...WIDTH 44
+		...HEIGHT 48
+	..OFFSET (0,0)
+.Pad "Rectangle 48x44"
+	..RECTANGLE
+		...WIDTH 48
+		...HEIGHT 44
+	..OFFSET (0,0)
+.Pad "Rectangle 40x180"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 180
+	..OFFSET (0,0)
+.Pad "Rectangle 180x40"
+	..RECTANGLE
+		...WIDTH 180
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 200x220"
+	..RECTANGLE
+		...WIDTH 200
+		...HEIGHT 220
+	..OFFSET (0,0)
+.Pad "Rectangle 220x200"
+	..RECTANGLE
+		...WIDTH 220
+		...HEIGHT 200
+	..OFFSET (0,0)
+.Pad "Rectangle 110x175 _1"
+	..RECTANGLE
+		...WIDTH 110
+		...HEIGHT 175
+	..OFFSET (0,0)
+.Pad "Rectangle 175x110 _1"
+	..RECTANGLE
+		...WIDTH 175
+		...HEIGHT 110
+	..OFFSET (0,0)
+.Pad "Rectangle 16x40"
+	..RECTANGLE
+		...WIDTH 16
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 40x16"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 16
+	..OFFSET (0,0)
+.Pad "Rectangle 120x226"
+	..RECTANGLE
+		...WIDTH 120
+		...HEIGHT 226
+	..OFFSET (0,0)
+.Pad "Rectangle 226x120"
+	..RECTANGLE
+		...WIDTH 226
+		...HEIGHT 120
+	..OFFSET (0,0)
+.Pad "Rectangle 110x150"
+	..RECTANGLE
+		...WIDTH 110
+		...HEIGHT 150
+	..OFFSET (0,0)
+.Pad "Rectangle 150x110"
+	..RECTANGLE
+		...WIDTH 150
+		...HEIGHT 110
+	..OFFSET (0,0)
+.Pad "Rectangle 70x126"
+	..RECTANGLE
+		...WIDTH 70
+		...HEIGHT 126
+	..OFFSET (0,0)
+.Pad "Rectangle 126x70"
+	..RECTANGLE
+		...WIDTH 126
+		...HEIGHT 70
+	..OFFSET (0,0)
+.Pad "Rectangle 350x450"
+	..RECTANGLE
+		...WIDTH 350
+		...HEIGHT 450
+	..OFFSET (0,0)
+.Pad "Rectangle 450x350"
+	..RECTANGLE
+		...WIDTH 450
+		...HEIGHT 350
+	..OFFSET (0,0)
+.Pad "Rectangle 30x110"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 110
+	..OFFSET (0,0)
+.Pad "Rectangle 110x30"
+	..RECTANGLE
+		...WIDTH 110
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 30x162"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 162
+	..OFFSET (0,0)
+.Pad "Rectangle 162x30"
+	..RECTANGLE
+		...WIDTH 162
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 100x120"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 120
+	..OFFSET (0,0)
+.Pad "Rectangle 120x100"
+	..RECTANGLE
+		...WIDTH 120
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 16x60"
+	..RECTANGLE
+		...WIDTH 16
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 60x16"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 16
+	..OFFSET (0,0)
+.Pad "Rectangle 16x140"
+	..RECTANGLE
+		...WIDTH 16
+		...HEIGHT 140
+	..OFFSET (0,0)
+.Pad "Rectangle 140x16"
+	..RECTANGLE
+		...WIDTH 140
+		...HEIGHT 16
+	..OFFSET (0,0)
+.Pad "Rectangle 130x50"
+	..RECTANGLE
+		...WIDTH 130
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 50x130"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 130
+	..OFFSET (0,0)
+.Pad "Rectangle 84x50"
+	..RECTANGLE
+		...WIDTH 84
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 50x84"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 84
+	..OFFSET (0,0)
+.Pad "Rectangle 115x110"
+	..RECTANGLE
+		...WIDTH 115
+		...HEIGHT 110
+	..OFFSET (0,0)
+.Pad "Rectangle 110x115"
+	..RECTANGLE
+		...WIDTH 110
+		...HEIGHT 115
+	..OFFSET (0,0)
+.Pad "Rectangle 90x200"
+	..RECTANGLE
+		...WIDTH 90
+		...HEIGHT 200
+	..OFFSET (0,0)
+.Pad "Rectangle 200x90"
+	..RECTANGLE
+		...WIDTH 200
+		...HEIGHT 90
+	..OFFSET (0,0)
+.Pad "Rectangle 70x65"
+	..RECTANGLE
+		...WIDTH 70
+		...HEIGHT 65
+	..OFFSET (0,0)
+.Pad "Rectangle 65x70"
+	..RECTANGLE
+		...WIDTH 65
+		...HEIGHT 70
+	..OFFSET (0,0)
+.Pad "Rectangle 60x120"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 120
+	..OFFSET (0,0)
+.Pad "Rectangle 120x60"
+	..RECTANGLE
+		...WIDTH 120
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 100x690"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 690
+	..OFFSET (0,0)
+.Pad "Rectangle 690x100"
+	..RECTANGLE
+		...WIDTH 690
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 35x115"
+	..RECTANGLE
+		...WIDTH 35
+		...HEIGHT 115
+	..OFFSET (0,0)
+.Pad "Rectangle 115x35"
+	..RECTANGLE
+		...WIDTH 115
+		...HEIGHT 35
+	..OFFSET (0,0)
+.Pad "Rectangle 79x51"
+	..RECTANGLE
+		...WIDTH 79
+		...HEIGHT 51
+	..OFFSET (0,0)
+.Pad "Rectangle 51x79"
+	..RECTANGLE
+		...WIDTH 51
+		...HEIGHT 79
+	..OFFSET (0,0)
+.Pad "Rectangle 50x70"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 70
+	..OFFSET (0,0)
+.Pad "Rectangle 70x50"
+	..RECTANGLE
+		...WIDTH 70
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 50x160"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 160
+	..OFFSET (0,0)
+.Pad "Rectangle 160x50"
+	..RECTANGLE
+		...WIDTH 160
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 84x114"
+	..RECTANGLE
+		...WIDTH 84
+		...HEIGHT 114
+	..OFFSET (0,0)
+.Pad "Rectangle 114x84"
+	..RECTANGLE
+		...WIDTH 114
+		...HEIGHT 84
+	..OFFSET (0,0)
+.Pad "Rectangle 76x142"
+	..RECTANGLE
+		...WIDTH 76
+		...HEIGHT 142
+	..OFFSET (0,0)
+.Pad "Rectangle 142x76"
+	..RECTANGLE
+		...WIDTH 142
+		...HEIGHT 76
+	..OFFSET (0,0)
+.Pad "Rectangle 20x30"
+	..RECTANGLE
+		...WIDTH 20
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 30x20"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 20
+	..OFFSET (0,0)
+.Pad "Rectangle 100x550"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 550
+	..OFFSET (0,0)
+.Pad "Rectangle 550x100"
+	..RECTANGLE
+		...WIDTH 550
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 120x178"
+	..RECTANGLE
+		...WIDTH 120
+		...HEIGHT 178
+	..OFFSET (0,0)
+.Pad "Rectangle 178x120"
+	..RECTANGLE
+		...WIDTH 178
+		...HEIGHT 120
+	..OFFSET (0,0)
+.Pad "Rectangle 46x65"
+	..RECTANGLE
+		...WIDTH 46
+		...HEIGHT 65
+	..OFFSET (0,0)
+.Pad "Rectangle 65x46"
+	..RECTANGLE
+		...WIDTH 65
+		...HEIGHT 46
+	..OFFSET (0,0)
+.Pad "Rectangle 90x244"
+	..RECTANGLE
+		...WIDTH 90
+		...HEIGHT 244
+	..OFFSET (0,0)
+.Pad "Rectangle 244x90"
+	..RECTANGLE
+		...WIDTH 244
+		...HEIGHT 90
+	..OFFSET (0,0)
+.Pad "Rectangle 40x240"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 240
+	..OFFSET (0,0)
+.Pad "Rectangle 240x40"
+	..RECTANGLE
+		...WIDTH 240
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 75x165"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 165
+	..OFFSET (0,0)
+.Pad "Rectangle 165x75"
+	..RECTANGLE
+		...WIDTH 165
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 75x185"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 185
+	..OFFSET (0,0)
+.Pad "Rectangle 185x75"
+	..RECTANGLE
+		...WIDTH 185
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 43x129"
+	..RECTANGLE
+		...WIDTH 43
+		...HEIGHT 129
+	..OFFSET (0,0)
+.Pad "Rectangle 129x43"
+	..RECTANGLE
+		...WIDTH 129
+		...HEIGHT 43
+	..OFFSET (0,0)
+.Pad "Rectangle 47x112"
+	..RECTANGLE
+		...WIDTH 47
+		...HEIGHT 112
+	..OFFSET (0,0)
+.Pad "Rectangle 112x47"
+	..RECTANGLE
+		...WIDTH 112
+		...HEIGHT 47
+	..OFFSET (0,0)
+.Pad "Rectangle 27x40"
+	..RECTANGLE
+		...WIDTH 27
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 40x27"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 27
+	..OFFSET (0,0)
+.Pad "Rectangle 95x102"
+	..RECTANGLE
+		...WIDTH 95
+		...HEIGHT 102
+	..OFFSET (0,0)
+.Pad "Rectangle 102x95"
+	..RECTANGLE
+		...WIDTH 102
+		...HEIGHT 95
+	..OFFSET (0,0)
+.Pad "Rectangle 75x90"
+	..RECTANGLE
+		...WIDTH 75
+		...HEIGHT 90
+	..OFFSET (0,0)
+.Pad "Rectangle 90x75"
+	..RECTANGLE
+		...WIDTH 90
+		...HEIGHT 75
+	..OFFSET (0,0)
+.Pad "Rectangle 200x300"
+	..RECTANGLE
+		...WIDTH 200
+		...HEIGHT 300
+	..OFFSET (0,0)
+.Pad "Rectangle 300x200"
+	..RECTANGLE
+		...WIDTH 300
+		...HEIGHT 200
+	..OFFSET (0,0)
+.Pad "Rectangle 88x126"
+	..RECTANGLE
+		...WIDTH 88
+		...HEIGHT 126
+	..OFFSET (0,0)
+.Pad "Rectangle 126x88"
+	..RECTANGLE
+		...WIDTH 126
+		...HEIGHT 88
+	..OFFSET (0,0)
+.Pad "Rectangle 76x70"
+	..RECTANGLE
+		...WIDTH 76
+		...HEIGHT 70
+	..OFFSET (0,0)
+.Pad "Rectangle 70x76"
+	..RECTANGLE
+		...WIDTH 70
+		...HEIGHT 76
+	..OFFSET (0,0)
+.Pad "Rectangle 150x40"
+	..RECTANGLE
+		...WIDTH 150
+		...HEIGHT 40
+	..OFFSET (0,0)
+.Pad "Rectangle 40x150"
+	..RECTANGLE
+		...WIDTH 40
+		...HEIGHT 150
+	..OFFSET (0,0)
+.Pad "Rectangle 160x60"
+	..RECTANGLE
+		...WIDTH 160
+		...HEIGHT 60
+	..OFFSET (0,0)
+.Pad "Rectangle 60x160"
+	..RECTANGLE
+		...WIDTH 60
+		...HEIGHT 160
+	..OFFSET (0,0)
+.Pad "Rectangle 30x45"
+	..RECTANGLE
+		...WIDTH 30
+		...HEIGHT 45
+	..OFFSET (0,0)
+.Pad "Rectangle 45x30"
+	..RECTANGLE
+		...WIDTH 45
+		...HEIGHT 30
+	..OFFSET (0,0)
+.Pad "Rectangle 24x64"
+	..RECTANGLE
+		...WIDTH 24
+		...HEIGHT 64
+	..OFFSET (0,0)
+.Pad "Rectangle 64x24"
+	..RECTANGLE
+		...WIDTH 64
+		...HEIGHT 24
+	..OFFSET (0,0)
+.Pad "Rectangle 55x230"
+	..RECTANGLE
+		...WIDTH 55
+		...HEIGHT 230
+	..OFFSET (0,0)
+.Pad "Rectangle 230x55"
+	..RECTANGLE
+		...WIDTH 230
+		...HEIGHT 55
+	..OFFSET (0,0)
+.Pad "Rectangle 113x28"
+	..RECTANGLE
+		...WIDTH 113
+		...HEIGHT 28
+	..OFFSET (0,0)
+.Pad "Rectangle 28x113"
+	..RECTANGLE
+		...WIDTH 28
+		...HEIGHT 113
+	..OFFSET (0,0)
+.Pad "Rectangle 50x16"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 16
+	..OFFSET (0,0)
+.Pad "Rectangle 16x50"
+	..RECTANGLE
+		...WIDTH 16
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 50x17"
+	..RECTANGLE
+		...WIDTH 50
+		...HEIGHT 17
+	..OFFSET (0,0)
+.Pad "Rectangle 17x50"
+	..RECTANGLE
+		...WIDTH 17
+		...HEIGHT 50
+	..OFFSET (0,0)
+.Pad "Rectangle 100x65"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 65
+	..OFFSET (0,0)
+.Pad "Rectangle 65x100"
+	..RECTANGLE
+		...WIDTH 65
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 150x100"
+	..RECTANGLE
+		...WIDTH 150
+		...HEIGHT 100
+	..OFFSET (0,0)
+.Pad "Rectangle 100x150"
+	..RECTANGLE
+		...WIDTH 100
+		...HEIGHT 150
+	..OFFSET (0,0)
+.Pad "Rectangle 120x550"
+	..RECTANGLE
+		...WIDTH 120
+		...HEIGHT 550
+	..OFFSET (0,0)
+.Pad "Rectangle 550x120"
+	..RECTANGLE
+		...WIDTH 550
+		...HEIGHT 120
+	..OFFSET (0,0)
+.Pad "Rectangle 110x125"
+	..RECTANGLE
+		...WIDTH 110
+		...HEIGHT 125
+	..OFFSET (0,0)
+.Pad "Rectangle 125x110"
+	..RECTANGLE
+		...WIDTH 125
+		...HEIGHT 110
+	..OFFSET (0,0)
+.Pad "Rectangle 70x140"
+	..RECTANGLE
+		...WIDTH 70
+		...HEIGHT 140
+	..OFFSET (0,0)
+.Pad "Rectangle 140x70"
+	..RECTANGLE
+		...WIDTH 140
+		...HEIGHT 70
+	..OFFSET (0,0)
+.Pad "Rectangle 800x366"
+	..RECTANGLE
+		...WIDTH 800
+		...HEIGHT 366
+	..OFFSET (0,0)
+.Pad "Rectangle 366x800"
+	..RECTANGLE
+		...WIDTH 366
+		...HEIGHT 800
+	..OFFSET (0,0)
+.Pad "Rectangle 10x63"
+	..RECTANGLE
+		...WIDTH 10
+		...HEIGHT 63
+	..OFFSET (0,0)
+.Pad "Rectangle 63x10"
+	..RECTANGLE
+		...WIDTH 63
+		...HEIGHT 10
+	..OFFSET (0,0)
+.Pad "Square 1"
+	..SQUARE
+		...WIDTH 1
+	..OFFSET (0,0)
+.Pad "Square 2"
+	..SQUARE
+		...WIDTH 2
+	..OFFSET (0,0)
+.Pad "Square 3"
+	..SQUARE
+		...WIDTH 3
+	..OFFSET (0,0)
+.Pad "Square 4"
+	..SQUARE
+		...WIDTH 4
+	..OFFSET (0,0)
+.Pad "Square 5"
+	..SQUARE
+		...WIDTH 5
+	..OFFSET (0,0)
+.Pad "Square 6"
+	..SQUARE
+		...WIDTH 6
+	..OFFSET (0,0)
+.Pad "Square 7"
+	..SQUARE
+		...WIDTH 7
+	..OFFSET (0,0)
+.Pad "Square 8"
+	..SQUARE
+		...WIDTH 8
+	..OFFSET (0,0)
+.Pad "Square 9"
+	..SQUARE
+		...WIDTH 9
+	..OFFSET (0,0)
+.Pad "Square 10"
+	..SQUARE
+		...WIDTH 10
+	..OFFSET (0,0)
+.Pad "Square 11"
+	..SQUARE
+		...WIDTH 11
+	..OFFSET (0,0)
+.Pad "Square 12"
+	..SQUARE
+		...WIDTH 12
+	..OFFSET (0,0)
+.Pad "Square 13"
+	..SQUARE
+		...WIDTH 13
+	..OFFSET (0,0)
+.Pad "Square 14"
+	..SQUARE
+		...WIDTH 14
+	..OFFSET (0,0)
+.Pad "Square 15"
+	..SQUARE
+		...WIDTH 15
+	..OFFSET (0,0)
+.Pad "Square 16"
+	..SQUARE
+		...WIDTH 16
+	..OFFSET (0,0)
+.Pad "Square 17"
+	..SQUARE
+		...WIDTH 17
+	..OFFSET (0,0)
+.Pad "Square 18"
+	..SQUARE
+		...WIDTH 18
+	..OFFSET (0,0)
+.Pad "Square 19"
+	..SQUARE
+		...WIDTH 19
+	..OFFSET (0,0)
+.Pad "Square 20"
+	..SQUARE
+		...WIDTH 20
+	..OFFSET (0,0)
+.Pad "Square 22"
+	..SQUARE
+		...WIDTH 22
+	..OFFSET (0,0)
+.Pad "Square 24"
+	..SQUARE
+		...WIDTH 24
+	..OFFSET (0,0)
+.Pad "Square 26"
+	..SQUARE
+		...WIDTH 26
+	..OFFSET (0,0)
+.Pad "Square 28"
+	..SQUARE
+		...WIDTH 28
+	..OFFSET (0,0)
+.Pad "Square 30"
+	..SQUARE
+		...WIDTH 30
+	..OFFSET (0,0)
+.Pad "Square 31"
+	..SQUARE
+		...WIDTH 31
+	..OFFSET (0,0)
+.Pad "Square 33"
+	..SQUARE
+		...WIDTH 33
+	..OFFSET (0,0)
+.Pad "Square 35"
+	..SQUARE
+		...WIDTH 35
+	..OFFSET (0,0)
+.Pad "Square 37"
+	..SQUARE
+		...WIDTH 37
+	..OFFSET (0,0)
+.Pad "Square 39"
+	..SQUARE
+		...WIDTH 39
+	..OFFSET (0,0)
+.Pad "Square 40"
+	..SQUARE
+		...WIDTH 40
+	..OFFSET (0,0)
+.Pad "Square 41"
+	..SQUARE
+		...WIDTH 41
+	..OFFSET (0,0)
+.Pad "Square 43"
+	..SQUARE
+		...WIDTH 43
+	..OFFSET (0,0)
+.Pad "Square 45"
+	..SQUARE
+		...WIDTH 45
+	..OFFSET (0,0)
+.Pad "Square 47"
+	..SQUARE
+		...WIDTH 47
+	..OFFSET (0,0)
+.Pad "Square 49"
+	..SQUARE
+		...WIDTH 49
+	..OFFSET (0,0)
+.Pad "Square 50"
+	..SQUARE
+		...WIDTH 50
+	..OFFSET (0,0)
+.Pad "Square 51"
+	..SQUARE
+		...WIDTH 51
+	..OFFSET (0,0)
+.Pad "Square 53"
+	..SQUARE
+		...WIDTH 53
+	..OFFSET (0,0)
+.Pad "Square 55"
+	..SQUARE
+		...WIDTH 55
+	..OFFSET (0,0)
+.Pad "Square 57"
+	..SQUARE
+		...WIDTH 57
+	..OFFSET (0,0)
+.Pad "Square 59"
+	..SQUARE
+		...WIDTH 59
+	..OFFSET (0,0)
+.Pad "Square 60"
+	..SQUARE
+		...WIDTH 60
+	..OFFSET (0,0)
+.Pad "Square 61"
+	..SQUARE
+		...WIDTH 61
+	..OFFSET (0,0)
+.Pad "Square 63"
+	..SQUARE
+		...WIDTH 63
+	..OFFSET (0,0)
+.Pad "Square 65"
+	..SQUARE
+		...WIDTH 65
+	..OFFSET (0,0)
+.Pad "Square 67"
+	..SQUARE
+		...WIDTH 67
+	..OFFSET (0,0)
+.Pad "Square 69"
+	..SQUARE
+		...WIDTH 69
+	..OFFSET (0,0)
+.Pad "Square 70"
+	..SQUARE
+		...WIDTH 70
+	..OFFSET (0,0)
+.Pad "Square 71"
+	..SQUARE
+		...WIDTH 71
+	..OFFSET (0,0)
+.Pad "Square 73"
+	..SQUARE
+		...WIDTH 73
+	..OFFSET (0,0)
+.Pad "Square 75"
+	..SQUARE
+		...WIDTH 75
+	..OFFSET (0,0)
+.Pad "Square 77"
+	..SQUARE
+		...WIDTH 77
+	..OFFSET (0,0)
+.Pad "Square 79"
+	..SQUARE
+		...WIDTH 79
+	..OFFSET (0,0)
+.Pad "Square 80"
+	..SQUARE
+		...WIDTH 80
+	..OFFSET (0,0)
+.Pad "Square 81"
+	..SQUARE
+		...WIDTH 81
+	..OFFSET (0,0)
+.Pad "Square 83"
+	..SQUARE
+		...WIDTH 83
+	..OFFSET (0,0)
+.Pad "Square 85"
+	..SQUARE
+		...WIDTH 85
+	..OFFSET (0,0)
+.Pad "Square 87"
+	..SQUARE
+		...WIDTH 87
+	..OFFSET (0,0)
+.Pad "Square 89"
+	..SQUARE
+		...WIDTH 89
+	..OFFSET (0,0)
+.Pad "Square 90"
+	..SQUARE
+		...WIDTH 90
+	..OFFSET (0,0)
+.Pad "Square 91"
+	..SQUARE
+		...WIDTH 91
+	..OFFSET (0,0)
+.Pad "Square 94"
+	..SQUARE
+		...WIDTH 94
+	..OFFSET (0,0)
+.Pad "Square 98"
+	..SQUARE
+		...WIDTH 98
+	..OFFSET (0,0)
+.Pad "Square 100"
+	..SQUARE
+		...WIDTH 100
+	..OFFSET (0,0)
+.Pad "Square 102"
+	..SQUARE
+		...WIDTH 102
+	..OFFSET (0,0)
+.Pad "Square 106"
+	..SQUARE
+		...WIDTH 106
+	..OFFSET (0,0)
+.Pad "Square 110"
+	..SQUARE
+		...WIDTH 110
+	..OFFSET (0,0)
+.Pad "Square 114"
+	..SQUARE
+		...WIDTH 114
+	..OFFSET (0,0)
+.Pad "Square 118"
+	..SQUARE
+		...WIDTH 118
+	..OFFSET (0,0)
+.Pad "Square 122"
+	..SQUARE
+		...WIDTH 122
+	..OFFSET (0,0)
+.Pad "Square 126"
+	..SQUARE
+		...WIDTH 126
+	..OFFSET (0,0)
+.Pad "Square 130"
+	..SQUARE
+		...WIDTH 130
+	..OFFSET (0,0)
+.Pad "Square 134"
+	..SQUARE
+		...WIDTH 134
+	..OFFSET (0,0)
+.Pad "Square 138"
+	..SQUARE
+		...WIDTH 138
+	..OFFSET (0,0)
+.Pad "Square 142"
+	..SQUARE
+		...WIDTH 142
+	..OFFSET (0,0)
+.Pad "Square 146"
+	..SQUARE
+		...WIDTH 146
+	..OFFSET (0,0)
+.Pad "Square 150"
+	..SQUARE
+		...WIDTH 150
+	..OFFSET (0,0)
+.Pad "Square 154"
+	..SQUARE
+		...WIDTH 154
+	..OFFSET (0,0)
+.Pad "Square 157"
+	..SQUARE
+		...WIDTH 157
+	..OFFSET (0,0)
+.Pad "Square 161"
+	..SQUARE
+		...WIDTH 161
+	..OFFSET (0,0)
+.Pad "Square 165"
+	..SQUARE
+		...WIDTH 165
+	..OFFSET (0,0)
+.Pad "Square 169"
+	..SQUARE
+		...WIDTH 169
+	..OFFSET (0,0)
+.Pad "Square 173"
+	..SQUARE
+		...WIDTH 173
+	..OFFSET (0,0)
+.Pad "Square 177"
+	..SQUARE
+		...WIDTH 177
+	..OFFSET (0,0)
+.Pad "Square 181"
+	..SQUARE
+		...WIDTH 181
+	..OFFSET (0,0)
+.Pad "Square 185"
+	..SQUARE
+		...WIDTH 185
+	..OFFSET (0,0)
+.Pad "Square 189"
+	..SQUARE
+		...WIDTH 189
+	..OFFSET (0,0)
+.Pad "Square 193"
+	..SQUARE
+		...WIDTH 193
+	..OFFSET (0,0)
+.Pad "Square 197"
+	..SQUARE
+		...WIDTH 197
+	..OFFSET (0,0)
+.Pad "Square 207"
+	..SQUARE
+		...WIDTH 207
+	..OFFSET (0,0)
+.Pad "Square 217"
+	..SQUARE
+		...WIDTH 217
+	..OFFSET (0,0)
+.Pad "Square 226"
+	..SQUARE
+		...WIDTH 226
+	..OFFSET (0,0)
+.Pad "Square 236"
+	..SQUARE
+		...WIDTH 236
+	..OFFSET (0,0)
+.Pad "Square 246"
+	..SQUARE
+		...WIDTH 246
+	..OFFSET (0,0)
+.Pad "Square 256"
+	..SQUARE
+		...WIDTH 256
+	..OFFSET (0,0)
+.Pad "Square 266"
+	..SQUARE
+		...WIDTH 266
+	..OFFSET (0,0)
+.Pad "Square 276"
+	..SQUARE
+		...WIDTH 276
+	..OFFSET (0,0)
+.Pad "Square 280"
+	..SQUARE
+		...WIDTH 280
+	..OFFSET (0,0)
+.Pad "Square 285"
+	..SQUARE
+		...WIDTH 285
+	..OFFSET (0,0)
+.Pad "Square 295"
+	..SQUARE
+		...WIDTH 295
+	..OFFSET (0,0)
+.Pad "Square 440"
+	..SQUARE
+		...WIDTH 440
+	..OFFSET (0,0)
+
+
+.HOLE "Rnd 10"
+	..ROUND
+		...DIAMETER 10
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 12"
+	..ROUND
+		...DIAMETER 12
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 14"
+	..ROUND
+		...DIAMETER 14
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 16"
+	..ROUND
+		...DIAMETER 16
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 20"
+	..ROUND
+		...DIAMETER 20
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 24"
+	..ROUND
+		...DIAMETER 24
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 26"
+	..ROUND
+		...DIAMETER 26
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 28"
+	..ROUND
+		...DIAMETER 28
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 31"
+	..ROUND
+		...DIAMETER 31
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 35"
+	..ROUND
+		...DIAMETER 35
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 39"
+	..ROUND
+		...DIAMETER 39
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 41"
+	..ROUND
+		...DIAMETER 41
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 43"
+	..ROUND
+		...DIAMETER 43
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 47"
+	..ROUND
+		...DIAMETER 47
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 51"
+	..ROUND
+		...DIAMETER 51
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 55"
+	..ROUND
+		...DIAMETER 55
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 59"
+	..ROUND
+		...DIAMETER 59
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 63"
+	..ROUND
+		...DIAMETER 63
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 67"
+	..ROUND
+		...DIAMETER 67
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 71"
+	..ROUND
+		...DIAMETER 71
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 75"
+	..ROUND
+		...DIAMETER 75
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 79"
+	..ROUND
+		...DIAMETER 79
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 83"
+	..ROUND
+		...DIAMETER 83
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 87"
+	..ROUND
+		...DIAMETER 87
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 91"
+	..ROUND
+		...DIAMETER 91
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 94"
+	..ROUND
+		...DIAMETER 94
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 98"
+	..ROUND
+		...DIAMETER 98
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 102"
+	..ROUND
+		...DIAMETER 102
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 106"
+	..ROUND
+		...DIAMETER 106
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 110"
+	..ROUND
+		...DIAMETER 110
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 114"
+	..ROUND
+		...DIAMETER 114
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 118"
+	..ROUND
+		...DIAMETER 118
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 122"
+	..ROUND
+		...DIAMETER 122
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 126"
+	..ROUND
+		...DIAMETER 126
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 130"
+	..ROUND
+		...DIAMETER 130
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 134"
+	..ROUND
+		...DIAMETER 134
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 138"
+	..ROUND
+		...DIAMETER 138
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 142"
+	..ROUND
+		...DIAMETER 142
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 146"
+	..ROUND
+		...DIAMETER 146
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 150"
+	..ROUND
+		...DIAMETER 150
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 154"
+	..ROUND
+		...DIAMETER 154
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 157"
+	..ROUND
+		...DIAMETER 157
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 161"
+	..ROUND
+		...DIAMETER 161
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 165"
+	..ROUND
+		...DIAMETER 165
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 169"
+	..ROUND
+		...DIAMETER 169
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 173"
+	..ROUND
+		...DIAMETER 173
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 177"
+	..ROUND
+		...DIAMETER 177
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 181"
+	..ROUND
+		...DIAMETER 181
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 185"
+	..ROUND
+		...DIAMETER 185
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 189"
+	..ROUND
+		...DIAMETER 189
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 193"
+	..ROUND
+		...DIAMETER 193
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 197"
+	..ROUND
+		...DIAMETER 197
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 217"
+	..ROUND
+		...DIAMETER 217
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 224"
+	..ROUND
+		...DIAMETER 224
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 236"
+	..ROUND
+		...DIAMETER 236
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 256"
+	..ROUND
+		...DIAMETER 256
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 276"
+	..ROUND
+		...DIAMETER 276
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 295"
+	..ROUND
+		...DIAMETER 295
+	..HOLE_OPTIONS PLATED DRILLED
+.HOLE "Rnd 315"
+	..ROUND
+		...DIAMETER 315
+	..HOLE_OPTIONS PLATED DRILLED
+
+
+.PADSTACK "Pad Round 40"
+	..PADSTACK_TYPE PIN_SMD
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...TOP_PAD  "Round 40 _1"
+		...BOTTOM_PAD  "Round 40 _1"
+.PADSTACK "DEFVIA"
+	..PADSTACK_TYPE VIA
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 20"
+			....OFFSET  (0,0)
+		...TOP_PAD  "Round 40"
+		...INTERNAL_PAD  "Round 40"
+		...BOTTOM_PAD  "Round 40"
+.PADSTACK "26VIA"
+	..PADSTACK_TYPE VIA
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 12"
+			....OFFSET  (0,0)
+		...TOP_PAD  "Round 26"
+		...INTERNAL_PAD  "Round 26"
+		...BOTTOM_PAD  "Round 26"
+.PADSTACK "30VIA"
+	..PADSTACK_TYPE VIA
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 14"
+			....OFFSET  (0,0)
+		...TOP_PAD  "Round 30"
+		...INTERNAL_PAD  "Round 30"
+		...BOTTOM_PAD  "Round 30"
+.PADSTACK "50VIA"
+	..PADSTACK_TYPE VIA
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 24"
+			....OFFSET  (0,0)
+		...TOP_PAD  "Round 50"
+		...INTERNAL_PAD  "Round 50"
+		...BOTTOM_PAD  "Round 50"
+.PADSTACK "55VIA"
+	..PADSTACK_TYPE VIA
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 28"
+			....OFFSET  (0,0)
+		...TOP_PAD  "Round 55"
+		...INTERNAL_PAD  "Round 55"
+		...BOTTOM_PAD  "Round 55"
+.PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+	..PADSTACK_TYPE PIN_THROUGH
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 39"
+			....OFFSET  (0,0)
+		...TOP_PAD  "Round 63"
+		...INTERNAL_PAD  "Round 63"
+		...BOTTOM_PAD  "Round 63"
+.PADSTACK ",Hole Rnd 78.7402"
+	..PADSTACK_TYPE MOUNTING_HOLE
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 79"
+			....OFFSET  (0,0)
+.PADSTACK ",Hole Rnd 110.236"
+	..PADSTACK_TYPE MOUNTING_HOLE
+	..TECHNOLOGY  "DEFAULT"
+		...TECHNOLOGY_OPTIONS  NONE
+		...HOLE_NAME  "Rnd 110"
+			....OFFSET  (0,0)

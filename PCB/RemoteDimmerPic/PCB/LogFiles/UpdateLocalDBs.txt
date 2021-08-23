@@ -1,0 +1,18 @@
+
+                       Update Local Cell And Padstack DBs
+                       ----------------------------------
+
+                      10:51 AM Thursday, November 23, 2000
+               Job Name: D:\LayoutTemplates\TEMPLATE\TEMPLATE.pcb
+
+
+     Version:  99.01.00
+
+     ERROR: No cell library search paths found from D:\LayoutTemplates\TEMPLATE\TEMPLATE.prj
+
+     ERROR:  Unable to initialize CellDBUpdate.
+      Do you have the correct path to the Central Library?
+      Did you forget to set the search path for cells?
+
+     Update Local Cell And Padstack DBs is being terminated with 1 errors and 0 warnings.
+      Cell And Padstack DBs have not been updated.

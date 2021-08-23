@@ -1,0 +1,2546 @@
+--
+-- Written by Synplicity
+-- Thu Apr 12 13:49:58 2001
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OBUF is
+port(
+  I :  in std_logic;
+  O :  out std_logic);
+end OBUF;
+
+architecture beh of OBUF is
+begin
+  O <= I;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity IBUF is
+port(
+  I :  in std_logic;
+  O :  out std_logic);
+end IBUF;
+
+architecture beh of IBUF is
+begin
+  O <= I;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity BUFG is
+port(
+  I :  in std_logic;
+  O :  out std_logic);
+end BUFG;
+
+architecture beh of BUFG is
+begin
+  O <= I;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity FDP is
+port(
+  Q :  out std_logic;
+  D :  in std_logic;
+  C :  in std_logic;
+  PRE :  in std_logic);
+end FDP;
+
+architecture beh of FDP is
+begin
+  II_Q: prim_dff port map (Q, D, C, '0', PRE);
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity FDC is
+port(
+  Q :  out std_logic;
+  D :  in std_logic;
+  C :  in std_logic;
+  CLR :  in std_logic);
+end FDC;
+
+architecture beh of FDC is
+begin
+  II_Q: prim_dff port map (Q, D, C, CLR, '0');
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity XOR2 is
+port(
+  I0 :  in std_logic;
+  I1 :  in std_logic;
+  O :  out std_logic);
+end XOR2;
+
+architecture beh of XOR2 is
+begin
+  O <= I1 xor I0 after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity OR2 is
+port(
+  I0 :  in std_logic;
+  I1 :  in std_logic;
+  O :  out std_logic);
+end OR2;
+
+architecture beh of OR2 is
+begin
+  O <= I1 or I0 after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2B1 is
+port(
+  I0 :  in std_logic;
+  I1 :  in std_logic;
+  O :  out std_logic);
+end AND2B1;
+
+architecture beh of AND2B1 is
+  signal I0N : std_logic ;
+begin
+  I0N <= not I0;
+  O <= I1 and I0N after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity AND2 is
+port(
+  I0 :  in std_logic;
+  I1 :  in std_logic;
+  O :  out std_logic);
+end AND2;
+
+architecture beh of AND2 is
+begin
+  O <= I1 and I0 after 100 ps;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity INV is
+port(
+  I :  in std_logic;
+  O :  out std_logic);
+end INV;
+
+architecture beh of INV is
+begin
+  O <= not I;
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity GND is
+port(
+  G :  out std_logic);
+end GND;
+
+architecture beh of GND is
+begin
+  G <= '0';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity VCC is
+port(
+  P :  out std_logic);
+end VCC;
+
+architecture beh of VCC is
+begin
+  P <= '1';
+end beh;
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity REMOTE_DIMMER is
+port(
+  CLK :  in std_logic;
+  RESET :  in std_logic;
+  IR_DETECT :  in std_logic;
+  RC_ADDRESS : in std_logic_vector(3 downto 0);
+  ZERO_DETECT :  in std_logic;
+  TRIAC_PULSE :  out std_logic);
+end REMOTE_DIMMER;
+
+architecture beh of REMOTE_DIMMER is
+  signal RXD : std_logic_vector(7 downto 0);
+  signal LIGHT_VALUE : std_logic_vector(5 downto 0);
+  signal \TD1.CNT\ : std_logic_vector(5 downto 0);
+  signal \FC1.CNT\ : std_logic_vector(7 downto 0);
+  signal \DFSM1.CURRENT_STATE_H.CURRENT_STATE\ : std_logic_vector(1 downto 0);
+  signal \DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS\ : std_logic_vector(0 to 0);
+  signal \UAR1.BYTE_OUT\ : std_logic_vector(7 downto 0);
+  signal \UAR1.SYNC_RXD_3\ : std_logic_vector(7 downto 0);
+  signal \UAR1.BM1.SAMPLED_BITS\ : std_logic_vector(2 downto 0);
+  signal \UAR1.BM1.CURRENT_STATE\ : std_logic_vector(3 downto 1);
+  signal \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE\ : std_logic_vector(4 to 4);
+  signal \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS\ : std_logic_vector(4 downto 2);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5\ : std_logic_vector(0 to 0);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8\ : std_logic_vector(1 to 1);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9\ : std_logic_vector(2 to 2);
+  signal \UAR1.BC1.CURRENT_STATE\ : std_logic_vector(11 downto 1);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_5\ : std_logic_vector(0 to 0);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_8\ : std_logic_vector(1 to 1);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_11\ : std_logic_vector(2 to 2);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_14\ : std_logic_vector(3 to 3);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_17\ : std_logic_vector(4 to 4);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_20\ : std_logic_vector(5 to 5);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_23\ : std_logic_vector(6 to 6);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_24\ : std_logic_vector(7 to 7);
+  signal \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\ : std_logic_vector(11 downto 0);
+  signal RC_ADDRESS_C : std_logic_vector(3 downto 0);
+  signal \FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE\ : std_logic_vector(0 to 0);
+  signal \TD1.TRIAC_TRIG.AXB\ : std_logic_vector(5 downto 1);
+  signal \TD1.TRIAC_TRIG.ALTB\ : std_logic_vector(4 downto 0);
+  signal \UAR1.BM1.SAMPLED_BITS_I_0\ : std_logic_vector(2 downto 0);
+  signal \UAR1.BM1.CURRENT_STATE_I_0\ : std_logic_vector(3 downto 1);
+  signal \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_I_0\ : std_logic_vector(4 to 4);
+  signal LIGHT_VALUE_I : std_logic_vector(5 downto 0);
+  signal \FC1.CNT_I\ : std_logic_vector(7 downto 0);
+  signal \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\ : std_logic_vector(0 to 0);
+  signal \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I\ : std_logic_vector(1 to 1);
+  signal RXD_I : std_logic_vector(3 downto 0);
+  signal \TD1.CNT_I\ : std_logic_vector(0 to 0);
+  signal \FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE_I\ : std_logic_vector(0 to 0);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_23_A\ : std_logic_vector(6 to 6);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_23_B\ : std_logic_vector(6 to 6);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_24_A\ : std_logic_vector(7 to 7);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_24_B\ : std_logic_vector(7 to 7);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8_A\ : std_logic_vector(1 to 1);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8_B\ : std_logic_vector(1 to 1);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9_A\ : std_logic_vector(2 to 2);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9_B\ : std_logic_vector(2 to 2);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_5_A\ : std_logic_vector(0 to 0);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_5_B\ : std_logic_vector(0 to 0);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_8_A\ : std_logic_vector(1 to 1);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_8_B\ : std_logic_vector(1 to 1);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_11_A\ : std_logic_vector(2 to 2);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_11_B\ : std_logic_vector(2 to 2);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_14_A\ : std_logic_vector(3 to 3);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_14_B\ : std_logic_vector(3 to 3);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_17_A\ : std_logic_vector(4 to 4);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_17_B\ : std_logic_vector(4 to 4);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_20_A\ : std_logic_vector(5 to 5);
+  signal \UAR1.BC1.STATE_SYNC_BYTE_OUT_20_B\ : std_logic_vector(5 to 5);
+  signal \UAR1.SYNC_RXD_3_A\ : std_logic_vector(7 downto 0);
+  signal \UAR1.SYNC_RXD_3_B\ : std_logic_vector(7 downto 0);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5_A\ : std_logic_vector(0 to 0);
+  signal \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5_B\ : std_logic_vector(0 to 0);
+  signal \TD1.TRIAC_TRIG.ALTB_A\ : std_logic_vector(4 downto 1);
+  signal \TD1.TRIAC_TRIG.ALTB_B\ : std_logic_vector(4 downto 1);
+  signal RXD_READY : std_logic ;
+  signal RXD_ACK : std_logic ;
+  signal CM_FADE_DOWN : std_logic ;
+  signal CM_FADE_UP : std_logic ;
+  signal CM_PANIC_ON : std_logic ;
+  signal COUNTER_TOP : std_logic ;
+  signal COUNT_SET : std_logic ;
+  signal \TD1.TRIAC_TRIG\ : std_logic ;
+  signal \TD1.CNT_N1\ : std_logic ;
+  signal \TD1.CNT_N2\ : std_logic ;
+  signal \TD1.CNT_N3\ : std_logic ;
+  signal \TD1.CNT_N4\ : std_logic ;
+  signal \TD1.CNT_N5\ : std_logic ;
+  signal \TD1.TRIG_CNT_UN2_RESET\ : std_logic ;
+  signal \FC1.UN1_UN1_COUNT_ENABLE\ : std_logic ;
+  signal \FC1.N_14\ : std_logic ;
+  signal \FC1.N_15\ : std_logic ;
+  signal \FC1.N_16\ : std_logic ;
+  signal \FC1.N_17\ : std_logic ;
+  signal \FC1.N_18\ : std_logic ;
+  signal \FC1.N_19\ : std_logic ;
+  signal \FC1.N_20\ : std_logic ;
+  signal \FC1.N_21\ : std_logic ;
+  signal \FC1.N_22\ : std_logic ;
+  signal \FC1.N_23\ : std_logic ;
+  signal \FC1.N_24\ : std_logic ;
+  signal \FC1.N_25\ : std_logic ;
+  signal \FC1.N_26\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.CO5\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_8\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_9\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_10\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_16\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_18\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_19\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_20\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_23\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_24\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_25\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_26\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_27\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_28\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.CO4\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.CO3\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.CO2\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.CO1\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.CO0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_4\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_7\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_10\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_11\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_12\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_14\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_15\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_17\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_18\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_4\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_7\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_10\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_13\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_23\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_24\ : std_logic ;
+  signal \DFSM1.N_39\ : std_logic ;
+  signal \RCD1.CM_FADE_DOWN_7\ : std_logic ;
+  signal \RCD1.CM_PANIC_ON_7\ : std_logic ;
+  signal \RCD1.UN8_RXD_READY_NE\ : std_logic ;
+  signal \RCD1.N_7\ : std_logic ;
+  signal \RCD1.N_10\ : std_logic ;
+  signal \RCD1.UN8_RXD_READY_3\ : std_logic ;
+  signal \RCD1.UN8_RXD_READY_2\ : std_logic ;
+  signal \RCD1.UN8_RXD_READY_1\ : std_logic ;
+  signal \RCD1.UN8_RXD_READY_0\ : std_logic ;
+  signal \UAR1.DATA_IN\ : std_logic ;
+  signal \UAR1.BIT_DONE\ : std_logic ;
+  signal \UAR1.BYTE_AVAIL\ : std_logic ;
+  signal \UAR1.SYNC_RXD_READY_3\ : std_logic ;
+  signal \UAR1.BM1.N_47\ : std_logic ;
+  signal \UAR1.BM1.N_18_I\ : std_logic ;
+  signal NN_1 : std_logic ;
+  signal NN_2 : std_logic ;
+  signal CLK_C : std_logic ;
+  signal RESET_C : std_logic ;
+  signal IR_DETECT_C : std_logic ;
+  signal ZERO_DETECT_C : std_logic ;
+  signal \DFSM1.N_43\ : std_logic ;
+  signal \FC1.N_5\ : std_logic ;
+  signal \FC1.N_3\ : std_logic ;
+  signal \FC1.N_1\ : std_logic ;
+  signal \FC1.UN10_COUNT_ENABLE\ : std_logic ;
+  signal \FC1.UN1_COUNT_ENABLE_1\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_11\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_22\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_21\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_18\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_17\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_27\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_26\ : std_logic ;
+  signal \FC1.UN1_UN1_COUNT_ENABLE_1\ : std_logic ;
+  signal \DFSM1.N_45\ : std_logic ;
+  signal \RCD1.N_18\ : std_logic ;
+  signal \RCD1.N_22\ : std_logic ;
+  signal \RCD1.N_14\ : std_logic ;
+  signal \RCD1.N_23\ : std_logic ;
+  signal \DFSM1.N_49\ : std_logic ;
+  signal \DFSM1.N_50\ : std_logic ;
+  signal \DFSM1.N_53\ : std_logic ;
+  signal \DFSM1.N_51\ : std_logic ;
+  signal \RCD1.N_19\ : std_logic ;
+  signal \RCD1.N_17\ : std_logic ;
+  signal \RCD1.N_15\ : std_logic ;
+  signal \RCD1.N_13\ : std_logic ;
+  signal \RCD1.N_12\ : std_logic ;
+  signal \RCD1.N_11\ : std_logic ;
+  signal \RCD1.N_25\ : std_logic ;
+  signal \RCD1.N_24\ : std_logic ;
+  signal \RCD1.N_21\ : std_logic ;
+  signal \RCD1.N_20\ : std_logic ;
+  signal \DFSM1.N_52\ : std_logic ;
+  signal \DFSM1.N_46\ : std_logic ;
+  signal COUNTER_BOTTOM : std_logic ;
+  signal \DFSM1.N_56\ : std_logic ;
+  signal \DFSM1.N_55\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_21\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_20\ : std_logic ;
+  signal \TD1.CNT_C4\ : std_logic ;
+  signal \TD1.CNT_C3\ : std_logic ;
+  signal \TD1.CNT_C2\ : std_logic ;
+  signal \TD1.CNT_C1\ : std_logic ;
+  signal \UAR1.BM1.N_59\ : std_logic ;
+  signal \UAR1.BC1.N_97\ : std_logic ;
+  signal \UAR1.BC1.N_98\ : std_logic ;
+  signal \UAR1.BC1.N_95\ : std_logic ;
+  signal \UAR1.BC1.N_96\ : std_logic ;
+  signal \UAR1.BC1.N_93\ : std_logic ;
+  signal \UAR1.BC1.N_94\ : std_logic ;
+  signal \UAR1.BC1.N_91\ : std_logic ;
+  signal \UAR1.BC1.N_92\ : std_logic ;
+  signal \UAR1.BC1.N_89\ : std_logic ;
+  signal \UAR1.BC1.N_90\ : std_logic ;
+  signal \UAR1.BC1.N_87\ : std_logic ;
+  signal \UAR1.BC1.N_88\ : std_logic ;
+  signal \UAR1.BC1.N_85\ : std_logic ;
+  signal \UAR1.BC1.N_86\ : std_logic ;
+  signal \UAR1.BC1.N_83\ : std_logic ;
+  signal \UAR1.BC1.N_84\ : std_logic ;
+  signal \UAR1.BC1.N_81\ : std_logic ;
+  signal \UAR1.BC1.N_82_1\ : std_logic ;
+  signal \UAR1.BC1.N_80\ : std_logic ;
+  signal \UAR1.BC1.N_79\ : std_logic ;
+  signal \UAR1.BC1.N_101\ : std_logic ;
+  signal \UAR1.BC1.N_78\ : std_logic ;
+  signal \UAR1.BC1.N_72\ : std_logic ;
+  signal \UAR1.BC1.N_74\ : std_logic ;
+  signal \UAR1.BC1.N_75\ : std_logic ;
+  signal \UAR1.BM1.N_37\ : std_logic ;
+  signal \UAR1.BC1.N_77\ : std_logic ;
+  signal \UAR1.BC1.N_76\ : std_logic ;
+  signal \UAR1.BC1.N_68\ : std_logic ;
+  signal \UAR1.BM_DATA\ : std_logic ;
+  signal \UAR1.BC1.N_104\ : std_logic ;
+  signal \UAR1.BM1.N_54\ : std_logic ;
+  signal \UAR1.BM1.N_62\ : std_logic ;
+  signal \UAR1.BM1.N_63\ : std_logic ;
+  signal \UAR1.BM1.N_61\ : std_logic ;
+  signal \UAR1.BM1.N_60\ : std_logic ;
+  signal \UAR1.BM1.N_73\ : std_logic ;
+  signal \UAR1.N_1\ : std_logic ;
+  signal \UAR1.SYNC_UN3_BYTE_AVAIL\ : std_logic ;
+  signal \RCD1.UN3_RXD_READY\ : std_logic ;
+  signal \UAR1.BM1.N_75\ : std_logic ;
+  signal \UAR1.BM1.N_75_I\ : std_logic ;
+  signal \UAR1.BIT_DONE_I\ : std_logic ;
+  signal \UAR1.BM_DATA_I\ : std_logic ;
+  signal \UAR1.BC1.N_72_I\ : std_logic ;
+  signal \UAR1.DATA_IN_I\ : std_logic ;
+  signal \UAR1.BM1.N_37_I\ : std_logic ;
+  signal \UAR1.BC1.N_104_I\ : std_logic ;
+  signal RXD_ACK_I : std_logic ;
+  signal \RCD1.UN3_RXD_READY_I\ : std_logic ;
+  signal \FC1.UN1_UN1_COUNT_ENABLE_I_0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_10_I_0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_17_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_10_I_0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_26_I\ : std_logic ;
+  signal CM_FADE_UP_I : std_logic ;
+  signal \RCD1.N_10_I\ : std_logic ;
+  signal \RCD1.N_14_I\ : std_logic ;
+  signal COUNTER_BOTTOM_I : std_logic ;
+  signal CM_PANIC_ON_I : std_logic ;
+  signal COUNTER_TOP_I : std_logic ;
+  signal \RCD1.N_11_I\ : std_logic ;
+  signal \RCD1.N_15_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_20_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_4_I_0\ : std_logic ;
+  signal \TD1.CNT_C4_I_0\ : std_logic ;
+  signal \TD1.CNT_C3_I_0\ : std_logic ;
+  signal \TD1.CNT_C2_I_0\ : std_logic ;
+  signal \TD1.CNT_C1_I_0\ : std_logic ;
+  signal \DFSM1.N_43_I\ : std_logic ;
+  signal \TD1.TRIAC_TRIG_I\ : std_logic ;
+  signal \UAR1.BM1.N_47_I\ : std_logic ;
+  signal \RCD1.N_7_I_0\ : std_logic ;
+  signal \DFSM1.N_39_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_23_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_7_I_0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_17_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_7_I_0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_14_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_4_I_0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_11_I\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_13_I_0\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.N_16_I\ : std_logic ;
+  signal N_31 : std_logic ;
+  signal N_32 : std_logic ;
+  signal N_33 : std_logic ;
+  signal N_34 : std_logic ;
+  signal N_35 : std_logic ;
+  signal N_36 : std_logic ;
+  signal N_37 : std_logic ;
+  signal N_38 : std_logic ;
+  signal N_39 : std_logic ;
+  signal N_40 : std_logic ;
+  signal N_41 : std_logic ;
+  signal N_42 : std_logic ;
+  signal N_43 : std_logic ;
+  signal N_44 : std_logic ;
+  signal N_45 : std_logic ;
+  signal N_46 : std_logic ;
+  signal N_47 : std_logic ;
+  signal N_48 : std_logic ;
+  signal N_49 : std_logic ;
+  signal N_50 : std_logic ;
+  signal N_51 : std_logic ;
+  signal N_52 : std_logic ;
+  signal N_53 : std_logic ;
+  signal N_54 : std_logic ;
+  signal N_55 : std_logic ;
+  signal N_56 : std_logic ;
+  signal N_57 : std_logic ;
+  signal N_58 : std_logic ;
+  signal N_59 : std_logic ;
+  signal N_60 : std_logic ;
+  signal N_61 : std_logic ;
+  signal N_62 : std_logic ;
+  signal N_63 : std_logic ;
+  signal N_64 : std_logic ;
+  signal N_65 : std_logic ;
+  signal N_66 : std_logic ;
+  signal N_67 : std_logic ;
+  signal N_68 : std_logic ;
+  signal N_69 : std_logic ;
+  signal N_70 : std_logic ;
+  signal N_71 : std_logic ;
+  signal N_72 : std_logic ;
+  signal N_73 : std_logic ;
+  signal N_74 : std_logic ;
+  signal N_75 : std_logic ;
+  signal N_76 : std_logic ;
+  signal N_77 : std_logic ;
+  signal N_78 : std_logic ;
+  signal N_79 : std_logic ;
+  signal N_80 : std_logic ;
+  signal N_81 : std_logic ;
+  signal N_82 : std_logic ;
+  signal N_83 : std_logic ;
+  signal N_84 : std_logic ;
+  signal N_85 : std_logic ;
+  signal N_86 : std_logic ;
+  signal N_87 : std_logic ;
+  signal N_88 : std_logic ;
+  signal N_89 : std_logic ;
+  signal N_90 : std_logic ;
+  signal N_91 : std_logic ;
+  signal N_92 : std_logic ;
+  signal \UAR1.BC1.N_68_A\ : std_logic ;
+  signal \UAR1.BC1.N_68_B\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_4_A\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_4_B\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_13_A\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_13_B\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_7_A\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_7_B\ : std_logic ;
+  signal \TD1.TRIAC_TRIG_A\ : std_logic ;
+  signal \TD1.TRIAC_TRIG_B\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_4_A\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_4_B\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_7_A\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_7_B\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_10_A\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_27.N_10_B\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_10_A\ : std_logic ;
+  signal \FC1.UN1_CNT_2_1.I_28.N_10_B\ : std_logic ;
+  component BUFG
+    port(
+      I :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component AND2
+    port(
+      I0 :  in std_logic;
+      I1 :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component XOR2
+    port(
+      I0 :  in std_logic;
+      I1 :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component OR2
+    port(
+      I0 :  in std_logic;
+      I1 :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component INV
+    port(
+      I :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component FDC
+    port(
+      Q :  out std_logic;
+      D :  in std_logic;
+      C :  in std_logic;
+      CLR :  in std_logic  );
+  end component;
+  component FDP
+    port(
+      Q :  out std_logic;
+      D :  in std_logic;
+      C :  in std_logic;
+      PRE :  in std_logic  );
+  end component;
+  component AND2B1
+    port(
+      I0 :  in std_logic;
+      I1 :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component GND
+    port(
+      G :  out std_logic  );
+  end component;
+  component IBUF
+    port(
+      I :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component OBUF
+    port(
+      I :  in std_logic;
+      O :  out std_logic  );
+  end component;
+  component VCC
+    port(
+      P :  out std_logic  );
+  end component;
+begin
+  II_CLK_IBUF: BUFG port map (
+      I => CLK,
+      O => CLK_C);
+  \II_DFSM1.G_1_0_AND2\: AND2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I\(1),
+      I1 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(0),
+      O => COUNT_SET);
+  \II_DFSM1.G_35\: AND2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(0),
+      I1 => CM_FADE_DOWN,
+      O => \DFSM1.N_55\);
+  \II_DFSM1.G_36\: AND2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I\(1),
+      I1 => COUNTER_BOTTOM,
+      O => \DFSM1.N_56\);
+  \II_DFSM1.G_37\: XOR2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE\(1),
+      I1 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(0),
+      O => \DFSM1.N_43\);
+  \II_DFSM1.G_39\: OR2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I\(1),
+      I1 => COUNTER_TOP,
+      O => \DFSM1.N_45\);
+  \II_DFSM1.G_40\: OR2 port map (
+      I0 => CM_FADE_UP_I,
+      I1 => \DFSM1.N_56\,
+      O => \DFSM1.N_46\);
+  \II_DFSM1.N_43_I\: INV port map (
+      I => \DFSM1.N_43\,
+      O => \DFSM1.N_43_I\);
+  \II_DFSM1.CURRENT_STATE_H.N_39_I\: INV port map (
+      I => \DFSM1.N_39\,
+      O => \DFSM1.N_39_I\);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE[0]\: FDC port map (
+      Q => \DFSM1.CURRENT_STATE_H.CURRENT_STATE\(0),
+      D => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS\(0),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE[1]\: FDC port map (
+      Q => \DFSM1.CURRENT_STATE_H.CURRENT_STATE\(1),
+      D => \DFSM1.N_39_I\,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_I[0]\: INV port map (
+      I => \DFSM1.CURRENT_STATE_H.CURRENT_STATE\(0),
+      O => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(0));
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_I[1]\: INV port map (
+      I => \DFSM1.CURRENT_STATE_H.CURRENT_STATE\(1),
+      O => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I\(1));
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_0[0]\: OR2 port map (
+      I0 => \DFSM1.N_51\,
+      I1 => N_92,
+      O => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS\(0));
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_0_0.G_62\: OR2 port map (
+      I0 => \DFSM1.N_52\,
+      I1 => \DFSM1.N_53\,
+      O => N_92);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_0_AND2[0]\: AND2 port map (
+      I0 => \DFSM1.N_46\,
+      I1 => N_88,
+      O => \DFSM1.N_51\);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_0_AND2_0.G_58\: AND2 port map (
+      I0 => CM_PANIC_ON_I,
+      I1 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE\(0),
+      O => N_88);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_0_AND2_0[0]\: AND2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I\(1),
+      I1 => \DFSM1.N_55\,
+      O => \DFSM1.N_52\);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_0_AND2_1[0]\: AND2 port map (
+      I0 => COUNTER_TOP_I,
+      I1 => N_74,
+      O => \DFSM1.N_53\);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_0_AND2_1_0.G_44\: AND2 port map (
+      I0 => CM_PANIC_ON_I,
+      I1 => \DFSM1.N_55\,
+      O => N_74);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_I[1]\: OR2 port map (
+      I0 => \DFSM1.N_50\,
+      I1 => N_86,
+      O => \DFSM1.N_39\);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_1.G_55\: OR2 port map (
+      I0 => CM_PANIC_ON,
+      I1 => \DFSM1.N_55\,
+      O => N_85);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_1.G_56\: OR2 port map (
+      I0 => N_85,
+      I1 => \DFSM1.N_49\,
+      O => N_86);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_AND2[1]\: AND2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(0),
+      I1 => \DFSM1.N_45\,
+      O => \DFSM1.N_49\);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_AND2_0[1]\: AND2 port map (
+      I0 => COUNTER_BOTTOM_I,
+      I1 => N_80,
+      O => \DFSM1.N_50\);
+  \II_DFSM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_AND2_0_1.G_50\: AND2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I\(1),
+      I1 => CM_FADE_UP_I,
+      O => N_80);
+  \II_FC1.G_2\: OR2 port map (
+      I0 => LIGHT_VALUE_I(5),
+      I1 => \FC1.N_1\,
+      O => \FC1.UN10_COUNT_ENABLE\);
+  \II_FC1.G_4\: AND2 port map (
+      I0 => LIGHT_VALUE_I(4),
+      I1 => \FC1.N_3\,
+      O => \FC1.N_1\);
+  \II_FC1.G_6\: OR2 port map (
+      I0 => LIGHT_VALUE_I(3),
+      I1 => \FC1.N_5\,
+      O => \FC1.N_3\);
+  \II_FC1.G_8\: AND2 port map (
+      I0 => LIGHT_VALUE_I(1),
+      I1 => LIGHT_VALUE_I(2),
+      O => \FC1.N_5\);
+  \II_FC1.G_14_I_AND2\: AND2 port map (
+      I0 => N_72,
+      I1 => N_73,
+      O => COUNTER_BOTTOM);
+  \II_FC1.G_14_I_AND2.G_32\: AND2 port map (
+      I0 => LIGHT_VALUE_I(5),
+      I1 => LIGHT_VALUE_I(4),
+      O => N_62);
+  \II_FC1.G_14_I_AND2.G_33\: AND2 port map (
+      I0 => LIGHT_VALUE_I(3),
+      I1 => LIGHT_VALUE_I(2),
+      O => N_63);
+  \II_FC1.G_14_I_AND2.G_34\: AND2 port map (
+      I0 => LIGHT_VALUE_I(0),
+      I1 => LIGHT_VALUE_I(1),
+      O => N_64);
+  \II_FC1.G_14_I_AND2.G_35\: AND2 port map (
+      I0 => \FC1.CNT_I\(7),
+      I1 => \FC1.CNT_I\(6),
+      O => N_65);
+  \II_FC1.G_14_I_AND2.G_36\: AND2 port map (
+      I0 => \FC1.CNT_I\(5),
+      I1 => \FC1.CNT_I\(4),
+      O => N_66);
+  \II_FC1.G_14_I_AND2.G_37\: AND2 port map (
+      I0 => \FC1.CNT_I\(3),
+      I1 => \FC1.CNT_I\(2),
+      O => N_67);
+  \II_FC1.G_14_I_AND2.G_38\: AND2 port map (
+      I0 => \FC1.CNT_I\(0),
+      I1 => \FC1.CNT_I\(1),
+      O => N_68);
+  \II_FC1.G_14_I_AND2.G_39\: AND2 port map (
+      I0 => N_68,
+      I1 => N_67,
+      O => N_69);
+  \II_FC1.G_14_I_AND2.G_40\: AND2 port map (
+      I0 => N_66,
+      I1 => N_65,
+      O => N_70);
+  \II_FC1.G_14_I_AND2.G_41\: AND2 port map (
+      I0 => N_64,
+      I1 => N_63,
+      O => N_71);
+  \II_FC1.G_14_I_AND2.G_42\: AND2 port map (
+      I0 => N_62,
+      I1 => N_71,
+      O => N_72);
+  \II_FC1.G_14_I_AND2.G_43\: AND2 port map (
+      I0 => N_70,
+      I1 => N_69,
+      O => N_73);
+  \II_FC1.CNT[0]\: FDC port map (
+      Q => \FC1.CNT\(0),
+      D => \FC1.UN1_CNT_2_1.N_16_I\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[1]\: FDC port map (
+      Q => \FC1.CNT\(1),
+      D => \FC1.N_14\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[2]\: FDC port map (
+      Q => \FC1.CNT\(2),
+      D => \FC1.N_15\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[3]\: FDC port map (
+      Q => \FC1.CNT\(3),
+      D => \FC1.N_16\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[4]\: FDC port map (
+      Q => \FC1.CNT\(4),
+      D => \FC1.N_17\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[5]\: FDC port map (
+      Q => \FC1.CNT\(5),
+      D => \FC1.N_18\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[6]\: FDC port map (
+      Q => \FC1.CNT\(6),
+      D => \FC1.N_19\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[7]\: FDC port map (
+      Q => \FC1.CNT\(7),
+      D => \FC1.N_20\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[8]\: FDC port map (
+      Q => LIGHT_VALUE(0),
+      D => \FC1.N_21\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[9]\: FDP port map (
+      Q => LIGHT_VALUE(1),
+      D => \FC1.N_22\,
+      C => CLK_C,
+      PRE => COUNT_SET);
+  \II_FC1.CNT[10]\: FDC port map (
+      Q => LIGHT_VALUE(2),
+      D => \FC1.N_23\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[11]\: FDP port map (
+      Q => LIGHT_VALUE(3),
+      D => \FC1.N_24\,
+      C => CLK_C,
+      PRE => COUNT_SET);
+  \II_FC1.CNT[12]\: FDC port map (
+      Q => LIGHT_VALUE(4),
+      D => \FC1.N_25\,
+      C => CLK_C,
+      CLR => COUNT_SET);
+  \II_FC1.CNT[13]\: FDP port map (
+      Q => LIGHT_VALUE(5),
+      D => \FC1.N_26\,
+      C => CLK_C,
+      PRE => COUNT_SET);
+  \II_FC1.CNT_I[0]\: INV port map (
+      I => \FC1.CNT\(0),
+      O => \FC1.CNT_I\(0));
+  \II_FC1.CNT_I[1]\: INV port map (
+      I => \FC1.CNT\(1),
+      O => \FC1.CNT_I\(1));
+  \II_FC1.CNT_I[2]\: INV port map (
+      I => \FC1.CNT\(2),
+      O => \FC1.CNT_I\(2));
+  \II_FC1.CNT_I[3]\: INV port map (
+      I => \FC1.CNT\(3),
+      O => \FC1.CNT_I\(3));
+  \II_FC1.CNT_I[4]\: INV port map (
+      I => \FC1.CNT\(4),
+      O => \FC1.CNT_I\(4));
+  \II_FC1.CNT_I[5]\: INV port map (
+      I => \FC1.CNT\(5),
+      O => \FC1.CNT_I\(5));
+  \II_FC1.CNT_I[6]\: INV port map (
+      I => \FC1.CNT\(6),
+      O => \FC1.CNT_I\(6));
+  \II_FC1.CNT_I[7]\: INV port map (
+      I => \FC1.CNT\(7),
+      O => \FC1.CNT_I\(7));
+  \II_FC1.COUNTER_BOTTOM_I\: INV port map (
+      I => COUNTER_BOTTOM,
+      O => COUNTER_BOTTOM_I);
+  \II_FC1.COUNTER_TOP_I\: INV port map (
+      I => COUNTER_TOP,
+      O => COUNTER_TOP_I);
+  \II_FC1.LIGHT_VALUE_I[0]\: INV port map (
+      I => LIGHT_VALUE(0),
+      O => LIGHT_VALUE_I(0));
+  \II_FC1.LIGHT_VALUE_I[1]\: INV port map (
+      I => LIGHT_VALUE(1),
+      O => LIGHT_VALUE_I(1));
+  \II_FC1.LIGHT_VALUE_I[2]\: INV port map (
+      I => LIGHT_VALUE(2),
+      O => LIGHT_VALUE_I(2));
+  \II_FC1.LIGHT_VALUE_I[3]\: INV port map (
+      I => LIGHT_VALUE(3),
+      O => LIGHT_VALUE_I(3));
+  \II_FC1.LIGHT_VALUE_I[4]\: INV port map (
+      I => LIGHT_VALUE(4),
+      O => LIGHT_VALUE_I(4));
+  \II_FC1.LIGHT_VALUE_I[5]\: INV port map (
+      I => LIGHT_VALUE(5),
+      O => LIGHT_VALUE_I(5));
+  \II_FC1.UN1_CNT_2_1.CO1_0_OR3\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_21\,
+      I1 => \FC1.UN1_CNT_2_1.N_22\,
+      O => \FC1.UN1_CNT_2_1.CO1\);
+  \II_FC1.UN1_CNT_2_1.CO2_0_OR3\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_23\,
+      I1 => \FC1.UN1_CNT_2_1.N_24\,
+      O => \FC1.UN1_CNT_2_1.CO2\);
+  \II_FC1.UN1_CNT_2_1.CO3_0_OR3\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_25\,
+      I1 => \FC1.UN1_CNT_2_1.N_26\,
+      O => \FC1.UN1_CNT_2_1.CO3\);
+  \II_FC1.UN1_CNT_2_1.CO4_0_OR3\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_27\,
+      I1 => \FC1.UN1_CNT_2_1.N_28\,
+      O => \FC1.UN1_CNT_2_1.CO4\);
+  \II_FC1.UN1_CNT_2_1.CO5_0\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_19\,
+      I1 => \FC1.UN1_CNT_2_1.N_20\,
+      O => \FC1.UN1_CNT_2_1.CO5\);
+  \II_FC1.UN1_CNT_2_1.CO5_0_AND3\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO4\,
+      I1 => \FC1.UN1_CNT_2_1.N_18\,
+      O => \FC1.UN1_CNT_2_1.N_19\);
+  \II_FC1.UN1_CNT_2_1.CO5_0_AND3_0\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(5),
+      O => \FC1.UN1_CNT_2_1.N_20\);
+  \II_FC1.UN1_CNT_2_1.G_6\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_11\,
+      I1 => \FC1.UN1_CNT_2_1.CO0\,
+      O => \FC1.UN1_CNT_2_1.N_21\);
+  \II_FC1.UN1_CNT_2_1.G_7\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(1),
+      O => \FC1.UN1_CNT_2_1.N_22\);
+  \II_FC1.UN1_CNT_2_1.G_8\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(2),
+      O => \FC1.UN1_CNT_2_1.N_23\);
+  \II_FC1.UN1_CNT_2_1.G_9\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_9\,
+      I1 => \FC1.UN1_CNT_2_1.CO1\,
+      O => \FC1.UN1_CNT_2_1.N_24\);
+  \II_FC1.UN1_CNT_2_1.G_10\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(3),
+      O => \FC1.UN1_CNT_2_1.N_25\);
+  \II_FC1.UN1_CNT_2_1.G_11\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_8\,
+      I1 => \FC1.UN1_CNT_2_1.CO2\,
+      O => \FC1.UN1_CNT_2_1.N_26\);
+  \II_FC1.UN1_CNT_2_1.G_12\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(4),
+      O => \FC1.UN1_CNT_2_1.N_27\);
+  \II_FC1.UN1_CNT_2_1.G_13\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.N_10\,
+      I1 => \FC1.UN1_CNT_2_1.CO3\,
+      O => \FC1.UN1_CNT_2_1.N_28\);
+  \II_FC1.UN1_CNT_2_1.G_15\: AND2 port map (
+      I0 => \FC1.CNT\(0),
+      I1 => \FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE\(0),
+      O => \FC1.UN1_CNT_2_1.CO0\);
+  \II_FC1.UN1_CNT_2_1.G_16\: OR2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(3),
+      O => \FC1.UN1_CNT_2_1.N_8\);
+  \II_FC1.UN1_CNT_2_1.G_17\: OR2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(2),
+      O => \FC1.UN1_CNT_2_1.N_9\);
+  \II_FC1.UN1_CNT_2_1.G_18\: OR2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(4),
+      O => \FC1.UN1_CNT_2_1.N_10\);
+  \II_FC1.UN1_CNT_2_1.G_19\: OR2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(1),
+      O => \FC1.UN1_CNT_2_1.N_11\);
+  \II_FC1.UN1_CNT_2_1.G_24\: XOR2 port map (
+      I0 => \FC1.CNT\(0),
+      I1 => \FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE_I\(0),
+      O => \FC1.UN1_CNT_2_1.N_16\);
+  \II_FC1.UN1_CNT_2_1.G_26\: OR2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(5),
+      O => \FC1.UN1_CNT_2_1.N_18\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_14\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.CNT\(6),
+      O => \FC1.UN1_CNT_2_1.I_27.N_11\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_15\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE\,
+      I1 => \FC1.CNT_I\(6),
+      O => \FC1.UN1_CNT_2_1.I_27.N_12\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_16\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_4_A\,
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_4_B\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_4\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_16_B\: AND2B1 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO5\,
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_11_I\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_4_A\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_16_B_0\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO5\,
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_12\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_4_B\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_17\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_4_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_14\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_18\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_4\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_15\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_19\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_7_A\,
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_7_B\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_7\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_19_B\: AND2B1 port map (
+      I0 => \FC1.CNT\(7),
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_14_I\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_7_A\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_19_B_0\: AND2 port map (
+      I0 => \FC1.CNT\(7),
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_15\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_7_B\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_20\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_7_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_17\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_21\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_7\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_18\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_22\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_10_A\,
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_10_B\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_10\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_22_B\: AND2B1 port map (
+      I0 => LIGHT_VALUE(0),
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_17_I\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_10_A\);
+  \II_FC1.UN1_CNT_2_1.I_27.G_22_B_0\: AND2 port map (
+      I0 => LIGHT_VALUE(0),
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_18\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_10_B\);
+  \II_FC1.UN1_CNT_2_1.I_27.N_4_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_27.N_4\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_4_I_0\);
+  \II_FC1.UN1_CNT_2_1.I_27.N_7_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_27.N_7\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_7_I_0\);
+  \II_FC1.UN1_CNT_2_1.I_27.N_10_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_27.N_10\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_10_I_0\);
+  \II_FC1.UN1_CNT_2_1.I_27.N_11_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_27.N_11\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_11_I\);
+  \II_FC1.UN1_CNT_2_1.I_27.N_14_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_27.N_14\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_14_I\);
+  \II_FC1.UN1_CNT_2_1.I_27.N_17_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_27.N_17\,
+      O => \FC1.UN1_CNT_2_1.I_27.N_17_I\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_22\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_10_I_0\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_17\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_23\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_1\,
+      I1 => \FC1.UN1_CNT_2_1.I_27.N_10\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_18\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_24\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_4_A\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_4_B\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_4\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_24_B\: AND2B1 port map (
+      I0 => LIGHT_VALUE(1),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_17_I\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_4_A\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_24_B_0\: AND2 port map (
+      I0 => LIGHT_VALUE(1),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_18\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_4_B\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_25\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_4_I_0\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_20\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_26\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_1\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_4\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_21\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_27\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_7_A\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_7_B\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_7\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_27_B\: AND2B1 port map (
+      I0 => LIGHT_VALUE(2),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_20_I\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_7_A\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_27_B_0\: AND2 port map (
+      I0 => LIGHT_VALUE(2),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_21\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_7_B\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_28\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_7_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_23\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_29\: AND2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_7\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_24\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_30\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_10_A\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_10_B\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_10\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_30_B\: AND2B1 port map (
+      I0 => LIGHT_VALUE(3),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_23_I\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_10_A\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_30_B_0\: AND2 port map (
+      I0 => LIGHT_VALUE(3),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_24\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_10_B\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_31\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_10_I_0\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_26\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_32\: AND2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_1\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_10\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_27\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_33\: OR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_13_A\,
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_13_B\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_13\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_33_B\: AND2B1 port map (
+      I0 => LIGHT_VALUE(4),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_26_I\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_13_A\);
+  \II_FC1.UN1_CNT_2_1.I_28.G_33_B_0\: AND2 port map (
+      I0 => LIGHT_VALUE(4),
+      I1 => \FC1.UN1_CNT_2_1.I_28.N_27\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_13_B\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_4_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_4\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_4_I_0\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_7_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_7\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_7_I_0\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_10_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_10\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_10_I_0\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_13_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_13\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_13_I_0\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_17_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_17\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_17_I\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_20_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_20\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_20_I\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_23_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_23\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_23_I\);
+  \II_FC1.UN1_CNT_2_1.I_28.N_26_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.I_28.N_26\,
+      O => \FC1.UN1_CNT_2_1.I_28.N_26_I\);
+  \II_FC1.UN1_CNT_2_1.N_16_I\: INV port map (
+      I => \FC1.UN1_CNT_2_1.N_16\,
+      O => \FC1.UN1_CNT_2_1.N_16_I\);
+  \II_FC1.UN1_CNT_2_1.SUM1\: XOR2 port map (
+      I0 => N_32,
+      I1 => \FC1.CNT\(1),
+      O => \FC1.N_14\);
+  \II_FC1.UN1_CNT_2_1.SUM1.G_2\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_32);
+  \II_FC1.UN1_CNT_2_1.SUM2\: XOR2 port map (
+      I0 => N_33,
+      I1 => \FC1.CNT\(2),
+      O => \FC1.N_15\);
+  \II_FC1.UN1_CNT_2_1.SUM2.G_3\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO1\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_33);
+  \II_FC1.UN1_CNT_2_1.SUM3\: XOR2 port map (
+      I0 => N_34,
+      I1 => \FC1.CNT\(3),
+      O => \FC1.N_16\);
+  \II_FC1.UN1_CNT_2_1.SUM3.G_4\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO2\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_34);
+  \II_FC1.UN1_CNT_2_1.SUM4\: XOR2 port map (
+      I0 => N_35,
+      I1 => \FC1.CNT\(4),
+      O => \FC1.N_17\);
+  \II_FC1.UN1_CNT_2_1.SUM4.G_5\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO3\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_35);
+  \II_FC1.UN1_CNT_2_1.SUM5\: XOR2 port map (
+      I0 => N_36,
+      I1 => \FC1.CNT\(5),
+      O => \FC1.N_18\);
+  \II_FC1.UN1_CNT_2_1.SUM5.G_6\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO4\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_36);
+  \II_FC1.UN1_CNT_2_1.SUM6\: XOR2 port map (
+      I0 => N_37,
+      I1 => \FC1.CNT\(6),
+      O => \FC1.N_19\);
+  \II_FC1.UN1_CNT_2_1.SUM6.G_7\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.CO5\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_37);
+  \II_FC1.UN1_CNT_2_1.SUM7\: XOR2 port map (
+      I0 => N_38,
+      I1 => \FC1.CNT\(7),
+      O => \FC1.N_20\);
+  \II_FC1.UN1_CNT_2_1.SUM7.G_8\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_4_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_38);
+  \II_FC1.UN1_CNT_2_1.SUM8\: XOR2 port map (
+      I0 => N_39,
+      I1 => LIGHT_VALUE(0),
+      O => \FC1.N_21\);
+  \II_FC1.UN1_CNT_2_1.SUM8.G_9\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_7_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_39);
+  \II_FC1.UN1_CNT_2_1.SUM9\: XOR2 port map (
+      I0 => N_40,
+      I1 => LIGHT_VALUE(1),
+      O => \FC1.N_22\);
+  \II_FC1.UN1_CNT_2_1.SUM9.G_10\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_27.N_10_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_40);
+  \II_FC1.UN1_CNT_2_1.SUM10\: XOR2 port map (
+      I0 => N_41,
+      I1 => LIGHT_VALUE(2),
+      O => \FC1.N_23\);
+  \II_FC1.UN1_CNT_2_1.SUM10.G_11\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_4_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_41);
+  \II_FC1.UN1_CNT_2_1.SUM11\: XOR2 port map (
+      I0 => N_42,
+      I1 => LIGHT_VALUE(3),
+      O => \FC1.N_24\);
+  \II_FC1.UN1_CNT_2_1.SUM11.G_12\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_7_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_42);
+  \II_FC1.UN1_CNT_2_1.SUM12\: XOR2 port map (
+      I0 => N_43,
+      I1 => LIGHT_VALUE(4),
+      O => \FC1.N_25\);
+  \II_FC1.UN1_CNT_2_1.SUM12.G_13\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_10_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_43);
+  \II_FC1.UN1_CNT_2_1.SUM13\: XOR2 port map (
+      I0 => N_44,
+      I1 => LIGHT_VALUE(5),
+      O => \FC1.N_26\);
+  \II_FC1.UN1_CNT_2_1.SUM13.G_14\: XOR2 port map (
+      I0 => \FC1.UN1_CNT_2_1.I_28.N_13_I_0\,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      O => N_44);
+  \II_FC1.UN1_COUNT_ENABLE_1\: AND2 port map (
+      I0 => \FC1.UN10_COUNT_ENABLE\,
+      I1 => N_75,
+      O => \FC1.UN1_COUNT_ENABLE_1\);
+  \II_FC1.UN1_COUNT_ENABLE_1.G_45\: AND2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(0),
+      I1 => \DFSM1.N_43_I\,
+      O => N_75);
+  \II_FC1.UN1_UN1_COUNT_ENABLE\: OR2 port map (
+      I0 => COUNTER_BOTTOM,
+      I1 => \FC1.UN1_UN1_COUNT_ENABLE_1\,
+      O => \FC1.UN1_UN1_COUNT_ENABLE\);
+  \II_FC1.UN1_UN1_COUNT_ENABLE_1\: OR2 port map (
+      I0 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(0),
+      I1 => \DFSM1.CURRENT_STATE_H.CURRENT_STATE\(1),
+      O => \FC1.UN1_UN1_COUNT_ENABLE_1\);
+  \II_FC1.UN1_UN1_COUNT_ENABLE_I\: INV port map (
+      I => \FC1.UN1_UN1_COUNT_ENABLE\,
+      O => \FC1.UN1_UN1_COUNT_ENABLE_I_0\);
+  \II_FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE[0]\: OR2 port map (
+      I0 => \FC1.UN1_UN1_COUNT_ENABLE_I_0\,
+      I1 => \FC1.UN1_COUNT_ENABLE_1\,
+      O => \FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE\(0));
+  \II_FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE_I[0]\: INV port map (
+      I => \FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE\(0),
+      O => \FC1.UN1_UN1_UN1_UN1_UN1_COUNT_ENABLE_I\(0));
+  \II_FC1.UN6_COUNTER_TOP\: AND2 port map (
+      I0 => N_47,
+      I1 => N_50,
+      O => COUNTER_TOP);
+  \II_FC1.UN6_COUNTER_TOP.G_17\: AND2 port map (
+      I0 => LIGHT_VALUE(5),
+      I1 => LIGHT_VALUE_I(4),
+      O => N_47);
+  \II_FC1.UN6_COUNTER_TOP.G_18\: AND2 port map (
+      I0 => LIGHT_VALUE(3),
+      I1 => LIGHT_VALUE_I(2),
+      O => N_48);
+  \II_FC1.UN6_COUNTER_TOP.G_19\: AND2 port map (
+      I0 => LIGHT_VALUE_I(0),
+      I1 => LIGHT_VALUE(1),
+      O => N_49);
+  \II_FC1.UN6_COUNTER_TOP.G_20\: AND2 port map (
+      I0 => N_49,
+      I1 => N_48,
+      O => N_50);
+  II_GND: GND port map (
+      G => NN_1);
+  II_IR_DETECT_IBUF: IBUF port map (
+      I => IR_DETECT,
+      O => IR_DETECT_C);
+  \II_RCD1.CM_FADE_DOWN\: FDC port map (
+      Q => CM_FADE_DOWN,
+      D => \RCD1.CM_FADE_DOWN_7\,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_RCD1.CM_FADE_UP\: FDC port map (
+      Q => CM_FADE_UP,
+      D => \RCD1.N_7_I_0\,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_RCD1.CM_PANIC_ON\: FDC port map (
+      Q => CM_PANIC_ON,
+      D => \RCD1.CM_PANIC_ON_7\,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_RCD1.G_24\: OR2 port map (
+      I0 => \RCD1.UN8_RXD_READY_NE\,
+      I1 => N_76,
+      O => \RCD1.N_10\);
+  \II_RCD1.G_24.G_46\: OR2 port map (
+      I0 => RXD(2),
+      I1 => \RCD1.UN3_RXD_READY_I\,
+      O => N_76);
+  \II_RCD1.G_25\: OR2 port map (
+      I0 => RXD(0),
+      I1 => \RCD1.N_10\,
+      O => \RCD1.N_11\);
+  \II_RCD1.G_26\: XOR2 port map (
+      I0 => RXD(1),
+      I1 => RXD_I(3),
+      O => \RCD1.N_12\);
+  \II_RCD1.G_27\: XOR2 port map (
+      I0 => RXD(1),
+      I1 => RXD_I(0),
+      O => \RCD1.N_13\);
+  \II_RCD1.G_28\: XOR2 port map (
+      I0 => RXD(3),
+      I1 => RXD_I(0),
+      O => \RCD1.N_14\);
+  \II_RCD1.G_29\: OR2 port map (
+      I0 => RXD(3),
+      I1 => \RCD1.N_10\,
+      O => \RCD1.N_15\);
+  \II_RCD1.G_31\: OR2 port map (
+      I0 => \RCD1.N_11\,
+      I1 => \RCD1.N_12\,
+      O => \RCD1.N_17\);
+  \II_RCD1.G_32\: OR2 port map (
+      I0 => \RCD1.N_11\,
+      I1 => N_83,
+      O => \RCD1.N_18\);
+  \II_RCD1.G_32.G_53\: OR2 port map (
+      I0 => RXD(3),
+      I1 => RXD_I(1),
+      O => N_83);
+  \II_RCD1.G_33\: OR2 port map (
+      I0 => \RCD1.N_15\,
+      I1 => \RCD1.N_13\,
+      O => \RCD1.N_19\);
+  \II_RCD1.N_7_I\: INV port map (
+      I => \RCD1.N_7\,
+      O => \RCD1.N_7_I_0\);
+  \II_RCD1.N_10_I\: INV port map (
+      I => \RCD1.N_10\,
+      O => \RCD1.N_10_I\);
+  \II_RCD1.N_11_I\: INV port map (
+      I => \RCD1.N_11\,
+      O => \RCD1.N_11_I\);
+  \II_RCD1.N_14_I\: INV port map (
+      I => \RCD1.N_14\,
+      O => \RCD1.N_14_I\);
+  \II_RCD1.N_15_I\: INV port map (
+      I => \RCD1.N_15\,
+      O => \RCD1.N_15_I\);
+  \II_RCD1.RXD_ACK\: FDC port map (
+      Q => RXD_ACK,
+      D => RXD_READY,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_RCD1.CM_FADE_DOWN_7_0\: OR2 port map (
+      I0 => \RCD1.N_20\,
+      I1 => \RCD1.N_21\,
+      O => \RCD1.CM_FADE_DOWN_7\);
+  \II_RCD1.CM_FADE_DOWN_7_0_AND3\: AND2 port map (
+      I0 => CM_FADE_DOWN,
+      I1 => \RCD1.N_17\,
+      O => \RCD1.N_20\);
+  \II_RCD1.CM_FADE_DOWN_7_0_AND3_0\: AND2 port map (
+      I0 => \RCD1.N_15_I\,
+      I1 => N_84,
+      O => \RCD1.N_21\);
+  \II_RCD1.CM_FADE_DOWN_7_0_AND3_0.G_54\: AND2 port map (
+      I0 => RXD(0),
+      I1 => RXD_I(1),
+      O => N_84);
+  \II_RCD1.CM_FADE_UP_7_I\: OR2 port map (
+      I0 => \RCD1.N_22\,
+      I1 => \RCD1.N_23\,
+      O => \RCD1.N_7\);
+  \II_RCD1.CM_FADE_UP_7_I_AND3\: AND2 port map (
+      I0 => CM_FADE_UP_I,
+      I1 => \RCD1.N_18\,
+      O => \RCD1.N_22\);
+  \II_RCD1.CM_FADE_UP_7_I_AND3_0\: AND2 port map (
+      I0 => \RCD1.N_10_I\,
+      I1 => N_82,
+      O => \RCD1.N_23\);
+  \II_RCD1.CM_FADE_UP_7_I_AND3_0.G_52\: AND2 port map (
+      I0 => RXD_I(1),
+      I1 => \RCD1.N_14_I\,
+      O => N_82);
+  \II_RCD1.CM_FADE_UP_I\: INV port map (
+      I => CM_FADE_UP,
+      O => CM_FADE_UP_I);
+  \II_RCD1.CM_PANIC_ON_7_0\: OR2 port map (
+      I0 => \RCD1.N_24\,
+      I1 => \RCD1.N_25\,
+      O => \RCD1.CM_PANIC_ON_7\);
+  \II_RCD1.CM_PANIC_ON_7_0_AND3\: AND2 port map (
+      I0 => CM_PANIC_ON,
+      I1 => \RCD1.N_19\,
+      O => \RCD1.N_24\);
+  \II_RCD1.CM_PANIC_ON_7_0_AND3_0\: AND2 port map (
+      I0 => \RCD1.N_11_I\,
+      I1 => N_87,
+      O => \RCD1.N_25\);
+  \II_RCD1.CM_PANIC_ON_7_0_AND3_0.G_57\: AND2 port map (
+      I0 => RXD(3),
+      I1 => RXD_I(1),
+      O => N_87);
+  \II_RCD1.CM_PANIC_ON_I\: INV port map (
+      I => CM_PANIC_ON,
+      O => CM_PANIC_ON_I);
+  \II_RCD1.RXD_ACK_I\: INV port map (
+      I => RXD_ACK,
+      O => RXD_ACK_I);
+  \II_RCD1.UN3_RXD_READY\: AND2 port map (
+      I0 => RXD_ACK_I,
+      I1 => RXD_READY,
+      O => \RCD1.UN3_RXD_READY\);
+  \II_RCD1.UN3_RXD_READY_I\: INV port map (
+      I => \RCD1.UN3_RXD_READY\,
+      O => \RCD1.UN3_RXD_READY_I\);
+  \II_RCD1.UN8_RXD_READY_0\: XOR2 port map (
+      I0 => RC_ADDRESS_C(0),
+      I1 => RXD(4),
+      O => \RCD1.UN8_RXD_READY_0\);
+  \II_RCD1.UN8_RXD_READY_1\: XOR2 port map (
+      I0 => RC_ADDRESS_C(1),
+      I1 => RXD(5),
+      O => \RCD1.UN8_RXD_READY_1\);
+  \II_RCD1.UN8_RXD_READY_2\: XOR2 port map (
+      I0 => RC_ADDRESS_C(2),
+      I1 => RXD(6),
+      O => \RCD1.UN8_RXD_READY_2\);
+  \II_RCD1.UN8_RXD_READY_3\: XOR2 port map (
+      I0 => RC_ADDRESS_C(3),
+      I1 => RXD(7),
+      O => \RCD1.UN8_RXD_READY_3\);
+  \II_RCD1.UN8_RXD_READY_NE\: OR2 port map (
+      I0 => N_60,
+      I1 => N_61,
+      O => \RCD1.UN8_RXD_READY_NE\);
+  \II_RCD1.UN8_RXD_READY_NE.G_30\: OR2 port map (
+      I0 => \RCD1.UN8_RXD_READY_3\,
+      I1 => \RCD1.UN8_RXD_READY_2\,
+      O => N_60);
+  \II_RCD1.UN8_RXD_READY_NE.G_31\: OR2 port map (
+      I0 => \RCD1.UN8_RXD_READY_1\,
+      I1 => \RCD1.UN8_RXD_READY_0\,
+      O => N_61);
+  \II_RC_ADDRESS_IBUF[0]\: IBUF port map (
+      I => RC_ADDRESS(0),
+      O => RC_ADDRESS_C(0));
+  \II_RC_ADDRESS_IBUF[1]\: IBUF port map (
+      I => RC_ADDRESS(1),
+      O => RC_ADDRESS_C(1));
+  \II_RC_ADDRESS_IBUF[2]\: IBUF port map (
+      I => RC_ADDRESS(2),
+      O => RC_ADDRESS_C(2));
+  \II_RC_ADDRESS_IBUF[3]\: IBUF port map (
+      I => RC_ADDRESS(3),
+      O => RC_ADDRESS_C(3));
+  II_RESET_IBUF: IBUF port map (
+      I => RESET,
+      O => RESET_C);
+  \II_TD1.TRIG_CNT_UN2_RESET\: OR2 port map (
+      I0 => RESET_C,
+      I1 => ZERO_DETECT_C,
+      O => \TD1.TRIG_CNT_UN2_RESET\);
+  \II_TD1.CNT[0]\: FDC port map (
+      Q => \TD1.CNT\(0),
+      D => \TD1.CNT_I\(0),
+      C => CLK_C,
+      CLR => \TD1.TRIG_CNT_UN2_RESET\);
+  \II_TD1.CNT[1]\: FDP port map (
+      Q => \TD1.CNT\(1),
+      D => \TD1.CNT_N1\,
+      C => CLK_C,
+      PRE => \TD1.TRIG_CNT_UN2_RESET\);
+  \II_TD1.CNT[2]\: FDC port map (
+      Q => \TD1.CNT\(2),
+      D => \TD1.CNT_N2\,
+      C => CLK_C,
+      CLR => \TD1.TRIG_CNT_UN2_RESET\);
+  \II_TD1.CNT[3]\: FDP port map (
+      Q => \TD1.CNT\(3),
+      D => \TD1.CNT_N3\,
+      C => CLK_C,
+      PRE => \TD1.TRIG_CNT_UN2_RESET\);
+  \II_TD1.CNT[4]\: FDC port map (
+      Q => \TD1.CNT\(4),
+      D => \TD1.CNT_N4\,
+      C => CLK_C,
+      CLR => \TD1.TRIG_CNT_UN2_RESET\);
+  \II_TD1.CNT[5]\: FDP port map (
+      Q => \TD1.CNT\(5),
+      D => \TD1.CNT_N5\,
+      C => CLK_C,
+      PRE => \TD1.TRIG_CNT_UN2_RESET\);
+  \II_TD1.CNT_C1\: OR2 port map (
+      I0 => \TD1.CNT\(1),
+      I1 => \TD1.CNT\(0),
+      O => \TD1.CNT_C1\);
+  \II_TD1.CNT_C1_I\: INV port map (
+      I => \TD1.CNT_C1\,
+      O => \TD1.CNT_C1_I_0\);
+  \II_TD1.CNT_C2\: OR2 port map (
+      I0 => \TD1.CNT\(2),
+      I1 => \TD1.CNT_C1\,
+      O => \TD1.CNT_C2\);
+  \II_TD1.CNT_C2_I\: INV port map (
+      I => \TD1.CNT_C2\,
+      O => \TD1.CNT_C2_I_0\);
+  \II_TD1.CNT_C3\: OR2 port map (
+      I0 => \TD1.CNT\(3),
+      I1 => \TD1.CNT_C2\,
+      O => \TD1.CNT_C3\);
+  \II_TD1.CNT_C3_I\: INV port map (
+      I => \TD1.CNT_C3\,
+      O => \TD1.CNT_C3_I_0\);
+  \II_TD1.CNT_C4\: OR2 port map (
+      I0 => \TD1.CNT\(4),
+      I1 => \TD1.CNT_C3\,
+      O => \TD1.CNT_C4\);
+  \II_TD1.CNT_C4_I\: INV port map (
+      I => \TD1.CNT_C4\,
+      O => \TD1.CNT_C4_I_0\);
+  \II_TD1.CNT_I[0]\: INV port map (
+      I => \TD1.CNT\(0),
+      O => \TD1.CNT_I\(0));
+  \II_TD1.CNT_N1\: XOR2 port map (
+      I0 => \TD1.CNT_I\(0),
+      I1 => \TD1.CNT\(1),
+      O => \TD1.CNT_N1\);
+  \II_TD1.CNT_N2\: XOR2 port map (
+      I0 => \TD1.CNT_C1_I_0\,
+      I1 => \TD1.CNT\(2),
+      O => \TD1.CNT_N2\);
+  \II_TD1.CNT_N3\: XOR2 port map (
+      I0 => \TD1.CNT_C2_I_0\,
+      I1 => \TD1.CNT\(3),
+      O => \TD1.CNT_N3\);
+  \II_TD1.CNT_N4\: XOR2 port map (
+      I0 => \TD1.CNT_C3_I_0\,
+      I1 => \TD1.CNT\(4),
+      O => \TD1.CNT_N4\);
+  \II_TD1.CNT_N5\: XOR2 port map (
+      I0 => \TD1.CNT_C4_I_0\,
+      I1 => \TD1.CNT\(5),
+      O => \TD1.CNT_N5\);
+  \II_TD1.TRIAC_TRIG.ALTB[0]\: AND2 port map (
+      I0 => \TD1.CNT\(0),
+      I1 => LIGHT_VALUE_I(0),
+      O => \TD1.TRIAC_TRIG.ALTB\(0));
+  \II_TD1.TRIAC_TRIG.ALTB[1]\: OR2 port map (
+      I0 => \TD1.TRIAC_TRIG.ALTB_A\(1),
+      I1 => \TD1.TRIAC_TRIG.ALTB_B\(1),
+      O => \TD1.TRIAC_TRIG.ALTB\(1));
+  \II_TD1.TRIAC_TRIG.ALTB[2]\: OR2 port map (
+      I0 => \TD1.TRIAC_TRIG.ALTB_A\(2),
+      I1 => \TD1.TRIAC_TRIG.ALTB_B\(2),
+      O => \TD1.TRIAC_TRIG.ALTB\(2));
+  \II_TD1.TRIAC_TRIG.ALTB[3]\: OR2 port map (
+      I0 => \TD1.TRIAC_TRIG.ALTB_A\(3),
+      I1 => \TD1.TRIAC_TRIG.ALTB_B\(3),
+      O => \TD1.TRIAC_TRIG.ALTB\(3));
+  \II_TD1.TRIAC_TRIG.ALTB[4]\: OR2 port map (
+      I0 => \TD1.TRIAC_TRIG.ALTB_A\(4),
+      I1 => \TD1.TRIAC_TRIG.ALTB_B\(4),
+      O => \TD1.TRIAC_TRIG.ALTB\(4));
+  \II_TD1.TRIAC_TRIG.ALTB[5]\: OR2 port map (
+      I0 => \TD1.TRIAC_TRIG_A\,
+      I1 => \TD1.TRIAC_TRIG_B\,
+      O => \TD1.TRIAC_TRIG\);
+  \II_TD1.TRIAC_TRIG.ALTB_B[1]\: AND2B1 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(1),
+      I1 => \TD1.TRIAC_TRIG.ALTB\(0),
+      O => \TD1.TRIAC_TRIG.ALTB_A\(1));
+  \II_TD1.TRIAC_TRIG.ALTB_B[2]\: AND2B1 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(2),
+      I1 => \TD1.TRIAC_TRIG.ALTB\(1),
+      O => \TD1.TRIAC_TRIG.ALTB_A\(2));
+  \II_TD1.TRIAC_TRIG.ALTB_B[3]\: AND2B1 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(3),
+      I1 => \TD1.TRIAC_TRIG.ALTB\(2),
+      O => \TD1.TRIAC_TRIG.ALTB_A\(3));
+  \II_TD1.TRIAC_TRIG.ALTB_B[4]\: AND2B1 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(4),
+      I1 => \TD1.TRIAC_TRIG.ALTB\(3),
+      O => \TD1.TRIAC_TRIG.ALTB_A\(4));
+  \II_TD1.TRIAC_TRIG.ALTB_B[5]\: AND2B1 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(5),
+      I1 => \TD1.TRIAC_TRIG.ALTB\(4),
+      O => \TD1.TRIAC_TRIG_A\);
+  \II_TD1.TRIAC_TRIG.ALTB_B_0[1]\: AND2 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(1),
+      I1 => \TD1.CNT\(1),
+      O => \TD1.TRIAC_TRIG.ALTB_B\(1));
+  \II_TD1.TRIAC_TRIG.ALTB_B_0[2]\: AND2 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(2),
+      I1 => \TD1.CNT\(2),
+      O => \TD1.TRIAC_TRIG.ALTB_B\(2));
+  \II_TD1.TRIAC_TRIG.ALTB_B_0[3]\: AND2 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(3),
+      I1 => \TD1.CNT\(3),
+      O => \TD1.TRIAC_TRIG.ALTB_B\(3));
+  \II_TD1.TRIAC_TRIG.ALTB_B_0[4]\: AND2 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(4),
+      I1 => \TD1.CNT\(4),
+      O => \TD1.TRIAC_TRIG.ALTB_B\(4));
+  \II_TD1.TRIAC_TRIG.ALTB_B_0[5]\: AND2 port map (
+      I0 => \TD1.TRIAC_TRIG.AXB\(5),
+      I1 => \TD1.CNT\(5),
+      O => \TD1.TRIAC_TRIG_B\);
+  \II_TD1.TRIAC_TRIG.AXB[1]\: XOR2 port map (
+      I0 => LIGHT_VALUE(1),
+      I1 => \TD1.CNT\(1),
+      O => \TD1.TRIAC_TRIG.AXB\(1));
+  \II_TD1.TRIAC_TRIG.AXB[2]\: XOR2 port map (
+      I0 => LIGHT_VALUE(2),
+      I1 => \TD1.CNT\(2),
+      O => \TD1.TRIAC_TRIG.AXB\(2));
+  \II_TD1.TRIAC_TRIG.AXB[3]\: XOR2 port map (
+      I0 => LIGHT_VALUE(3),
+      I1 => \TD1.CNT\(3),
+      O => \TD1.TRIAC_TRIG.AXB\(3));
+  \II_TD1.TRIAC_TRIG.AXB[4]\: XOR2 port map (
+      I0 => LIGHT_VALUE(4),
+      I1 => \TD1.CNT\(4),
+      O => \TD1.TRIAC_TRIG.AXB\(4));
+  \II_TD1.TRIAC_TRIG.AXB[5]\: XOR2 port map (
+      I0 => LIGHT_VALUE(5),
+      I1 => \TD1.CNT\(5),
+      O => \TD1.TRIAC_TRIG.AXB\(5));
+  \II_TD1.TRIAC_TRIG.TRIAC_TRIG_I\: INV port map (
+      I => \TD1.TRIAC_TRIG\,
+      O => \TD1.TRIAC_TRIG_I\);
+  II_TRIAC_PULSE_OBUF: OBUF port map (
+      I => \TD1.TRIAC_TRIG_I\,
+      O => TRIAC_PULSE);
+  \II_UAR1.BC1.BYTE_OUT[0]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(0),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_5\(0),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.BYTE_OUT[1]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(1),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_8\(1),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.BYTE_OUT[2]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(2),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_11\(2),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.BYTE_OUT[3]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(3),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_14\(3),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.BYTE_OUT[4]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(4),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_17\(4),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.BYTE_OUT[5]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(5),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_20\(5),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.BYTE_OUT[6]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(6),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_23\(6),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.BYTE_OUT[7]\: FDC port map (
+      Q => \UAR1.BYTE_OUT\(7),
+      D => \UAR1.BC1.STATE_SYNC_BYTE_OUT_24\(7),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CYCLE_MEASURE\: OR2 port map (
+      I0 => \UAR1.BYTE_AVAIL\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(11),
+      O => \UAR1.BC1.N_104\);
+  \II_UAR1.BC1.N_104_I\: INV port map (
+      I => \UAR1.BC1.N_104\,
+      O => \UAR1.BC1.N_104_I\);
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_5[0]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_5_A\(0),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_5_B\(0),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_5\(0));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_5_B[0]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(9),
+      I1 => \UAR1.BYTE_OUT\(0),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_5_A\(0));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_5_B_0[0]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(9),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_5_B\(0));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_8[1]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_8_A\(1),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_8_B\(1),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_8\(1));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_8_B[1]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(8),
+      I1 => \UAR1.BYTE_OUT\(1),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_8_A\(1));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_8_B_0[1]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(8),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_8_B\(1));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_11[2]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_11_A\(2),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_11_B\(2),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_11\(2));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_11_B[2]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(7),
+      I1 => \UAR1.BYTE_OUT\(2),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_11_A\(2));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_11_B_0[2]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(7),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_11_B\(2));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_14[3]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_14_A\(3),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_14_B\(3),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_14\(3));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_14_B[3]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(6),
+      I1 => \UAR1.BYTE_OUT\(3),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_14_A\(3));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_14_B_0[3]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(6),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_14_B\(3));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_17[4]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_17_A\(4),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_17_B\(4),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_17\(4));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_17_B[4]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(5),
+      I1 => \UAR1.BYTE_OUT\(4),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_17_A\(4));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_17_B_0[4]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(5),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_17_B\(4));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_20[5]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_20_A\(5),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_20_B\(5),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_20\(5));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_20_B[5]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(4),
+      I1 => \UAR1.BYTE_OUT\(5),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_20_A\(5));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_20_B_0[5]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(4),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_20_B\(5));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_23[6]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_23_A\(6),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_23_B\(6),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_23\(6));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_23_B[6]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(3),
+      I1 => \UAR1.BYTE_OUT\(6),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_23_A\(6));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_23_B_0[6]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(3),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_23_B\(6));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_24[7]\: OR2 port map (
+      I0 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_24_A\(7),
+      I1 => \UAR1.BC1.STATE_SYNC_BYTE_OUT_24_B\(7),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_24\(7));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_24_B[7]\: AND2B1 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(2),
+      I1 => \UAR1.BYTE_OUT\(7),
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_24_A\(7));
+  \II_UAR1.BC1.STATE_SYNC_BYTE_OUT_24_B_0[7]\: AND2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(2),
+      I1 => \UAR1.BM_DATA\,
+      O => \UAR1.BC1.STATE_SYNC_BYTE_OUT_24_B\(7));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[0]\: FDC port map (
+      Q => \UAR1.BYTE_AVAIL\,
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(11),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[1]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(1),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(10),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[2]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(2),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(9),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[3]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(3),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(8),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[4]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(4),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(7),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[5]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(5),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(6),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[6]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(6),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(5),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[7]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(7),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(4),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[8]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(8),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(3),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[9]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(9),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(2),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[10]\: FDC port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(10),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(1),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE[11]\: FDP port map (
+      Q => \UAR1.BC1.CURRENT_STATE\(11),
+      D => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(0),
+      C => CLK_C,
+      PRE => RESET_C);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_40\: AND2 port map (
+      I0 => \UAR1.BIT_DONE\,
+      I1 => \UAR1.BM1.N_37\,
+      O => \UAR1.BC1.N_101\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_49\: OR2 port map (
+      I0 => \UAR1.BC1.N_68_A\,
+      I1 => \UAR1.BC1.N_68_B\,
+      O => \UAR1.BC1.N_68\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_49_B\: AND2B1 port map (
+      I0 => \UAR1.BM1.N_75\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(10),
+      O => \UAR1.BC1.N_68_A\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_49_B_0\: AND2 port map (
+      I0 => \UAR1.BM1.N_75\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(1),
+      O => \UAR1.BC1.N_68_B\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53\: OR2 port map (
+      I0 => N_57,
+      I1 => N_59,
+      O => \UAR1.BC1.N_72\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53.G_23\: OR2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(3),
+      I1 => \UAR1.BC1.CURRENT_STATE\(2),
+      O => N_53);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53.G_24\: OR2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(1),
+      I1 => \UAR1.BC1.CURRENT_STATE\(8),
+      O => N_54);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53.G_25\: OR2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(7),
+      I1 => \UAR1.BC1.CURRENT_STATE\(6),
+      O => N_55);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53.G_26\: OR2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(5),
+      I1 => \UAR1.BC1.CURRENT_STATE\(9),
+      O => N_56);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53.G_27\: OR2 port map (
+      I0 => \UAR1.BC1.CURRENT_STATE\(4),
+      I1 => N_56,
+      O => N_57);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53.G_28\: OR2 port map (
+      I0 => N_55,
+      I1 => N_54,
+      O => N_58);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_53.G_29\: OR2 port map (
+      I0 => N_53,
+      I1 => N_58,
+      O => N_59);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_55\: OR2 port map (
+      I0 => \UAR1.BC1.N_72\,
+      I1 => N_79,
+      O => \UAR1.BC1.N_74\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.G_55.G_49\: OR2 port map (
+      I0 => \UAR1.DATA_IN_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(10),
+      O => N_79);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS.N_72_I\: INV port map (
+      I => \UAR1.BC1.N_72\,
+      O => \UAR1.BC1.N_72_I\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[0]\: OR2 port map (
+      I0 => \UAR1.BC1.N_75\,
+      I1 => N_91,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(0));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[1]\: OR2 port map (
+      I0 => \UAR1.BC1.N_79\,
+      I1 => \UAR1.BC1.N_80\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(1));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[2]\: OR2 port map (
+      I0 => \UAR1.BC1.N_82_1\,
+      I1 => \UAR1.BC1.N_81\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(2));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[3]\: OR2 port map (
+      I0 => \UAR1.BC1.N_84\,
+      I1 => \UAR1.BC1.N_83\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(3));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[4]\: OR2 port map (
+      I0 => \UAR1.BC1.N_86\,
+      I1 => \UAR1.BC1.N_85\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(4));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[5]\: OR2 port map (
+      I0 => \UAR1.BC1.N_88\,
+      I1 => \UAR1.BC1.N_87\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(5));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[6]\: OR2 port map (
+      I0 => \UAR1.BC1.N_90\,
+      I1 => \UAR1.BC1.N_89\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(6));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[7]\: OR2 port map (
+      I0 => \UAR1.BC1.N_92\,
+      I1 => \UAR1.BC1.N_91\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(7));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[8]\: OR2 port map (
+      I0 => \UAR1.BC1.N_94\,
+      I1 => \UAR1.BC1.N_93\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(8));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[9]\: OR2 port map (
+      I0 => \UAR1.BC1.N_96\,
+      I1 => \UAR1.BC1.N_95\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(9));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS[10]\: OR2 port map (
+      I0 => \UAR1.BC1.N_98\,
+      I1 => \UAR1.BC1.N_97\,
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(10));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_0.G_59\: OR2 port map (
+      I0 => \UAR1.BYTE_AVAIL\,
+      I1 => \UAR1.BC1.N_77\,
+      O => N_89);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_0.G_60\: OR2 port map (
+      I0 => N_89,
+      I1 => \UAR1.BC1.N_78\,
+      O => N_90);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_0.G_61\: OR2 port map (
+      I0 => \UAR1.BC1.N_76\,
+      I1 => N_90,
+      O => N_91);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[0]\: AND2 port map (
+      I0 => \UAR1.BC1.N_74\,
+      I1 => N_81,
+      O => \UAR1.BC1.N_75\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[1]\: AND2 port map (
+      I0 => \UAR1.DATA_IN\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(11),
+      O => \UAR1.BC1.N_79\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[2]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(9),
+      O => \UAR1.BC1.N_81\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[3]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(8),
+      O => \UAR1.BC1.N_83\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[4]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(7),
+      O => \UAR1.BC1.N_85\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[5]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(6),
+      O => \UAR1.BC1.N_87\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[6]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(5),
+      O => \UAR1.BC1.N_89\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[7]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(4),
+      O => \UAR1.BC1.N_91\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[8]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(3),
+      O => \UAR1.BC1.N_93\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[9]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(2),
+      O => \UAR1.BC1.N_95\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[10]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(1),
+      O => \UAR1.BC1.N_97\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2[11]\: AND2 port map (
+      I0 => N_31,
+      I1 => \UAR1.BC1.CURRENT_STATE\(1),
+      O => \UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS\(11));
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0.G_51\: AND2 port map (
+      I0 => \UAR1.BIT_DONE\,
+      I1 => \UAR1.BM1.N_37_I\,
+      O => N_81);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[0]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE\,
+      I1 => \UAR1.BC1.N_68\,
+      O => \UAR1.BC1.N_76\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[1]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(10),
+      O => \UAR1.BC1.N_80\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[3]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(9),
+      O => \UAR1.BC1.N_84\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[4]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(8),
+      O => \UAR1.BC1.N_86\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[5]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(7),
+      O => \UAR1.BC1.N_88\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[6]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(6),
+      O => \UAR1.BC1.N_90\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[7]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(5),
+      O => \UAR1.BC1.N_92\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[8]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(4),
+      O => \UAR1.BC1.N_94\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[9]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(3),
+      O => \UAR1.BC1.N_96\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0[10]\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(2),
+      O => \UAR1.BC1.N_98\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0_1[2]\: AND2 port map (
+      I0 => \UAR1.BM_DATA\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(10),
+      O => \UAR1.BC1.N_82_1\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_1[0]\: AND2 port map (
+      I0 => \UAR1.DATA_IN_I\,
+      I1 => \UAR1.BC1.CURRENT_STATE\(11),
+      O => \UAR1.BC1.N_77\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_2[0]\: AND2 port map (
+      I0 => \UAR1.BC1.N_72_I\,
+      I1 => N_78,
+      O => \UAR1.BC1.N_78\);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_2_0.G_47\: AND2 port map (
+      I0 => \UAR1.DATA_IN_I\,
+      I1 => \UAR1.BIT_DONE\,
+      O => N_77);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_2_0.G_48\: AND2 port map (
+      I0 => N_77,
+      I1 => \UAR1.BM_DATA_I\,
+      O => N_78);
+  \II_UAR1.BC1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_11.G_1\: AND2 port map (
+      I0 => \UAR1.BC1.N_101\,
+      I1 => \UAR1.BM1.N_75_I\,
+      O => N_31);
+  \II_UAR1.BM1.G_38\: AND2 port map (
+      I0 => \UAR1.BIT_DONE_I\,
+      I1 => \UAR1.DATA_IN\,
+      O => \UAR1.BM1.N_73\);
+  \II_UAR1.BM1.G_40\: AND2 port map (
+      I0 => \UAR1.BM1.SAMPLED_BITS\(1),
+      I1 => N_45,
+      O => \UAR1.BM1.N_75\);
+  \II_UAR1.BM1.G_40.G_15\: AND2 port map (
+      I0 => \UAR1.BM1.SAMPLED_BITS\(0),
+      I1 => \UAR1.BM1.SAMPLED_BITS\(2),
+      O => N_45);
+  \II_UAR1.BM1.G_41\: OR2 port map (
+      I0 => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5_A\(0),
+      I1 => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5_B\(0),
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5\(0));
+  \II_UAR1.BM1.G_41_B\: AND2B1 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE\(3),
+      I1 => \UAR1.BM1.SAMPLED_BITS\(0),
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5_A\(0));
+  \II_UAR1.BM1.G_41_B_0\: AND2 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE\(3),
+      I1 => \UAR1.DATA_IN\,
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5_B\(0));
+  \II_UAR1.BM1.G_42\: OR2 port map (
+      I0 => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8_A\(1),
+      I1 => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8_B\(1),
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8\(1));
+  \II_UAR1.BM1.G_42_B\: AND2B1 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE\(2),
+      I1 => \UAR1.BM1.SAMPLED_BITS\(1),
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8_A\(1));
+  \II_UAR1.BM1.G_42_B_0\: AND2 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE\(2),
+      I1 => \UAR1.DATA_IN\,
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8_B\(1));
+  \II_UAR1.BM1.G_43\: OR2 port map (
+      I0 => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9_A\(2),
+      I1 => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9_B\(2),
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9\(2));
+  \II_UAR1.BM1.G_43_B\: AND2B1 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE\(1),
+      I1 => \UAR1.BM1.SAMPLED_BITS\(2),
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9_A\(2));
+  \II_UAR1.BM1.G_43_B_0\: AND2 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE\(1),
+      I1 => \UAR1.DATA_IN\,
+      O => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9_B\(2));
+  \II_UAR1.BM1.G_44\: OR2 port map (
+      I0 => \UAR1.DATA_IN\,
+      I1 => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(4),
+      O => \UAR1.BM1.N_54\);
+  \II_UAR1.BM1.N_37_I\: INV port map (
+      I => \UAR1.BM1.N_37\,
+      O => \UAR1.BM1.N_37_I\);
+  \II_UAR1.BM1.N_75_I\: INV port map (
+      I => \UAR1.BM1.N_75\,
+      O => \UAR1.BM1.N_75_I\);
+  \II_UAR1.BM1.BM_DATA_0_AND2\: AND2 port map (
+      I0 => \UAR1.BIT_DONE\,
+      I1 => \UAR1.BM1.N_75\,
+      O => \UAR1.BM_DATA\);
+  \II_UAR1.BM1.BM_DATA_I\: INV port map (
+      I => \UAR1.BM_DATA\,
+      O => \UAR1.BM_DATA_I\);
+  \II_UAR1.BM1.CURRENT_STATE_H.N_47_I\: INV port map (
+      I => \UAR1.BM1.N_47\,
+      O => \UAR1.BM1.N_47_I\);
+  \II_UAR1.BM1.CURRENT_STATE_H.BIT_DONE_I\: INV port map (
+      I => \UAR1.BIT_DONE\,
+      O => \UAR1.BIT_DONE_I\);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE[0]\: FDC port map (
+      Q => \UAR1.BIT_DONE\,
+      D => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS\(4),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE[1]\: FDC port map (
+      Q => \UAR1.BM1.CURRENT_STATE\(1),
+      D => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS\(3),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE[2]\: FDC port map (
+      Q => \UAR1.BM1.CURRENT_STATE\(2),
+      D => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS\(2),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE[3]\: FDC port map (
+      Q => \UAR1.BM1.CURRENT_STATE\(3),
+      D => \UAR1.BM1.N_18_I\,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE[4]\: FDP port map (
+      Q => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE\(4),
+      D => \UAR1.BM1.N_47_I\,
+      C => CLK_C,
+      PRE => RESET_C);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_I[1]\: INV port map (
+      I => \UAR1.BM1.CURRENT_STATE\(1),
+      O => \UAR1.BM1.CURRENT_STATE_I_0\(1));
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_I[2]\: INV port map (
+      I => \UAR1.BM1.CURRENT_STATE\(2),
+      O => \UAR1.BM1.CURRENT_STATE_I_0\(2));
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_I[3]\: INV port map (
+      I => \UAR1.BM1.CURRENT_STATE\(3),
+      O => \UAR1.BM1.CURRENT_STATE_I_0\(3));
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_I[4]\: INV port map (
+      I => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE\(4),
+      O => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_I_0\(4));
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0_AND2[2]\: AND2 port map (
+      I0 => \UAR1.BC1.N_104_I\,
+      I1 => \UAR1.BM1.CURRENT_STATE\(3),
+      O => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS\(2));
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0_AND2[3]\: AND2 port map (
+      I0 => \UAR1.BC1.N_104_I\,
+      I1 => \UAR1.BM1.CURRENT_STATE\(2),
+      O => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS\(3));
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_AND2_0_AND2[4]\: AND2 port map (
+      I0 => \UAR1.BC1.N_104_I\,
+      I1 => \UAR1.BM1.CURRENT_STATE\(1),
+      O => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS\(4));
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I[0]\: OR2 port map (
+      I0 => \UAR1.BM1.N_63\,
+      I1 => \UAR1.BM1.N_62\,
+      O => \UAR1.BM1.N_47\);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_AND2[0]\: AND2 port map (
+      I0 => \UAR1.BC1.N_104_I\,
+      I1 => \UAR1.BM1.N_54\,
+      O => \UAR1.BM1.N_62\);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_AND2_0[0]\: AND2 port map (
+      I0 => \UAR1.BM1.N_73\,
+      I1 => N_52,
+      O => \UAR1.BM1.N_63\);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_AND2_0_0.G_21\: AND2 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE_I_0\(3),
+      I1 => \UAR1.BM1.CURRENT_STATE_I_0\(2),
+      O => N_51);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_AND2_0_0.G_22\: AND2 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE_I_0\(1),
+      I1 => N_51,
+      O => N_52);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_I[1]\: OR2 port map (
+      I0 => \UAR1.BM1.N_60\,
+      I1 => \UAR1.BM1.N_61\,
+      O => \UAR1.BM1.N_18_I\);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_I_AND2[1]\: AND2 port map (
+      I0 => \UAR1.BIT_DONE\,
+      I1 => \UAR1.BC1.N_104_I\,
+      O => \UAR1.BM1.N_60\);
+  \II_UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE_NS_I_I_AND2_0[1]\: AND2 port map (
+      I0 => \UAR1.BM1.CURRENT_STATE_H.CURRENT_STATE\(4),
+      I1 => \UAR1.BM1.N_73\,
+      O => \UAR1.BM1.N_61\);
+  \II_UAR1.BM1.FAIL_I\: OR2 port map (
+      I0 => \UAR1.BM1.N_75\,
+      I1 => \UAR1.BM1.N_59\,
+      O => \UAR1.BM1.N_37\);
+  \II_UAR1.BM1.FAIL_I_AND2\: AND2 port map (
+      I0 => \UAR1.BM1.SAMPLED_BITS_I_0\(0),
+      I1 => N_46,
+      O => \UAR1.BM1.N_59\);
+  \II_UAR1.BM1.FAIL_I_AND2.G_16\: AND2 port map (
+      I0 => \UAR1.BM1.SAMPLED_BITS_I_0\(2),
+      I1 => \UAR1.BM1.SAMPLED_BITS_I_0\(1),
+      O => N_46);
+  \II_UAR1.BM1.SAMPLED_BITS[0]\: FDC port map (
+      Q => \UAR1.BM1.SAMPLED_BITS\(0),
+      D => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_5\(0),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BM1.SAMPLED_BITS[1]\: FDC port map (
+      Q => \UAR1.BM1.SAMPLED_BITS\(1),
+      D => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_8\(1),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BM1.SAMPLED_BITS[2]\: FDC port map (
+      Q => \UAR1.BM1.SAMPLED_BITS\(2),
+      D => \UAR1.BM1.STATE_SYNC_SAMPLED_BITS_9\(2),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.BM1.SAMPLED_BITS_I[0]\: INV port map (
+      I => \UAR1.BM1.SAMPLED_BITS\(0),
+      O => \UAR1.BM1.SAMPLED_BITS_I_0\(0));
+  \II_UAR1.BM1.SAMPLED_BITS_I[1]\: INV port map (
+      I => \UAR1.BM1.SAMPLED_BITS\(1),
+      O => \UAR1.BM1.SAMPLED_BITS_I_0\(1));
+  \II_UAR1.BM1.SAMPLED_BITS_I[2]\: INV port map (
+      I => \UAR1.BM1.SAMPLED_BITS\(2),
+      O => \UAR1.BM1.SAMPLED_BITS_I_0\(2));
+  \II_UAR1.RXD[0]\: FDC port map (
+      Q => RXD(0),
+      D => \UAR1.SYNC_RXD_3\(0),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD[1]\: FDC port map (
+      Q => RXD(1),
+      D => \UAR1.SYNC_RXD_3\(1),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD[2]\: FDC port map (
+      Q => RXD(2),
+      D => \UAR1.SYNC_RXD_3\(2),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD[3]\: FDC port map (
+      Q => RXD(3),
+      D => \UAR1.SYNC_RXD_3\(3),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD[4]\: FDC port map (
+      Q => RXD(4),
+      D => \UAR1.SYNC_RXD_3\(4),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD[5]\: FDC port map (
+      Q => RXD(5),
+      D => \UAR1.SYNC_RXD_3\(5),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD[6]\: FDC port map (
+      Q => RXD(6),
+      D => \UAR1.SYNC_RXD_3\(6),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD[7]\: FDC port map (
+      Q => RXD(7),
+      D => \UAR1.SYNC_RXD_3\(7),
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.RXD_READY\: FDC port map (
+      Q => RXD_READY,
+      D => \UAR1.SYNC_RXD_READY_3\,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.SYNC_RXD_3[0]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(0),
+      I1 => \UAR1.SYNC_RXD_3_B\(0),
+      O => \UAR1.SYNC_RXD_3\(0));
+  \II_UAR1.SYNC_RXD_3[1]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(1),
+      I1 => \UAR1.SYNC_RXD_3_B\(1),
+      O => \UAR1.SYNC_RXD_3\(1));
+  \II_UAR1.SYNC_RXD_3[2]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(2),
+      I1 => \UAR1.SYNC_RXD_3_B\(2),
+      O => \UAR1.SYNC_RXD_3\(2));
+  \II_UAR1.SYNC_RXD_3[3]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(3),
+      I1 => \UAR1.SYNC_RXD_3_B\(3),
+      O => \UAR1.SYNC_RXD_3\(3));
+  \II_UAR1.SYNC_RXD_3[4]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(4),
+      I1 => \UAR1.SYNC_RXD_3_B\(4),
+      O => \UAR1.SYNC_RXD_3\(4));
+  \II_UAR1.SYNC_RXD_3[5]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(5),
+      I1 => \UAR1.SYNC_RXD_3_B\(5),
+      O => \UAR1.SYNC_RXD_3\(5));
+  \II_UAR1.SYNC_RXD_3[6]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(6),
+      I1 => \UAR1.SYNC_RXD_3_B\(6),
+      O => \UAR1.SYNC_RXD_3\(6));
+  \II_UAR1.SYNC_RXD_3[7]\: OR2 port map (
+      I0 => \UAR1.SYNC_RXD_3_A\(7),
+      I1 => \UAR1.SYNC_RXD_3_B\(7),
+      O => \UAR1.SYNC_RXD_3\(7));
+  \II_UAR1.SYNC_RXD_3_B[0]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(0),
+      O => \UAR1.SYNC_RXD_3_A\(0));
+  \II_UAR1.SYNC_RXD_3_B[1]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(1),
+      O => \UAR1.SYNC_RXD_3_A\(1));
+  \II_UAR1.SYNC_RXD_3_B[2]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(2),
+      O => \UAR1.SYNC_RXD_3_A\(2));
+  \II_UAR1.SYNC_RXD_3_B[3]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(3),
+      O => \UAR1.SYNC_RXD_3_A\(3));
+  \II_UAR1.SYNC_RXD_3_B[4]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(4),
+      O => \UAR1.SYNC_RXD_3_A\(4));
+  \II_UAR1.SYNC_RXD_3_B[5]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(5),
+      O => \UAR1.SYNC_RXD_3_A\(5));
+  \II_UAR1.SYNC_RXD_3_B[6]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(6),
+      O => \UAR1.SYNC_RXD_3_A\(6));
+  \II_UAR1.SYNC_RXD_3_B[7]\: AND2B1 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => RXD(7),
+      O => \UAR1.SYNC_RXD_3_A\(7));
+  \II_UAR1.SYNC_RXD_3_B_0[0]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(0),
+      O => \UAR1.SYNC_RXD_3_B\(0));
+  \II_UAR1.SYNC_RXD_3_B_0[1]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(1),
+      O => \UAR1.SYNC_RXD_3_B\(1));
+  \II_UAR1.SYNC_RXD_3_B_0[2]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(2),
+      O => \UAR1.SYNC_RXD_3_B\(2));
+  \II_UAR1.SYNC_RXD_3_B_0[3]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(3),
+      O => \UAR1.SYNC_RXD_3_B\(3));
+  \II_UAR1.SYNC_RXD_3_B_0[4]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(4),
+      O => \UAR1.SYNC_RXD_3_B\(4));
+  \II_UAR1.SYNC_RXD_3_B_0[5]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(5),
+      O => \UAR1.SYNC_RXD_3_B\(5));
+  \II_UAR1.SYNC_RXD_3_B_0[6]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(6),
+      O => \UAR1.SYNC_RXD_3_B\(6));
+  \II_UAR1.SYNC_RXD_3_B_0[7]\: AND2 port map (
+      I0 => \UAR1.SYNC_UN3_BYTE_AVAIL\,
+      I1 => \UAR1.BYTE_OUT\(7),
+      O => \UAR1.SYNC_RXD_3_B\(7));
+  \II_UAR1.SYNC_RXD_READY_3_1_0\: OR2 port map (
+      I0 => \UAR1.BYTE_AVAIL\,
+      I1 => RXD_READY,
+      O => \UAR1.N_1\);
+  \II_UAR1.SYNC_RXD_READY_3_2_0\: AND2 port map (
+      I0 => RXD_ACK_I,
+      I1 => \UAR1.N_1\,
+      O => \UAR1.SYNC_RXD_READY_3\);
+  \II_UAR1.SYNC_UN3_BYTE_AVAIL\: AND2 port map (
+      I0 => \UAR1.BYTE_AVAIL\,
+      I1 => RXD_ACK_I,
+      O => \UAR1.SYNC_UN3_BYTE_AVAIL\);
+  \II_UAR1.DATA_IN\: FDC port map (
+      Q => \UAR1.DATA_IN\,
+      D => IR_DETECT_C,
+      C => CLK_C,
+      CLR => RESET_C);
+  \II_UAR1.DATA_IN_I\: INV port map (
+      I => \UAR1.DATA_IN\,
+      O => \UAR1.DATA_IN_I\);
+  \II_UAR1.RXD_I[0]\: INV port map (
+      I => RXD(0),
+      O => RXD_I(0));
+  \II_UAR1.RXD_I[1]\: INV port map (
+      I => RXD(1),
+      O => RXD_I(1));
+  \II_UAR1.RXD_I[3]\: INV port map (
+      I => RXD(3),
+      O => RXD_I(3));
+  II_VCC: VCC port map (
+      P => NN_2);
+  II_ZERO_DETECT_IBUF: IBUF port map (
+      I => ZERO_DETECT,
+      O => ZERO_DETECT_C);
+end beh;
+

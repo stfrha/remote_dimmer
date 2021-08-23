@@ -1,0 +1,12 @@
+* Version 1.0: Started on Thursday, February 01, 2001 10:35:58
+* Current design file is: D:\bbbb\Template_new\Template\TEMPLATE.pcb
+*
+w 0 0 0 2 3 <196,297><1138,979><-1,-1>
+*
+* Set Mouse Buttons For New Mapping
+c 0 33156
+v 0 2 TEMPLATE <0, 0, 0, 0>, 0
+*
+* Exit
+c 0 57665
+* 

@@ -1,0 +1,16 @@
+* Version 1.0: Started on Wednesday, February 23, 2000 10:49:29
+* Current design file is: D:\libraries\CentralLibrary\LayoutTemplates\TEMPLATE\Work\CellEditorFiles\CellDB\Work\FR4SNA.rec
+*
+w 0 0 0 0 1 <146,172><1081,913><-1,-1>
+*
+* Set Mouse Buttons For New Mapping
+c 0 33156
+v 0 2 VeriBest Cell Editor <0, 0, 0, 0>, 0
+v 0 3 VeriBest Cell Editor <0, 0, 363, 776>, 3
+v 0 3 VeriBest Cell Editor <0, 0, 363, 776>, 3
+d 0 1023 0 210 b 8
+d 0 1023 0 2 b 8
+*
+* Exit
+c 0 57665
+* 

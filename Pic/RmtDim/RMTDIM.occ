@@ -1,0 +1,19 @@
+CC5X Version 3.1C, Copyright (c) B Knudsen Data, Norway 1992-2001
+ --> FREE edition, 8-16 bit int, 24 bit float, 1k code, reduced optim.
+C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C:
+ 14. Sep 2001   0:26
+ Chip = 16F84
+ RAM: 00h : -------- ----.... ........ 6.******
+ RAM: 20h : ******** ******** ******** ********
+ RAM: 40h : ******** ********
+RAM usage: 14 bytes (0 local), 54 bytes free
+ File 'RMTDIM.fcs'
+ Optimizing - removed 3 instructions (-0 %)
+ File 'RMTDIM.var'
+ File 'RMTDIM.asm'
+ File 'RMTDIM.lst'
+ File 'RMTDIM.cod'
+ File 'RMTDIM.occ'
+ File 'RMTDIM.hex'
+Total of 337 code words (32 %)
+ * Estimated CODE SIZE of licensed edition: 323 code words (-14)

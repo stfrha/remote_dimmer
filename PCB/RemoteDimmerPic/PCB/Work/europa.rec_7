@@ -1,0 +1,10 @@
+* Version 1.0: Started on Wednesday, November 24, 1999 15:39:27
+* Current design file is: H:\users\libraries\CentralLibrary\LayoutTemplates\Europa\Work\europa.rec
+*
+w 0 0 0 2 3 <254,339><1196,1021><-1,-1>
+*
+* Set Mouse Buttons For New Mapping
+c 0 33156
+v 0 2 europa:1 <0, 0, 0, 0>, 0
+d 0 1040 0 2 b 264
+* 

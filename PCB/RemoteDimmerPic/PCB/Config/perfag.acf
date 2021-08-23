@@ -1,0 +1,1640 @@
+.FILETYPE ApertureCorrelationFile
+.VERSION "VB99.0"
+.CREATOR "VeriBest PCB VB98Gerber2HKP Translator"
+.DATE "Monday, November 15, 1999 08:00 AM"
+
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 1
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 1"
+ ..Angle 0
+ ..AperturePosition 1
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 2
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 2"
+ ..Angle 0
+ ..AperturePosition 2
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 3
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 3"
+ ..Angle 0
+ ..AperturePosition 3
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 4
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 4"
+ ..Angle 0
+ ..AperturePosition 4
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 5
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 5"
+ ..Angle 0
+ ..AperturePosition 5
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 6
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 6"
+ ..Angle 0
+ ..AperturePosition 6
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 7
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 7"
+ ..Angle 0
+ ..AperturePosition 7
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 8
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 8"
+ ..Angle 0
+ ..AperturePosition 8
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 9
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 9"
+ ..Angle 0
+ ..AperturePosition 9
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 10
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 10 _1"
+ ..Angle 0
+ ..AperturePosition 10
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 11
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 11"
+ ..Angle 0
+ ..AperturePosition 11
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 12
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 12"
+ ..Angle 0
+ ..AperturePosition 12
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 13
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 13"
+ ..Angle 0
+ ..AperturePosition 13
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 14
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 14"
+ ..Angle 0
+ ..AperturePosition 14
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 15
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 15"
+ ..Angle 0
+ ..AperturePosition 15
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 16
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 16"
+ ..Angle 0
+ ..AperturePosition 16
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 17
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 17"
+ ..Angle 0
+ ..AperturePosition 17
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 18
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 18"
+ ..Angle 0
+ ..AperturePosition 18
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 19
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 19"
+ ..Angle 0
+ ..AperturePosition 19
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 20
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 20"
+ ..Angle 0
+ ..AperturePosition 20
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 21
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 22"
+ ..Angle 0
+ ..AperturePosition 21
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 22
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 24"
+ ..Angle 0
+ ..AperturePosition 22
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 23
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 26"
+ ..Angle 0
+ ..AperturePosition 23
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 24
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 28"
+ ..Angle 0
+ ..AperturePosition 24
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 25
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 30"
+ ..Angle 0
+ ..AperturePosition 25
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 26
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 31"
+ ..Angle 0
+ ..AperturePosition 26
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 27
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 33"
+ ..Angle 0
+ ..AperturePosition 27
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 28
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 35"
+ ..Angle 0
+ ..AperturePosition 28
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 29
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 37"
+ ..Angle 0
+ ..AperturePosition 29
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 30
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 39"
+ ..Angle 0
+ ..AperturePosition 30
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 31
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 40 _1"
+ ..Angle 0
+ ..AperturePosition 31
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 32
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 41"
+ ..Angle 0
+ ..AperturePosition 32
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 33
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 43"
+ ..Angle 0
+ ..AperturePosition 33
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 34
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 45"
+ ..Angle 0
+ ..AperturePosition 34
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 35
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 47"
+ ..Angle 0
+ ..AperturePosition 35
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 36
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 49"
+ ..Angle 0
+ ..AperturePosition 36
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 37
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 50"
+ ..Angle 0
+ ..AperturePosition 37
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 38
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 51"
+ ..Angle 0
+ ..AperturePosition 38
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 39
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 53"
+ ..Angle 0
+ ..AperturePosition 39
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 40
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 55"
+ ..Angle 0
+ ..AperturePosition 40
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 41
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 57"
+ ..Angle 0
+ ..AperturePosition 41
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 42
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 59"
+ ..Angle 0
+ ..AperturePosition 42
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 43
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 60"
+ ..Angle 0
+ ..AperturePosition 43
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 44
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 61"
+ ..Angle 0
+ ..AperturePosition 44
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 45
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 63"
+ ..Angle 0
+ ..AperturePosition 45
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 46
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 65"
+ ..Angle 0
+ ..AperturePosition 46
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 47
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 67"
+ ..Angle 0
+ ..AperturePosition 47
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 48
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 69"
+ ..Angle 0
+ ..AperturePosition 48
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 49
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 70"
+ ..Angle 0
+ ..AperturePosition 49
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 50
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 71"
+ ..Angle 0
+ ..AperturePosition 50
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 51
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 73"
+ ..Angle 0
+ ..AperturePosition 51
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 52
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 75"
+ ..Angle 0
+ ..AperturePosition 52
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 53
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 77"
+ ..Angle 0
+ ..AperturePosition 53
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 54
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 79"
+ ..Angle 0
+ ..AperturePosition 54
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 55
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 80"
+ ..Angle 0
+ ..AperturePosition 55
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 56
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 81"
+ ..Angle 0
+ ..AperturePosition 56
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 57
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 83"
+ ..Angle 0
+ ..AperturePosition 57
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 58
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 85"
+ ..Angle 0
+ ..AperturePosition 58
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 59
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 87"
+ ..Angle 0
+ ..AperturePosition 59
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 60
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 89"
+ ..Angle 0
+ ..AperturePosition 60
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 61
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 90"
+ ..Angle 0
+ ..AperturePosition 61
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 62
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 91"
+ ..Angle 0
+ ..AperturePosition 62
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 63
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 94"
+ ..Angle 0
+ ..AperturePosition 63
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 64
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 98"
+ ..Angle 0
+ ..AperturePosition 64
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 65
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 100"
+ ..Angle 0
+ ..AperturePosition 65
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 66
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 102"
+ ..Angle 0
+ ..AperturePosition 66
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 67
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 106"
+ ..Angle 0
+ ..AperturePosition 67
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 68
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 110"
+ ..Angle 0
+ ..AperturePosition 68
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 69
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 114"
+ ..Angle 0
+ ..AperturePosition 69
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 70
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 118"
+ ..Angle 0
+ ..AperturePosition 70
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 71
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 122"
+ ..Angle 0
+ ..AperturePosition 71
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 72
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 126"
+ ..Angle 0
+ ..AperturePosition 72
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 73
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 130"
+ ..Angle 0
+ ..AperturePosition 73
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 74
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 134"
+ ..Angle 0
+ ..AperturePosition 74
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 75
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 138"
+ ..Angle 0
+ ..AperturePosition 75
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 76
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 142"
+ ..Angle 0
+ ..AperturePosition 76
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 77
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 146"
+ ..Angle 0
+ ..AperturePosition 77
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 78
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 150"
+ ..Angle 0
+ ..AperturePosition 78
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 79
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 154"
+ ..Angle 0
+ ..AperturePosition 79
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 80
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 157"
+ ..Angle 0
+ ..AperturePosition 80
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 81
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 161"
+ ..Angle 0
+ ..AperturePosition 81
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 82
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 165"
+ ..Angle 0
+ ..AperturePosition 82
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 83
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 169"
+ ..Angle 0
+ ..AperturePosition 83
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 84
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 173"
+ ..Angle 0
+ ..AperturePosition 84
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 85
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 177"
+ ..Angle 0
+ ..AperturePosition 85
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 86
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 181"
+ ..Angle 0
+ ..AperturePosition 86
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 87
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 185"
+ ..Angle 0
+ ..AperturePosition 87
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 88
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 189"
+ ..Angle 0
+ ..AperturePosition 88
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 89
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 193"
+ ..Angle 0
+ ..AperturePosition 89
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 90
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 197"
+ ..Angle 0
+ ..AperturePosition 90
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 91
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 207"
+ ..Angle 0
+ ..AperturePosition 91
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 92
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 217"
+ ..Angle 0
+ ..AperturePosition 92
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 93
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 226"
+ ..Angle 0
+ ..AperturePosition 93
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 94
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 236"
+ ..Angle 0
+ ..AperturePosition 94
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 95
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 246"
+ ..Angle 0
+ ..AperturePosition 95
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 96
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 256"
+ ..Angle 0
+ ..AperturePosition 96
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 97
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 266"
+ ..Angle 0
+ ..AperturePosition 97
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 98
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 276"
+ ..Angle 0
+ ..AperturePosition 98
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 99
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 285"
+ ..Angle 0
+ ..AperturePosition 99
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Width
+ ..Width 0
+ ..Angle 0
+ ..AperturePosition 100
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Round 295"
+ ..Angle 0
+ ..AperturePosition 100
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Round
+
+.ElementType Pad
+ ..Name "Square 10"
+ ..Angle 0
+ ..AperturePosition 110
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Rectangle
+
+.ElementType Pad
+ ..Name "Square 20"
+ ..Angle 0
+ ..AperturePosition 120
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Rectangle
+
+.ElementType Pad
+ ..Name "Square 30"
+ ..Angle 0
+ ..AperturePosition 130
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Rectangle
+
+.ElementType Pad
+ ..Name "Square 40"
+ ..Angle 0
+ ..Angle 90
+ ..Angle 180
+ ..Angle 270
+ ..AperturePosition 140
+ ..ApertureWidth 0
+ ..ApertureHeight 0
+ ..ApertureShape Rectangle

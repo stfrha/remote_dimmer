@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version 6.1.3
+#-- Project file f:\privat\remotedimmer\cpld\remotedimmer\default\synthesis\remote_dimmer.prd
+#-- Written on Thu Apr 12 13:43:07 2001
+
+#
+### Watch Implementation type ###
+#
+watch_impl -active
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

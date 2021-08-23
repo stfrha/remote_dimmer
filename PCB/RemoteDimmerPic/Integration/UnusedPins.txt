@@ -1,0 +1,39 @@
+
+Schematic unused pins from : Packager  23-May-2001  15:37
+
+------------------------------------------------------------------------
+            Part/Reference             |          Unused pins
+                                       |  (G) - Gate, (P) - Partial Gate
+------------------------------------------------------------------------
+ Part BAS32L                           |
+ Part CAP0805                          |
+ Part CE1705_10X20                     |
+ Part CE9005_6.3X6                     |
+ Part CON_PB8302/107/0                 |
+  P2                                   | (G)  2
+  P2                                   | (G)  3
+  P2                                   | (G)  4
+  P2                                   | (G)  5
+  P2                                   | (G)  6
+  P3                                   | (G)  2
+  P3                                   | (G)  4
+  P3                                   | (G)  6
+ Part CON_PB8302/303/0                 |
+  P1                                   | (P)  3
+  P4                                   | (P)  3 4
+  P5                                   | (P)  3 4
+ Part CON_PB8302/304/0                 |
+ Part IRF3205_TO220_S                  |
+ Part LM317_SOT223                     |
+ Part LTC1066-1_SOL18_50               |
+ Part LT5085/01/0                      |
+ Part MKS4,22.5_B10.5                  |
+ Part PC355_SO4_100                    |
+ Part RES0805                          |
+ Part RM1101                           |
+ Part TP                               |
+ Part XX1060                           |
+ Part 1N6470_MELF                      |
+ Part 4N46_DIP6M3                      |
+  U5                                   | (P)  5
+ Part 7805_TO220                       |

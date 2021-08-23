@@ -1,0 +1,9 @@
+.FILETYPE NC_DRILL_GEN_FILE
+.VERSION "VB99.0"
+.DATE "Wednesday, June 14, 2000"
+
+.FormatFile "D:\\VERIBEST\\VBExpPCB\\config\\VBExpPCB\\NCDrillMetric.mmm"
+.SweepAxis Horizontal
+.SummaryUnits Metric
+.Bandwidth 2540000
+.MachineFileExt  ".ncd"

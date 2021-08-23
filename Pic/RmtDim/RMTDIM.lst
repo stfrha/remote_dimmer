@@ -1,0 +1,709 @@
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 1
+
+ADDR CODE  LINE SOURCE
+
+           0001 
+           0002 ; CC5X Version 3.1C, Copyright (c) B Knudsen Data
+           0003 ; C compiler for the PICmicro family
+           0004 ; ************  14. Sep 2001   0:26  *************
+           0005 
+           0006 	processor  16F84
+           0007 	radix  DEC
+           0008 
+     0001  0009 TMR0        EQU   0x01
+     0081  0010 OPTION_REG  EQU   0x81
+     0006  0011 PORTB       EQU   0x06
+     0086  0012 TRISB       EQU   0x86
+     0000  0013 Carry       EQU   0
+     0002  0014 Zero_       EQU   2
+     0005  0015 RP0         EQU   5
+     0002  0016 T0IF        EQU   2
+     0005  0017 RTIE        EQU   5
+     0007  0018 GIE         EQU   7
+     0000  0019 RB0         EQU   0
+     0001  0020 RB1         EQU   1
+     0002  0021 RB2         EQU   2
+     0003  0022 RB3         EQU   3
+     0004  0023 RB4         EQU   4
+     0005  0024 RB5         EQU   5
+     000C  0025 irState     EQU   0x0C
+     000D  0026 irData      EQU   0x0D
+     000F  0027 irOnCount   EQU   0x0F
+     0010  0028 irOffCount  EQU   0x10
+     0011  0029 remoteCode  EQU   0x11
+     0012  0030 irTemp      EQU   0x12
+     0014  0031 dimState    EQU   0x14
+     0015  0032 dimValue    EQU   0x15
+     0016  0033 cyclesToChange EQU   0x16
+     0000  0034 oldZeroDetect EQU   0
+     0019  0035 lightCounter EQU   0x19
+     0001  0036 armHoldOff  EQU   1
+           0037 
+0000 2936  0038 	GOTO main
+           0039 
+           0040   ; FILE C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C
+           0041 			;#include <16f84.h>
+           0042 			;
+           0043 			;
+           0044 			;
+           0045 			;/* -------------------------------
+           0046 			;	HW Pins
+           0047 			;		irCarrier		input
+           0048 			;		zeroDetectBit	input
+           0049 			;		triacOn			output
+           0050 			;		led0			output
+           0051 			;		led1			output
+           0052 			;		led2			output
+           0053 			;		led3			output
+           0054 			;---------------------------------*/
+           0055 			;
+           0056 			;#define zeroDetectBit	RB0
+           0057 			;#define	irCarrier	RB2
+           0058 			;#define triacOn		RB1
+           0059 			;#define	TIMER0		TMR0
+           0060 			;#define led0		RB4
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 2
+
+ADDR CODE  LINE SOURCE
+
+           0061 			;#define led1		RB5
+           0062 			;#define led2		RB3
+           0063 			;
+           0064 			;//	IR States
+           0065 			;#define	IRS_IDLE	0x00
+           0066 			;#define	IRS_CARRIER_ON	0x01
+           0067 			;#define	IRS_CARRIER_OFF	0x02
+           0068 			;
+           0069 			;//	IR Codes
+           0070 			;#define IRC_ALL_ON	0xB4	//PR+
+           0071 			;#define IRC_ALL_OFF	0xB0	//PR-
+           0072 			;#define IRC_DIM_UP	0xAC	//Vol+
+           0073 			;#define IRC_DIM_DOWN	0xAA	//Vol-
+           0074 			;#define IRC_HALT	0x92	//Left menu arrow 
+           0075 			;
+           0076 			;//	Miscellaneus IR
+           0077 			;#define IRM_MASK_WORD	0xFF
+           0078 			;#define IRM_ADDRESS_MASK	0x1E00
+           0079 			;#define IRM_ADDRESS	0x1800	//Thomson DT3300 DVD-remote in TV mode
+           0080 			;#define IRM_ON_CYCLES	7	//IRM_ON_CYCLES >= 480us / CYCLE_TIME = 4.8
+           0081 			;#define IRM_DATA_THRES	25	//2080us / CYCLE_TIME (= 20.8) < IRM_LAST_THRES 
+                   < 4600us / CYCLE_TIME (= 46)
+           0082 			;#define IRM_LAST_THRES	50	//IRM_LAST_THRES > 4600us / CYCLE_TIME (= 46)
+           0083 			;
+           0084 			;
+           0085 			;//	Dimmer States
+           0086 			;#define	DS_ALL_ON	0x00
+           0087 			;#define	DS_ALL_OFF	0x01
+           0088 			;#define	DS_DIM_UP	0x02
+           0089 			;#define	DS_DIM_DOWN	0x03
+           0090 			;#define	DS_HALT		0x04
+           0091 			;
+           0092 			;//	Miscellaneus Dimmer
+           0093 			;#define DM_LIGHTS_OFF	84	//DM_LIGHTS_OFF = 10ms / CYCLE_TIME - 1.6ms / CY
+                   CLE_TIME = 100 - 16 = 84
+           0094 			;							//1.6ms empirical value 
+                   of lamp off state preheat
+           0095 			;#define DM_STAGE_NUM	100	//DM_STAGE_NUM = 10ms / CYCLE_TIME
+           0096 			;#define DM_CHANGE_CYCLE	1000	//DM_CHANGE_CYCLE = DIM_TIME / (CYCLE_TI
+                   ME * DM_STAGE_NUM)
+           0097 			;
+           0098 			;/*---------------------------------------------------------------------
+           0099 			;Setup timer (with no prescaler) in 100 us period, 100us * 4M / 4 = 100
+           0100 			;Remove timer interrupt overhead = 6 (four for interrupt and two for 
+           0101 			;counter write halt) Value to write to timer = 256 - (100 - 6) = 162 = 0xA2
+           0102 			;---------------------------------------------------------------------*/
+           0103 			;#define DM_TIMER_RELOAD		0xA2
+           0104 			;
+           0105 			;
+           0106 			;//	IR Variables
+           0107 			;char		irState;
+           0108 			;unsigned long	irData;
+           0109 			;char		irOnCount;
+           0110 			;char		irOffCount;
+           0111 			;char		remoteCode;
+           0112 			;unsigned long	irTemp;
+           0113 			;
+           0114 			;//	Dimmer Variables
+           0115 			;char		dimState;
+           0116 			;char		dimValue;			//0 = All on, DM_LIGHTS_OFF = Al
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 3
+
+ADDR CODE  LINE SOURCE
+
+                   l off
+           0117 			;unsigned long	cyclesToChange;		//Number of cycles until next change of 
+                   dimValue during
+           0118 			;									//dimmin
+                   g
+           0119 			;// Light Control Variables
+           0120 			;bit		oldZeroDetect;
+           0121 			;char		lightCounter;
+           0122 			;bit		armHoldOff;
+           0123 			;
+           0124 			;
+           0125 			;#pragma origin 4
+     0000  0126 	ORG 0x0004
+           0127 			;
+           0128 			;interrupt int_server( void) {
+           0129 int_server
+           0130 			;
+           0131 			;	// Do not need to save registers on stack unless main
+           0132 			;	// is expanded to run continuos code
+           0133 			;
+           0134 			;	//Reset Timer to period minus overhead
+           0135 			;	TIMER0 = DM_TIMER_RELOAD;
+0004 30A2  0136 	MOVLW .162
+0005 1283  0137 	BCF   0x03,RP0
+0006 0081  0138 	MOVWF TMR0
+           0139 			;
+           0140 			;	T0IF = 0;
+0007 110B  0141 	BCF   0x0B,T0IF
+           0142 			;	
+           0143 			;/*----------------------------------------
+           0144 			;	
+           0145 			;			IR Section
+           0146 			;
+           0147 			;----------------------------------------*/
+           0148 			;
+           0149 			;	if (irState == IRS_IDLE) {
+0008 088C  0150 	MOVF  irState,1
+0009 1D03  0151 	BTFSS 0x03,Zero_
+000A 2814  0152 	GOTO  m001
+           0153 			;//		led2 = 1;
+           0154 			;		if (irCarrier == 0) {
+000B 1906  0155 	BTFSC 0x06,RB2
+000C 2858  0156 	GOTO  m008
+           0157 			;			irState = IRS_CARRIER_ON;
+000D 3001  0158 	MOVLW .1
+000E 008C  0159 	MOVWF irState
+           0160 			;			irData = 0;
+000F 018D  0161 	CLRF  irData
+0010 018E  0162 	CLRF  irData+1
+           0163 			;			irOnCount = 1;
+0011 3001  0164 	MOVLW .1
+0012 008F  0165 	MOVWF irOnCount
+           0166 			;		}
+           0167 			;	} else if (irState == IRS_CARRIER_ON) {
+0013 2858  0168 	GOTO  m008
+0014 0B0C  0169 m001	DECFSZ irState,W
+0015 2825  0170 	GOTO  m004
+           0171 			;//		led2 = 0;
+           0172 			;		if (irCarrier == 1) {
+0016 1283  0173 	BCF   0x03,RP0
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 4
+
+ADDR CODE  LINE SOURCE
+
+0017 1D06  0174 	BTFSS 0x06,RB2
+0018 2823  0175 	GOTO  m003
+           0176 			;			irOffCount = 1;
+0019 3001  0177 	MOVLW .1
+001A 0090  0178 	MOVWF irOffCount
+           0179 			;			if (irOnCount >= IRM_ON_CYCLES) {
+001B 3007  0180 	MOVLW .7
+001C 020F  0181 	SUBWF irOnCount,W
+001D 1C03  0182 	BTFSS 0x03,Carry
+001E 2821  0183 	GOTO  m002
+           0184 			;				irState = IRS_IDLE;
+001F 018C  0185 	CLRF  irState
+           0186 			;			} else {
+0020 2823  0187 	GOTO  m003
+           0188 			;				irState = IRS_CARRIER_OFF;
+0021 3002  0189 m002	MOVLW .2
+0022 008C  0190 	MOVWF irState
+           0191 			;			}
+           0192 			;		}
+           0193 			;		irOnCount++;
+0023 0A8F  0194 m003	INCF  irOnCount,1
+           0195 			;	} else if (irState == IRS_CARRIER_OFF) {
+0024 2858  0196 	GOTO  m008
+0025 080C  0197 m004	MOVF  irState,W
+0026 3A02  0198 	XORLW .2
+0027 1D03  0199 	BTFSS 0x03,Zero_
+0028 2858  0200 	GOTO  m008
+           0201 			;		if (irCarrier == 0) {
+0029 1283  0202 	BCF   0x03,RP0
+002A 1906  0203 	BTFSC 0x06,RB2
+002B 2843  0204 	GOTO  m006
+           0205 			;			irState = IRS_CARRIER_ON;
+002C 3001  0206 	MOVLW .1
+002D 008C  0207 	MOVWF irState
+           0208 			;			irOnCount = 1;
+002E 3001  0209 	MOVLW .1
+002F 008F  0210 	MOVWF irOnCount
+           0211 			;			if (irOffCount < IRM_DATA_THRES) {
+0030 3019  0212 	MOVLW .25
+0031 0210  0213 	SUBWF irOffCount,W
+0032 1803  0214 	BTFSC 0x03,Carry
+0033 2840  0215 	GOTO  m005
+           0216 			;				irTemp = irData << 1;
+0034 1003  0217 	BCF   0x03,Carry
+0035 0D0D  0218 	RLF   irData,W
+0036 0092  0219 	MOVWF irTemp
+0037 0D0E  0220 	RLF   irData+1,W
+0038 0093  0221 	MOVWF irTemp+1
+           0222 			;				irData = irTemp + 1;
+0039 0813  0223 	MOVF  irTemp+1,W
+003A 008E  0224 	MOVWF irData+1
+003B 0A12  0225 	INCF  irTemp,W
+003C 008D  0226 	MOVWF irData
+003D 1903  0227 	BTFSC 0x03,Zero_
+003E 0A8E  0228 	INCF  irData+1,1
+           0229 			;			} else {
+003F 2843  0230 	GOTO  m006
+           0231 			;				irData <<= 1;
+0040 1003  0232 m005	BCF   0x03,Carry
+0041 0D8D  0233 	RLF   irData,1
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 5
+
+ADDR CODE  LINE SOURCE
+
+0042 0D8E  0234 	RLF   irData+1,1
+           0235 			;			}
+           0236 			;		}
+           0237 			;		if (irOffCount > IRM_LAST_THRES) {
+0043 3033  0238 m006	MOVLW .51
+0044 0210  0239 	SUBWF irOffCount,W
+0045 1C03  0240 	BTFSS 0x03,Carry
+0046 2857  0241 	GOTO  m007
+           0242 			;			irState = IRS_IDLE;
+0047 018C  0243 	CLRF  irState
+           0244 			;			irData <<= 1;
+0048 1003  0245 	BCF   0x03,Carry
+0049 0D8D  0246 	RLF   irData,1
+004A 0D8E  0247 	RLF   irData+1,1
+           0248 			;			irTemp = irData & IRM_ADDRESS_MASK;
+004B 301E  0249 	MOVLW .30
+004C 050E  0250 	ANDWF irData+1,W
+004D 0093  0251 	MOVWF irTemp+1
+004E 0192  0252 	CLRF  irTemp
+           0253 			;			if (irTemp == IRM_ADDRESS) {
+004F 1D03  0254 	BTFSS 0x03,Zero_
+0050 2857  0255 	GOTO  m007
+0051 0813  0256 	MOVF  irTemp+1,W
+0052 3A18  0257 	XORLW .24
+0053 1D03  0258 	BTFSS 0x03,Zero_
+0054 2857  0259 	GOTO  m007
+           0260 			;				remoteCode = irData & IRM_MASK_WORD;
+0055 080D  0261 	MOVF  irData,W
+0056 0091  0262 	MOVWF remoteCode
+           0263 			;			}
+           0264 			;		}
+           0265 			;		irOffCount++;
+0057 0A90  0266 m007	INCF  irOffCount,1
+           0267 			;	}
+           0268 			;
+           0269 			;/*----------------------------------------
+           0270 			;	
+           0271 			;			Dimmer Section
+           0272 			;
+           0273 			;----------------------------------------*/
+           0274 			;
+           0275 			;	if (dimState == DS_ALL_ON) {
+0058 0894  0276 m008	MOVF  dimState,1
+0059 1D03  0277 	BTFSS 0x03,Zero_
+005A 286D  0278 	GOTO  m010
+           0279 			;		led0 = 0;
+005B 1283  0280 	BCF   0x03,RP0
+005C 1206  0281 	BCF   0x06,RB4
+           0282 			;		led1 = 0;
+005D 1286  0283 	BCF   0x06,RB5
+           0284 			;		dimValue = 0;
+005E 0195  0285 	CLRF  dimValue
+           0286 			;		if (remoteCode == IRC_ALL_OFF) {
+005F 0811  0287 	MOVF  remoteCode,W
+0060 3AB0  0288 	XORLW .176
+0061 1D03  0289 	BTFSS 0x03,Zero_
+0062 2866  0290 	GOTO  m009
+           0291 			;			dimState = DS_ALL_OFF;
+0063 3001  0292 	MOVLW .1
+0064 0094  0293 	MOVWF dimState
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 6
+
+ADDR CODE  LINE SOURCE
+
+           0294 			;		} else if (remoteCode == IRC_DIM_DOWN) {
+0065 290B  0295 	GOTO  m030
+0066 0811  0296 m009	MOVF  remoteCode,W
+0067 3AAA  0297 	XORLW .170
+0068 1D03  0298 	BTFSS 0x03,Zero_
+0069 290B  0299 	GOTO  m030
+           0300 			;			dimState = DS_DIM_DOWN;
+006A 3003  0301 	MOVLW .3
+006B 0094  0302 	MOVWF dimState
+           0303 			;		}
+           0304 			;	} else if (dimState == DS_DIM_DOWN) {
+006C 290B  0305 	GOTO  m030
+006D 0814  0306 m010	MOVF  dimState,W
+006E 3A03  0307 	XORLW .3
+006F 1D03  0308 	BTFSS 0x03,Zero_
+0070 28A4  0309 	GOTO  m017
+           0310 			;		led0 = 0;
+0071 1283  0311 	BCF   0x03,RP0
+0072 1206  0312 	BCF   0x06,RB4
+           0313 			;		led1 = 1;
+0073 1686  0314 	BSF   0x06,RB5
+           0315 			;		if (dimValue == DM_LIGHTS_OFF) {
+0074 0815  0316 	MOVF  dimValue,W
+0075 3A54  0317 	XORLW .84
+0076 1D03  0318 	BTFSS 0x03,Zero_
+0077 287B  0319 	GOTO  m011
+           0320 			;			dimState = DS_ALL_OFF;
+0078 3001  0321 	MOVLW .1
+0079 0094  0322 	MOVWF dimState
+           0323 			;		} else if (cyclesToChange == 0) {
+007A 2889  0324 	GOTO  m013
+007B 0816  0325 m011	MOVF  cyclesToChange,W
+007C 0417  0326 	IORWF cyclesToChange+1,W
+007D 1D03  0327 	BTFSS 0x03,Zero_
+007E 2885  0328 	GOTO  m012
+           0329 			;			dimValue++;
+007F 0A95  0330 	INCF  dimValue,1
+           0331 			;			cyclesToChange = DM_CHANGE_CYCLE;
+0080 30E8  0332 	MOVLW .232
+0081 0096  0333 	MOVWF cyclesToChange
+0082 3003  0334 	MOVLW .3
+0083 0097  0335 	MOVWF cyclesToChange+1
+           0336 			;		} else {
+0084 2889  0337 	GOTO  m013
+           0338 			;			cyclesToChange--;
+0085 0396  0339 m012	DECF  cyclesToChange,1
+0086 0A16  0340 	INCF  cyclesToChange,W
+0087 1903  0341 	BTFSC 0x03,Zero_
+0088 0397  0342 	DECF  cyclesToChange+1,1
+           0343 			;		}
+           0344 			;		if (remoteCode == IRC_ALL_ON) {
+0089 0811  0345 m013	MOVF  remoteCode,W
+008A 3AB4  0346 	XORLW .180
+008B 1D03  0347 	BTFSS 0x03,Zero_
+008C 288F  0348 	GOTO  m014
+           0349 			;			dimState = DS_ALL_ON;
+008D 0194  0350 	CLRF  dimState
+           0351 			;		} else if (remoteCode == IRC_ALL_OFF) {
+008E 290B  0352 	GOTO  m030
+008F 0811  0353 m014	MOVF  remoteCode,W
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 7
+
+ADDR CODE  LINE SOURCE
+
+0090 3AB0  0354 	XORLW .176
+0091 1D03  0355 	BTFSS 0x03,Zero_
+0092 2896  0356 	GOTO  m015
+           0357 			;			dimState = DS_ALL_OFF;
+0093 3001  0358 	MOVLW .1
+0094 0094  0359 	MOVWF dimState
+           0360 			;		} else if (remoteCode == IRC_DIM_UP) {
+0095 290B  0361 	GOTO  m030
+0096 0811  0362 m015	MOVF  remoteCode,W
+0097 3AAC  0363 	XORLW .172
+0098 1D03  0364 	BTFSS 0x03,Zero_
+0099 289D  0365 	GOTO  m016
+           0366 			;			dimState = DS_DIM_UP;
+009A 3002  0367 	MOVLW .2
+009B 0094  0368 	MOVWF dimState
+           0369 			;		} else if (remoteCode == IRC_HALT) {
+009C 290B  0370 	GOTO  m030
+009D 0811  0371 m016	MOVF  remoteCode,W
+009E 3A92  0372 	XORLW .146
+009F 1D03  0373 	BTFSS 0x03,Zero_
+00A0 290B  0374 	GOTO  m030
+           0375 			;			dimState = DS_HALT;
+00A1 3004  0376 	MOVLW .4
+00A2 0094  0377 	MOVWF dimState
+           0378 			;		}
+           0379 			;	} else if (dimState == DS_DIM_UP) {
+00A3 290B  0380 	GOTO  m030
+00A4 0814  0381 m017	MOVF  dimState,W
+00A5 3A02  0382 	XORLW .2
+00A6 1D03  0383 	BTFSS 0x03,Zero_
+00A7 28D9  0384 	GOTO  m024
+           0385 			;		led0 = 1;
+00A8 1283  0386 	BCF   0x03,RP0
+00A9 1606  0387 	BSF   0x06,RB4
+           0388 			;		led1 = 0;
+00AA 1286  0389 	BCF   0x06,RB5
+           0390 			;		if (dimValue == 0) {
+00AB 0895  0391 	MOVF  dimValue,1
+00AC 1D03  0392 	BTFSS 0x03,Zero_
+00AD 28B0  0393 	GOTO  m018
+           0394 			;			dimState = DS_ALL_ON;
+00AE 0194  0395 	CLRF  dimState
+           0396 			;		} else if (cyclesToChange == 0) {
+00AF 28BE  0397 	GOTO  m020
+00B0 0816  0398 m018	MOVF  cyclesToChange,W
+00B1 0417  0399 	IORWF cyclesToChange+1,W
+00B2 1D03  0400 	BTFSS 0x03,Zero_
+00B3 28BA  0401 	GOTO  m019
+           0402 			;			dimValue--;
+00B4 0395  0403 	DECF  dimValue,1
+           0404 			;			cyclesToChange = DM_CHANGE_CYCLE;
+00B5 30E8  0405 	MOVLW .232
+00B6 0096  0406 	MOVWF cyclesToChange
+00B7 3003  0407 	MOVLW .3
+00B8 0097  0408 	MOVWF cyclesToChange+1
+           0409 			;		} else {
+00B9 28BE  0410 	GOTO  m020
+           0411 			;			cyclesToChange--;
+00BA 0396  0412 m019	DECF  cyclesToChange,1
+00BB 0A16  0413 	INCF  cyclesToChange,W
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 8
+
+ADDR CODE  LINE SOURCE
+
+00BC 1903  0414 	BTFSC 0x03,Zero_
+00BD 0397  0415 	DECF  cyclesToChange+1,1
+           0416 			;		}
+           0417 			;		if (remoteCode == IRC_ALL_ON) {
+00BE 0811  0418 m020	MOVF  remoteCode,W
+00BF 3AB4  0419 	XORLW .180
+00C0 1D03  0420 	BTFSS 0x03,Zero_
+00C1 28C4  0421 	GOTO  m021
+           0422 			;			dimState = DS_ALL_ON;
+00C2 0194  0423 	CLRF  dimState
+           0424 			;		} else if (remoteCode == IRC_ALL_OFF) {
+00C3 290B  0425 	GOTO  m030
+00C4 0811  0426 m021	MOVF  remoteCode,W
+00C5 3AB0  0427 	XORLW .176
+00C6 1D03  0428 	BTFSS 0x03,Zero_
+00C7 28CB  0429 	GOTO  m022
+           0430 			;			dimState = DS_ALL_OFF;
+00C8 3001  0431 	MOVLW .1
+00C9 0094  0432 	MOVWF dimState
+           0433 			;		} else if (remoteCode == IRC_DIM_DOWN) {
+00CA 290B  0434 	GOTO  m030
+00CB 0811  0435 m022	MOVF  remoteCode,W
+00CC 3AAA  0436 	XORLW .170
+00CD 1D03  0437 	BTFSS 0x03,Zero_
+00CE 28D2  0438 	GOTO  m023
+           0439 			;			dimState = DS_DIM_DOWN;
+00CF 3003  0440 	MOVLW .3
+00D0 0094  0441 	MOVWF dimState
+           0442 			;		} else if (remoteCode == IRC_HALT) {
+00D1 290B  0443 	GOTO  m030
+00D2 0811  0444 m023	MOVF  remoteCode,W
+00D3 3A92  0445 	XORLW .146
+00D4 1D03  0446 	BTFSS 0x03,Zero_
+00D5 290B  0447 	GOTO  m030
+           0448 			;			dimState = DS_HALT;
+00D6 3004  0449 	MOVLW .4
+00D7 0094  0450 	MOVWF dimState
+           0451 			;		}
+           0452 			;	} else if (dimState == DS_ALL_OFF) {
+00D8 290B  0453 	GOTO  m030
+00D9 0B14  0454 m024	DECFSZ dimState,W
+00DA 28ED  0455 	GOTO  m026
+           0456 			;		led0 = 1;
+00DB 1283  0457 	BCF   0x03,RP0
+00DC 1606  0458 	BSF   0x06,RB4
+           0459 			;		led1 = 1;
+00DD 1686  0460 	BSF   0x06,RB5
+           0461 			;		dimValue = DM_LIGHTS_OFF;
+00DE 3054  0462 	MOVLW .84
+00DF 0095  0463 	MOVWF dimValue
+           0464 			;		if (remoteCode == IRC_ALL_ON) {
+00E0 0811  0465 	MOVF  remoteCode,W
+00E1 3AB4  0466 	XORLW .180
+00E2 1D03  0467 	BTFSS 0x03,Zero_
+00E3 28E6  0468 	GOTO  m025
+           0469 			;			dimState = DS_ALL_ON;
+00E4 0194  0470 	CLRF  dimState
+           0471 			;		} else if (remoteCode == IRC_DIM_UP) {
+00E5 290B  0472 	GOTO  m030
+00E6 0811  0473 m025	MOVF  remoteCode,W
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 9
+
+ADDR CODE  LINE SOURCE
+
+00E7 3AAC  0474 	XORLW .172
+00E8 1D03  0475 	BTFSS 0x03,Zero_
+00E9 290B  0476 	GOTO  m030
+           0477 			;			dimState = DS_DIM_UP;
+00EA 3002  0478 	MOVLW .2
+00EB 0094  0479 	MOVWF dimState
+           0480 			;		}
+           0481 			;	} else if (dimState == DS_HALT) {
+00EC 290B  0482 	GOTO  m030
+00ED 0814  0483 m026	MOVF  dimState,W
+00EE 3A04  0484 	XORLW .4
+00EF 1D03  0485 	BTFSS 0x03,Zero_
+00F0 290B  0486 	GOTO  m030
+           0487 			;		if (remoteCode == IRC_ALL_ON) {
+00F1 0811  0488 	MOVF  remoteCode,W
+00F2 3AB4  0489 	XORLW .180
+00F3 1D03  0490 	BTFSS 0x03,Zero_
+00F4 28F7  0491 	GOTO  m027
+           0492 			;			dimState = DS_ALL_ON;
+00F5 0194  0493 	CLRF  dimState
+           0494 			;		} else if (remoteCode == IRC_ALL_OFF) {
+00F6 290B  0495 	GOTO  m030
+00F7 0811  0496 m027	MOVF  remoteCode,W
+00F8 3AB0  0497 	XORLW .176
+00F9 1D03  0498 	BTFSS 0x03,Zero_
+00FA 28FE  0499 	GOTO  m028
+           0500 			;			dimState = DS_ALL_OFF;
+00FB 3001  0501 	MOVLW .1
+00FC 0094  0502 	MOVWF dimState
+           0503 			;		} else if (remoteCode == IRC_DIM_DOWN) {
+00FD 290B  0504 	GOTO  m030
+00FE 0811  0505 m028	MOVF  remoteCode,W
+00FF 3AAA  0506 	XORLW .170
+0100 1D03  0507 	BTFSS 0x03,Zero_
+0101 2905  0508 	GOTO  m029
+           0509 			;			dimState = DS_DIM_DOWN;
+0102 3003  0510 	MOVLW .3
+0103 0094  0511 	MOVWF dimState
+           0512 			;		} else if (remoteCode == IRC_DIM_UP) {
+0104 290B  0513 	GOTO  m030
+0105 0811  0514 m029	MOVF  remoteCode,W
+0106 3AAC  0515 	XORLW .172
+0107 1D03  0516 	BTFSS 0x03,Zero_
+0108 290B  0517 	GOTO  m030
+           0518 			;			dimState = DS_DIM_UP;
+0109 3002  0519 	MOVLW .2
+010A 0094  0520 	MOVWF dimState
+           0521 			;		}
+           0522 			;	}
+           0523 			;
+           0524 			;/*----------------------------------------
+           0525 			;	
+           0526 			;		Light Control Section
+           0527 			;
+           0528 			;----------------------------------------*/
+           0529 			;
+           0530 			;	if (armHoldOff == 1) {
+010B 1C98  0531 m030	BTFSS 0x18,armHoldOff
+010C 2910  0532 	GOTO  m031
+           0533 			;		lightCounter = 0;
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 10
+
+ADDR CODE  LINE SOURCE
+
+010D 0199  0534 	CLRF  lightCounter
+           0535 			;		armHoldOff = 0;
+010E 1098  0536 	BCF   0x18,armHoldOff
+           0537 			;	} else if (zeroDetectBit != oldZeroDetect) {
+010F 2925  0538 	GOTO  m036
+0110 1283  0539 m031	BCF   0x03,RP0
+0111 1806  0540 	BTFSC 0x06,RB0
+0112 2916  0541 	GOTO  m032
+0113 1818  0542 	BTFSC 0x18,oldZeroDetect
+0114 2918  0543 	GOTO  m033
+0115 2924  0544 	GOTO  m035
+0116 1818  0545 m032	BTFSC 0x18,oldZeroDetect
+0117 2924  0546 	GOTO  m035
+           0547 			;		oldZeroDetect = zeroDetectBit;
+0118 1018  0548 m033	BCF   0x18,oldZeroDetect
+0119 1283  0549 	BCF   0x03,RP0
+011A 1806  0550 	BTFSC 0x06,RB0
+011B 1418  0551 	BSF   0x18,oldZeroDetect
+           0552 			;		if (zeroDetectBit == 1) {
+011C 1C06  0553 	BTFSS 0x06,RB0
+011D 2922  0554 	GOTO  m034
+           0555 			;			lightCounter = DM_STAGE_NUM-1;
+011E 3063  0556 	MOVLW .99
+011F 0099  0557 	MOVWF lightCounter
+           0558 			;			armHoldOff = 1;
+0120 1498  0559 	BSF   0x18,armHoldOff
+           0560 			;		} else {
+0121 2925  0561 	GOTO  m036
+           0562 			;			lightCounter = 0;
+0122 0199  0563 m034	CLRF  lightCounter
+           0564 			;		}
+           0565 			;	} else {
+0123 2925  0566 	GOTO  m036
+           0567 			;		lightCounter++;
+0124 0A99  0568 m035	INCF  lightCounter,1
+           0569 			;	}
+           0570 			;	if ((lightCounter > dimValue) && (lightCounter < (dimValue + 2))) {
+0125 0819  0571 m036	MOVF  lightCounter,W
+0126 0215  0572 	SUBWF dimValue,W
+0127 1803  0573 	BTFSC 0x03,Carry
+0128 2932  0574 	GOTO  m037
+0129 3002  0575 	MOVLW .2
+012A 0715  0576 	ADDWF dimValue,W
+012B 0219  0577 	SUBWF lightCounter,W
+012C 1803  0578 	BTFSC 0x03,Carry
+012D 2932  0579 	GOTO  m037
+           0580 			;		triacOn = 1;
+012E 1283  0581 	BCF   0x03,RP0
+012F 1486  0582 	BSF   0x06,RB1
+           0583 			;		led2 = 0;
+0130 1186  0584 	BCF   0x06,RB3
+           0585 			;	} else {
+0131 2935  0586 	GOTO  m038
+           0587 			;		triacOn = 0;
+0132 1283  0588 m037	BCF   0x03,RP0
+0133 1086  0589 	BCF   0x06,RB1
+           0590 			;		led2 = 1;
+0134 1586  0591 	BSF   0x06,RB3
+           0592 			;	}	
+           0593 			;}
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 11
+
+ADDR CODE  LINE SOURCE
+
+0135 0009  0594 m038	RETFIE
+           0595 			;
+           0596 			;void	main( void )
+           0597 			;{
+           0598 main
+           0599 			;	irState = IRS_IDLE;
+0136 018C  0600 	CLRF  irState
+           0601 			;	irData = 0;
+0137 018D  0602 	CLRF  irData
+0138 018E  0603 	CLRF  irData+1
+           0604 			;	irOnCount = 0;
+0139 018F  0605 	CLRF  irOnCount
+           0606 			;	irOffCount = 0;
+013A 0190  0607 	CLRF  irOffCount
+           0608 			;	remoteCode = 0;
+013B 0191  0609 	CLRF  remoteCode
+           0610 			;	dimState = DS_ALL_ON;
+013C 0194  0611 	CLRF  dimState
+           0612 			;	dimValue = 0;
+013D 0195  0613 	CLRF  dimValue
+           0614 			;	cyclesToChange = DM_CHANGE_CYCLE;
+013E 30E8  0615 	MOVLW .232
+013F 0096  0616 	MOVWF cyclesToChange
+0140 3003  0617 	MOVLW .3
+0141 0097  0618 	MOVWF cyclesToChange+1
+           0619 			;	oldZeroDetect = zeroDetectBit;
+0142 1018  0620 	BCF   0x18,oldZeroDetect
+0143 1283  0621 	BCF   0x03,RP0
+0144 1806  0622 	BTFSC 0x06,RB0
+0145 1418  0623 	BSF   0x18,oldZeroDetect
+           0624 			;	lightCounter = 0;
+0146 0199  0625 	CLRF  lightCounter
+           0626 			;	armHoldOff = 0;
+0147 1098  0627 	BCF   0x18,armHoldOff
+           0628 			;
+           0629 			;	PORTB = 0;
+0148 0186  0630 	CLRF  PORTB
+           0631 			;	TRISB =  bin( 11000101 );
+0149 30C5  0632 	MOVLW .197
+014A 1683  0633 	BSF   0x03,RP0
+014B 0086  0634 	MOVWF TRISB
+           0635 			;
+           0636 			;	OPTION = 0x88;
+014C 3088  0637 	MOVLW .136
+014D 0081  0638 	MOVWF OPTION_REG
+           0639 			;
+           0640 			;	TIMER0 = DM_TIMER_RELOAD;
+014E 30A2  0641 	MOVLW .162
+014F 1283  0642 	BCF   0x03,RP0
+0150 0081  0643 	MOVWF TMR0
+           0644 			;	RTIE = 1;
+0151 168B  0645 	BSF   0x0B,RTIE
+           0646 			;	GIE = 1;
+0152 178B  0647 	BSF   0x0B,GIE
+           0648 			;
+           0649 			;	// Enable timer interrupt
+           0650 			;
+           0651 			;	while (1);
+0153 2953  0652 m039	GOTO  m039
+           0653 
+CC5X Version 3.1C,   File: C:\CC5X\EXEMPEL\RMTDIM\RMTDIM.C 14. Sep 2001   0:26   Page 12
+
+ADDR CODE  LINE SOURCE
+
+     0000  0654 	END

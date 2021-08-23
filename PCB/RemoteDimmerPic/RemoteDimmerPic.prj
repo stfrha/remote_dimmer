@@ -1,0 +1,245 @@
+SECTION VBPCBIndicators
+KEY SchematicDesignStatus "0"
+KEY VBPCBForwardAnno "0"
+KEY SchematicDesignBackAnno "0"
+KEY CADBackAnno "0"
+KEY FLATNETNAMEs "1"
+KEY LayoutTemplate "Template"
+KEY CDBCRunning "0"
+KEY UpdateJobPrefsDB "Sync"
+KEY UpdateNetClassDB "Sync"
+KEY UpdateNetPropsDB "CAE"
+KEY FwdAnnoExtractFlag "1"
+KEY FwdAnnoRebuildFlag "0"
+KEY FwdAnnoReplaceFlag "0"
+KEY UnusedPartsFlag "0"
+KEY DisableBackAnnoChanges "0"
+KEY FanoutSinglePinNets "0"
+KEY FwdAnnoRemoveTraces "1"
+KEY FwdAnnoRemoveHangers "1"
+KEY AllowAlpha "0"
+ENDSECTION
+SECTION VBPCBDesignData
+KEY NetClassFile ""
+KEY VBPCBForeignNetlist ""
+KEY VBPCBForeignNetlistFormat ""
+KEY VBPCBDesignPath "PCB\REMOTEDIMMERPIC.PCB"
+ENDSECTION
+SECTION IngrElecDesignInfo
+KEY SBKDir "design_definition\graphics"
+KEY UDBDir ".\udb"
+KEY CDBDir ".\default\default.cdb"
+KEY ACEPlusHDLDir "design_definition\hdl"
+KEY ACEPlusGeneratedHDLDir "Default\genhdl\vhdl"
+KEY ACEPlusDesignRootName "design_definition\graphics\RemoteDimmer.sbk"
+KEY ASICToolkit ""
+KEY AvoidInstance "1"
+ENDSECTION
+SECTION IngrElecLibraries
+LIST Names
+VALUE "Symbols"
+VALUE "PDBs"
+VALUE "2dCellLibraries"
+VALUE "VerilogSimulationLibraries"
+VALUE "VHDLSimulationLibraries"
+ENDLIST
+LIST VerilogSimulationLibraries
+ENDLIST
+LIST VHDLSimulationLibraries
+VALUE "IEEE"
+ENDLIST
+LIST SignalIntegrityLibrary
+ENDLIST
+LIST 2dCellLibraries
+ENDLIST
+LIST 3dCellLibraries
+ENDLIST
+LIST Symbols
+ENDLIST
+LIST PDBs
+ENDLIST
+KEY CentralLibrary "H:\users\libraries\CentralLibrary\CentralLibrary.LMC"
+KEY SearchPathScheme "(Default)"
+ENDSECTION
+SECTION ACEPlusProjectFiles
+LIST Types
+VALUE "Schematics(*.sbk)"
+VALUE "StateDiagrams(*.sdg)"
+VALUE "FlowCharts(*.sfc)"
+VALUE "TruthTables(*.tbl)"
+VALUE "HDL(*.v*)"
+VALUE "All(*.*)"
+ENDLIST
+LIST Schematics(*.sbk)
+ENDLIST
+LIST StateDiagrams(*.sdg)
+ENDLIST
+LIST FlowCharts(*.sfc)
+ENDLIST
+LIST TruthTables(*.tbl)
+ENDLIST
+LIST HDL(*.v*)
+ENDLIST
+LIST All(*.*)
+ENDLIST
+ENDSECTION
+SECTION ACEPlusFilePaths
+LIST Names
+VALUE "BOM_Configuration"
+VALUE "Bus_Contents"
+VALUE "CDB_Discard"
+VALUE "EDIF_Configuration"
+VALUE "Fonts"
+VALUE "Global_Signals"
+VALUE "HDL_String_Map"
+VALUE "HPGL_Plot_Configuration"
+VALUE "HPGL2_Plot_Configuration"
+VALUE "Pin_Types"
+VALUE "PostScript_Plot_Configuration"
+VALUE "Project_Options"
+VALUE "CrossRef_Configuration"
+VALUE "Text_Properties"
+VALUE "Verification_Rules"
+VALUE "VerilogConfig"
+VALUE "VHDLConfig"
+VALUE "Windows_Plot_Configuration"
+ENDLIST
+LIST Fonts
+VALUE "${VBEST14PATH}\config\vbdc\vbdc.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\engineer.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\fancy.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt0.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt1.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt7.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt23.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt26.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt41.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt42.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt50.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt126.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt127.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\sdedbg.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\sbkdbg.fnt"
+ENDLIST
+LIST Text_Properties
+VALUE "${VBEST14PATH}\config\vbdc\vbdc.prp"
+ENDLIST
+LIST VerilogConfig
+ENDLIST
+LIST VHDLConfig
+ENDLIST
+LIST HDL_String_Map
+ENDLIST
+KEY Pin_Types "w:\VB2000\vbdc\config\vbdc\pintypes.asc"
+KEY Project_Options "w:\VB2000\vbdc\config\vbdc\vbdcsys.asc"
+KEY CrossRef_Configuration "w:\VB2000\vbdc\config\vbdc\crossref.asc"
+KEY CDB_Discard "w:\VB2000\vbdc\config\vbdc\discard.asc"
+KEY Verification_Rules "w:\VB2000\vbdc\config\vbdc\vbdcver.asc"
+KEY PostScript_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dctops.pcf"
+KEY HPGL_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dctohpgl.pcf"
+KEY HPGL2_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dc2hpgl2.pcf"
+KEY Windows_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dctowin.pcf"
+KEY BOM_Configuration "w:\VB2000\vbdc\config\vbdc\cdb2bom.asc"
+KEY EDIF_Configuration "w:\VB2000\vbdc\config\edif\edifcnfg.asc"
+KEY Global_Signals "w:\VB2000\vbdc\config\vbdc\global"
+KEY Bus_Contents ".\conts"
+ENDSECTION
+SECTION IEEE
+LIST Packages
+VALUE "std_logic_1164"
+VALUE "std_logic_arith"
+ENDLIST
+KEY Path "f:\veribest\2000\vbvhdl\lib93\IEEE_SYN"
+KEY USEALL "0"
+ENDSECTION
+SECTION ConfigurationInfo
+LIST Configurations
+VALUE "Default"
+ENDLIST
+KEY ActiveConfiguration "Default"
+ENDSECTION
+SECTION Default
+LIST BlockViewMap
+VALUE "PIC16F84,design_definition\graphics\PIC16F84.sbk,,0"
+VALUE "REMOTEDIMMER,design_definition\graphics\RemoteDimmer.sbk,,0"
+VALUE "ELIRM 8752,design_definition\graphics\ELIRM 8752.sbk,,0"
+VALUE "TRAFO BV20,design_definition\graphics\TRAFO BV20.sbk,,0"
+VALUE "BT139-500 TRIAC,design_definition\graphics\BT139-500 TRIAC.sbk,,0"
+VALUE "AC_OPTOCOUPLER,design_definition\graphics\AC_OPTOCOUPLER.sbk,,0"
+VALUE "OPTOTRIAC,design_definition\graphics\OPTOTRIAC.sbk,,0"
+ENDLIST
+LIST Types
+VALUE "All(*.*)"
+VALUE "Verilog(*.v)"
+VALUE "VHDL(*.vhd)"
+VALUE "BlockSymbols(*.blk)"
+VALUE "TruthTables(*.tbl)"
+VALUE "FlowCharts(*.sfc)"
+VALUE "StateDiagrams(*.sdg)"
+VALUE "Schematics(*.sbk)"
+ENDLIST
+LIST All(*.*)
+ENDLIST
+LIST Verilog(*.v)
+ENDLIST
+LIST VHDL(*.vhd)
+ENDLIST
+LIST BlockSymbols(*.blk)
+VALUE "design_definition\graphics\OPTOTRIAC.blk"
+VALUE "design_definition\graphics\PIC16F84.blk"
+ENDLIST
+LIST TruthTables(*.tbl)
+ENDLIST
+LIST FlowCharts(*.sfc)
+ENDLIST
+LIST StateDiagrams(*.sdg)
+ENDLIST
+LIST Schematics(*.sbk)
+VALUE "design_definition\graphics\PIC16F84.sbk"
+VALUE "design_definition\graphics\OPTOTRIAC.sbk"
+VALUE "design_definition\graphics\RemoteDimmer.sbk"
+VALUE "design_definition\graphics\BT139-500 TRIAC.sbk"
+VALUE "design_definition\graphics\TRAFO BV20.sbk"
+VALUE "design_definition\graphics\ELIRM 8752.sbk"
+ENDLIST
+KEY HDLTechnology ""
+KEY VendorTechnology "No Vendor Technology"
+KEY ConfigDir ".\Default"
+KEY SimulationType "NONE"
+KEY VhdlFlavor "Undefined"
+KEY Vendor ""
+KEY CDBDir ".\default\default.cdb"
+KEY VendorPath ""
+KEY ConfigType "PCB"
+KEY ActiveRoot "RemoteDimmer"
+ENDSECTION
+SECTION Versions
+KEY ProjectVersion "VB2K"
+KEY VBDesignView "16.0.0.30"
+KEY VBDC ""
+KEY VBGHLD ""
+KEY VBWaveBench "0.0.22.0"
+KEY VBVHDL "16.0.0.12"
+KEY VBHDLWriter "5.0.4.5040"
+KEY XILINXM1 "0.0.0.0"
+KEY Actel "0.0.0.0"
+ENDSECTION
+SECTION VHDLIntegration
+LIST VHDLFiles
+ENDLIST
+LIST USERSTIMLIST
+ENDLIST
+LIST STIMLIST
+ENDLIST
+ENDSECTION
+SECTION VERILOGIntegration
+LIST VERILOGFiles
+ENDLIST
+LIST USERSTIMLIST
+ENDLIST
+LIST STIMLIST
+ENDLIST
+ENDSECTION
+SECTION IngrElecTechnologyInfo
+KEY DesignKit ""
+ENDSECTION

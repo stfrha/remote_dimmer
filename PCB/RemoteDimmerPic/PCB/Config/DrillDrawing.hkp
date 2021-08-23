@@ -1,0 +1,18 @@
+.FILETYPE NC_DRILL_CHART_FILE
+.VERSION "VB99.0"
+.DATE "Wednesday, November 24, 1999"
+
+.Columns 
+ ..Symbol
+ ..Diameter
+ ..Tolerance
+ ..Plated
+ ..Quantity
+.FontName "VeriBest Gerber 0"
+.FontSize 2540000
+.LineSpacing 1270000
+.PenWidth 203200
+.Format1 1
+.Format2 4
+.NegTol 0
+.PosTol 0

@@ -1,0 +1,243 @@
+SECTION VHDLIntegration
+LIST VHDLFiles
+VALUE "design_definition\hdl\vhdl\RemoteDimmer.vhd"
+ENDLIST
+LIST USERSTIMLIST
+ENDLIST
+LIST STIMLIST
+VALUE "design_definition\stimulus\wsw\vhdl\UART_stim.vhd | Stimulus | UART | design_definition\stimulus\wsw\UART.wsw | udut"
+VALUE "design_definition\stimulus\wsw\vhdl\REMOTE_DIMMER_stim.vhd | Stimulus | REMOTE_DIMMER | design_definition\stimulus\wsw\REMOTE_DIMMER.wsw | udut"
+ENDLIST
+LIST UART_stim.vhd
+VALUE "Default\simulator_build\vhdl\pre_synthesis\UART.vpd"
+ENDLIST
+LIST REMOTE_DIMMER_stim.vhd
+VALUE "Default\simulator_build\vhdl\pre_synthesis\REMOTE_DIMMER.vpd"
+ENDLIST
+ENDSECTION
+SECTION Default
+LIST BlockViewMap
+VALUE "UAR,design_definition\hdl\vhdl\RemoteDimmer.vhd,STRUCTURE,0"
+VALUE "RC_DECODE,design_definition\hdl\vhdl\RemoteDimmer.vhd,BEHAVIOUR,0"
+VALUE "BIT_MEASURE,design_definition\hdl\vhdl\RemoteDimmer.vhd,BEHAVIOUR,0"
+VALUE "TRIAC_DRIVER,design_definition\hdl\vhdl\RemoteDimmer.vhd,BEHAVIOUR,0"
+VALUE "REMOTE_DIMMER,design_definition\hdl\vhdl\RemoteDimmer.vhd,STRUCTURE,0"
+VALUE "DIMMER_FSM,design_definition\hdl\vhdl\RemoteDimmer.vhd,BEHAVIOUR,0"
+VALUE "FADE_COUNTER,design_definition\hdl\vhdl\RemoteDimmer.vhd,BEHAVIOUR,0"
+VALUE "BIT_COLLECTOR,design_definition\hdl\vhdl\RemoteDimmer.vhd,BEHAVIOUR,0"
+ENDLIST
+LIST Types
+VALUE "All(*.*)"
+VALUE "Verilog(*.v)"
+VALUE "VHDL(*.vhd)"
+VALUE "BlockSymbols(*.blk)"
+VALUE "TruthTables(*.tbl)"
+VALUE "FlowCharts(*.sfc)"
+VALUE "StateDiagrams(*.sdg)"
+VALUE "Schematics(*.sbk)"
+ENDLIST
+LIST All(*.*)
+ENDLIST
+LIST Verilog(*.v)
+ENDLIST
+LIST VHDL(*.vhd)
+VALUE "design_definition\hdl\vhdl\RemoteDimmer.vhd"
+ENDLIST
+LIST BlockSymbols(*.blk)
+ENDLIST
+LIST TruthTables(*.tbl)
+ENDLIST
+LIST FlowCharts(*.sfc)
+ENDLIST
+LIST StateDiagrams(*.sdg)
+ENDLIST
+LIST Schematics(*.sbk)
+ENDLIST
+LIST VerilogStimMap
+ENDLIST
+LIST VhdlStimMap
+VALUE "REMOTE_DIMMER,design_definition\stimulus\wsw\vhdl\REMOTE_DIMMER_stim.vhd"
+VALUE "UART,design_definition\stimulus\wsw\vhdl\UART_stim.vhd"
+ENDLIST
+KEY HDLTechnology "VHDL93"
+KEY VendorTechnology "XilinxM1 XC9500 Technology"
+KEY ConfigDir ".\Default"
+KEY SimulationType "VHDL"
+KEY VhdlFlavor "VHDL93"
+KEY Vendor "XilinxM1"
+KEY CDBDir ".\default\default.cdb"
+KEY VendorPath "f:\veribest\2000\vbdesvw\XilinxM1\xc9500\vendor.dke"
+KEY ConfigType "CHIP"
+KEY ActiveRoot "REMOTE_DIMMER"
+KEY SchematicOnlyFlag "Off"
+ENDSECTION
+SECTION VERILOGIntegration
+LIST VERILOGFiles
+ENDLIST
+LIST USERSTIMLIST
+ENDLIST
+LIST STIMLIST
+ENDLIST
+ENDSECTION
+SECTION ACEPlusProjectFiles
+LIST Types
+VALUE "Schematics(*.sbk)"
+VALUE "StateDiagrams(*.sdg)"
+VALUE "FlowCharts(*.sfc)"
+VALUE "TruthTables(*.tbl)"
+VALUE "HDL(*.v*)"
+VALUE "All(*.*)"
+ENDLIST
+LIST Schematics(*.sbk)
+ENDLIST
+LIST StateDiagrams(*.sdg)
+ENDLIST
+LIST FlowCharts(*.sfc)
+ENDLIST
+LIST TruthTables(*.tbl)
+ENDLIST
+LIST HDL(*.v*)
+ENDLIST
+LIST All(*.*)
+ENDLIST
+ENDSECTION
+SECTION ACEPlusFilePaths
+LIST Names
+VALUE "BOM_Configuration"
+VALUE "Bus_Contents"
+VALUE "CDB_Discard"
+VALUE "EDIF_Configuration"
+VALUE "Fonts"
+VALUE "Global_Signals"
+VALUE "HDL_String_Map"
+VALUE "HPGL_Plot_Configuration"
+VALUE "HPGL2_Plot_Configuration"
+VALUE "Pin_Types"
+VALUE "PostScript_Plot_Configuration"
+VALUE "Project_Options"
+VALUE "CrossRef_Configuration"
+VALUE "Text_Properties"
+VALUE "Verification_Rules"
+VALUE "VerilogConfig"
+VALUE "VHDLConfig"
+VALUE "Windows_Plot_Configuration"
+ENDLIST
+LIST Fonts
+VALUE "${VBEST14PATH}\config\vbdc\vbdc.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\engineer.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\fancy.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt0.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt1.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt7.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt23.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt26.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt41.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt42.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt50.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt126.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\defnt127.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\sdedbg.fnt"
+VALUE "${VBEST14PATH}\config\vbdc\sbkdbg.fnt"
+ENDLIST
+LIST Text_Properties
+VALUE "${VBEST14PATH}\config\vbdc\vbdc.prp"
+ENDLIST
+LIST VerilogConfig
+ENDLIST
+LIST VHDLConfig
+ENDLIST
+LIST HDL_String_Map
+ENDLIST
+KEY Pin_Types "w:\VB2000\vbdc\config\vbdc\pintypes.asc"
+KEY Project_Options "w:\VB2000\vbdc\config\vbdc\vbdcsys.asc"
+KEY CrossRef_Configuration "w:\VB2000\vbdc\config\vbdc\crossref.asc"
+KEY CDB_Discard "w:\VB2000\vbdc\config\vbdc\discard.asc"
+KEY Verification_Rules "w:\VB2000\vbdc\config\vbdc\vbdcver.asc"
+KEY PostScript_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dctops.pcf"
+KEY HPGL_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dctohpgl.pcf"
+KEY HPGL2_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dc2hpgl2.pcf"
+KEY Windows_Plot_Configuration "w:\VB2000\vbdc\config\vbdc\dctowin.pcf"
+KEY BOM_Configuration "w:\VB2000\vbdc\config\vbdc\cdb2bom.asc"
+KEY EDIF_Configuration "w:\VB2000\vbdc\config\edif\edifcnfg.asc"
+KEY Global_Signals "w:\VB2000\vbdc\config\vbdc\global"
+KEY Bus_Contents ".\conts"
+ENDSECTION
+SECTION IngrElecDesignInfo
+KEY SBKDir "design_definition\graphics"
+KEY UDBDir ".\udb"
+KEY CDBDir ".\default\default.cdb"
+KEY ACEPlusHDLDir "design_definition\hdl\vhdl"
+KEY ACEPlusGeneratedHDLDir "Default\genhdl\vhdl"
+KEY ACEPlusDesignRootName "design_definition\hdl\vhdl\RemoteDimmer.vhd"
+KEY ASICToolkit ""
+KEY AvoidInstance "0"
+ENDSECTION
+SECTION IngrElecLibraries
+LIST Names
+VALUE "Symbols"
+VALUE "PDBs"
+VALUE "2dCellLibraries"
+VALUE "VerilogSimulationLibraries"
+VALUE "VHDLSimulationLibraries"
+ENDLIST
+LIST VerilogSimulationLibraries
+ENDLIST
+LIST VHDLSimulationLibraries
+VALUE "IEEE"
+ENDLIST
+LIST SignalIntegrityLibrary
+ENDLIST
+LIST 2dCellLibraries
+ENDLIST
+LIST 3dCellLibraries
+ENDLIST
+LIST Symbols
+VALUE "${VBEST14PATH}\libelec\symlib\border.slb"
+VALUE "${VBEST14PATH}\libelec\symlib\kitbasic.slb"
+VALUE "${VBEST14PATH}\libelec\symlib\fchart.slb"
+VALUE "${VBEST14PATH}\libelec\symlib\connector.slb"
+VALUE "design_definition\logiblox\VeriBlox.slb"
+ENDLIST
+LIST PDBs
+ENDLIST
+KEY CentralLibrary "\\guinness\data\users\libraries\CentralLibrary\CentralLibrary.LMC"
+KEY SearchPathScheme "(Default)"
+ENDSECTION
+SECTION IEEE
+LIST Packages
+VALUE "std_logic_1164"
+VALUE "std_logic_arith"
+ENDLIST
+KEY Path "f:\veribest\2000\vbvhdl\lib93\IEEE_SYN"
+KEY USEALL "0"
+ENDSECTION
+SECTION VBPCBIndicators
+KEY SchematicDesignStatus "0"
+KEY VBPCBForwardAnno "0"
+KEY SchematicDesignBackAnno "0"
+KEY CADBackAnno "0"
+KEY FLATNETNAMEs "1"
+ENDSECTION
+SECTION VBPCBDesignData
+KEY NetClassFile ""
+ENDSECTION
+SECTION ConfigurationInfo
+LIST Configurations
+VALUE "Default"
+ENDLIST
+KEY ActiveConfiguration "Default"
+ENDSECTION
+SECTION Versions
+KEY ProjectVersion "VB2K"
+KEY VBDesignView "16.0.0.30"
+KEY VBDC ""
+KEY VBGHLD ""
+KEY VBWaveBench "0.0.22.0"
+KEY VBVHDL "16.0.0.12"
+KEY VBHDLWriter "5.0.4.5040"
+KEY XILINXM1 "0.0.0.0"
+KEY Actel "0.0.0.0"
+ENDSECTION
+SECTION IngrElecTechnologyInfo
+KEY DesignKit "f:\veribest\2000\vbdesvw\XilinxM1\xc9500\"
+ENDSECTION

@@ -1,0 +1,159 @@
+
+                                    Packager
+                                    --------
+
+                        03:36 PM Wednesday, May 23, 2001
+     Job Name: F:\FRHA\RemoteDimmer\PCB\RemoteDimmerPic\RemoteDimmerPic.prj
+
+
+     Packager     Version: 15.8
+
+     The root of this design is at "F:\FRHA\RemoteDimmer\PCB\RemoteDimmerPic\design_definition\graphics\RemoteDimmer.sbk".
+
+     The FLATNETNAMEs status indicates that the present set
+      of schematic netnames should be used to update the
+      FLATNETNAMEs.
+
+     The FLATNETNAMEs status indicates that the present set
+      of schematic netnames should be used to update the
+      FLATNETNAMEs.
+
+     Unable to determine the Disable Repackage status.
+     !Repackaging will be allowed!
+
+     The VBPCB Design Path this design is at "F:\FRHA\RemoteDimmer\PCB\RemoteDimmerPic\PCB\REMOTEDIMMERPIC.PCB".
+
+     The Central Library is at "H:\users\libraries\CentralLibrary\CentralLibrary.LMC".
+
+     The PDBs listed in the project file will be searched to satisfy the parts
+      requirements of the CDB only for parts not already found in the
+      Target PDB.
+
+     The AllowAlphaRefDes status indicates that reference
+      designators containing all alpha characters should be deleted
+      and the relevant symbols repackaged.
+
+     The cross mapping of symbol pin names to Part Number pin
+      numbers will be checked for packaged symbols and mapped correctly
+      for unpackaged symbols.
+
+     Properties that have been checked off in the Property Definition Editor
+      found at Library Manager/Common Properties will be checked for value
+      differences between the PartsDB and the non-null properties on symbols.
+     Those properties checked off will only be transferred from the PartsDB
+      to symbols that have not been packaged.  However, the property values
+      transferred will be limited to the precision specified in the Notation
+      Settings dialog.
+     The following properties were checked off in the Property Definition Editor:
+       "Value2"
+       "IBIS"
+       "Model Suffix"
+       "VHDL Model"
+       "Verilog Model"
+       "Simulation Model"
+       "Rating"
+       "Tolerance"
+       "Value"
+
+     WARNING:  The schematic source files have been modified since
+      the present Common DataBase was compiled.  Please have the
+      schematic designer recompile the CDB and rerun this procedure
+      if it is desired to incorporate the latest changes.
+
+     Common Data Base has been read
+
+     Target PDB Name: Integration\LocalPartsDB.pdb
+
+     Number of Part Numbers: 20
+          Part Numb: CAP0805 -> Vend Part: CAP0805 
+          Part Numb: XX1060 -> Vend Part: XX1060 
+          Part Numb: LT5085/01/0 -> Vend Part: LT5085/01/0 
+          Part Numb: RM1101 -> Vend Part: RM1101 
+          Part Numb: PC355_SO4_100 -> Vend Part: PC355_SO4_100 
+          Part Numb: MKS4,22.5_B10.5 -> Vend Part: MKS4,22.5_B10.5 
+          Part Numb: CON_PB8302/303/0 -> Vend Part: CON_PB8302/303/0 
+          Part Numb: RES0805 -> Vend Part: RES0805 
+          Part Numb: BAS32L -> Vend Part: BAS32L 
+          Part Numb: CE1705_10X20 -> Vend Part: CE1705_10X20 
+          Part Numb: LM317_SOT223 -> Vend Part: LM317_SOT223 
+          Part Numb: CON_PB8302/304/0 -> Vend Part: CON_PB8302/304/0 
+          Part Numb: TP -> Vend Part: TP 
+          Part Numb: CE9005_6.3X6 -> Vend Part: CE9005_6.3X6 
+          Part Numb: 1N6470_MELF -> Vend Part: 1N6470_MELF 
+          Part Numb: 7805_TO220 -> Vend Part: 7805_TO220 
+          Part Numb: CON_PB8302/107/0 -> Vend Part: CON_PB8302/107/0 
+          Part Numb: IRF3205_TO220_S -> Vend Part: IRF3205_TO220_S 
+          Part Numb: LTC1066-1_SOL18_50 -> Vend Part: LTC1066-1_SOL18_50 
+          Part Numb: 4N46_DIP6M3 -> Vend Part: 4N46_DIP6M3 
+
+     Number of Part Names: 0
+
+     Number of Part Labels: 0
+
+
+     Checking for value differences between non-null symbol properties and PartsDB properties,
+      but only for those properties checked off in the Property Definition Editor
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP37: Symbol / PartsDB property mismatch
+      Resolved PartNumber = LM317_SOT223
+      Symbol Property: Part Name = LM340_FUSK
+     PartsDB Property: Part Name = LM317_SOT223
+     The property value on this prepackaged symbol has not been changed.
+      Use the 'Update PDB Properties on symbol' option on the Packager menu
+      or use VBDC Device Replace to change the schematic symbol in order to
+      update the schematic to the PartsDB value as limited by the precision
+      specified in the Notation Settings dialog.  Be sure that the
+      precision specified in the Notation Settings dialog is sufficient to
+      define the value exactly or this warning will continue.
+
+     Checking the validity of the packaging of prepackaged schematic
+      symbols.  Only the first error in symbols having the same
+      Reference Designator will be reported.
+
+     The packaging of all prepackaged schematic symbols is consistent
+      with the Parts DataBase data for the cross mapping of
+      symbol pin names to Part Number pin numbers.
+      Symbols that were not prepackaged will now be packaged correctly.
+      
+     No errors in Existing Schematic Packaging.
+
+     The Common DataBase has been read and will be packaged.
+     Clustering 64 Symbols:
+              64  *************
+              50  **************************************************
+     Clustering is Complete
+
+     Packager Assignments successfully completed
+
+
+
+     36 nets were found containing 137 pins
+     51 components were found
+
+     Parsed netlist - Augmenting..
+
+     Augmented - Adding phantom pins....
+
+     Numbering Nets....
+     After augmentation of supply pins, there are 36 nets where 0 nets have only one pin.
+
+
+     Checking Pins....
+
+     Testing of Packaging has been completed with 2 warnings.
+      Erroneous results may occur if not fixed.
+
+     Updating the Common DataBase
+
+     A BAM WasIs List: Integration\CDBBackAnno.bam has been created.
+
+     The Common DataBase has been successfully updated.
+
+     Packager finished successfully.
+     !THE CDB IS UP-TO-DATE!
+     
+     An unused pin and gate report has been written to Integration\UnusedPins.txt
+     An unused gate report for gates not in schematic has been written to Integration\UnusedGates.txt
+     An augmented pin report has been written to Integration\AugmentedPins.txt.
+
+     There have been 2 warnings.

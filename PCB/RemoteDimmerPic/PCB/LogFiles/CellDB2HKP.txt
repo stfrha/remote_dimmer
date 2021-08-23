@@ -1,0 +1,24 @@
+
+                          PCB Cell Library to ASCII Log
+                          -----------------------------
+
+                      04:31 PM Thursday, November 23, 2000
+         Job Name: D:\LayoutTemplates\TEMPLATE\Work\CellDBLibs\ASCII.cel
+
+
+Overwriting existing Cell ASCII file 'D:\LayoutTemplates\Format_001123.txt'.
+
+
+The following cells use these units : TH
+
+    Processing Cell "A1"
+    Processing Cell "A2"
+    Processing Cell "A3"
+    Processing Cell "A3RUB"
+    Processing Cell "A4"
+    Processing Cell "A4RUB"
+    Processing Cell "FR4SNA"
+
+Processed '7' cells.
+
+Cell ASCII file 'D:\LayoutTemplates\Format_001123.txt' was created successfully.

@@ -1,0 +1,6355 @@
+.FILETYPE LAYOUT
+.VERSION "VB99.0"
+.SCHEMA_VERSION 1
+.CREATOR "VeriBest, Inc."
+.UNITS TH
+
+.MIGRATED_DESIGN
+.FORWARD_ANNOTATION_REQUIRED
+
+.PACKAGE_CELL "FI0001"
+ ..XY (3500,0)
+ ..PLACEMENT_LYR LYR_12
+ ..FACEMENT BOTTOM
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !cmp_partno text [38]
+ ..TEXT "FIDUCIAL40"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (3475,50)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 25
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+ !cmp_ref text [36]
+ ..TEXT "FI6"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (3600,25)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+  ...DISPLAY_ATTR
+   ....TEXT_LYR SILKSCREEN_BOTTOM
+   ....XY (3600,25)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+ ..PIN "1"
+  ...XY (3500,0)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 40"
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (3510,0,0)
+	(3500,7.333248619e-013,10)
+	(3510,0.01732283465,0)
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (3510,0,0)
+	(3500,7.333248619e-013,10)
+	(3510,0.01732283465,0)
+ ..PLACEMENT_OUTLINE ! generated
+  ...HEIGHT 0
+  ...UNDERSIDE_SPACE 0
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3499,-1)
+	(3499,1)
+	(3501,1)
+	(3501,-1)
+	(3499,-1)
+
+.PACKAGE_CELL "FI0001"
+ ..XY (0,5750)
+ ..PLACEMENT_LYR LYR_12
+ ..FACEMENT BOTTOM
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !cmp_partno text [38]
+ ..TEXT "FIDUCIAL40"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-25,5800)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 25
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+ !cmp_ref text [36]
+ ..TEXT "FI5"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-100,5775)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+  ...DISPLAY_ATTR
+   ....TEXT_LYR SILKSCREEN_BOTTOM
+   ....XY (-100,5775)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+ ..PIN "1"
+  ...XY (0,5750)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 40"
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,5750,0)
+	(0,5750,10)
+	(10,5750.017323,0)
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,5750,0)
+	(0,5750,10)
+	(10,5750.017323,0)
+ ..PLACEMENT_OUTLINE ! generated
+  ...HEIGHT 0
+  ...UNDERSIDE_SPACE 0
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1,5749)
+	(-1,5751)
+	(1,5751)
+	(1,5749)
+	(-1,5749)
+
+.PACKAGE_CELL "FI0001"
+ ..XY (0,0)
+ ..PLACEMENT_LYR LYR_12
+ ..FACEMENT BOTTOM
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !cmp_partno text [38]
+ ..TEXT "FIDUCIAL40"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-25,50)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 25
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+ !cmp_ref text [36]
+ ..TEXT "FI4"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-100,25)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+  ...DISPLAY_ATTR
+   ....TEXT_LYR SILKSCREEN_BOTTOM
+   ....XY (-100,25)
+   ....ROTATION 180
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS MIRRORED
+ ..PIN "1"
+  ...XY (0,0)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 40"
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,0,0)
+	(7.333248619e-013,-7.333248619e-013,10)
+	(10,0.01732283465,0)
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,0,0)
+	(7.333248619e-013,-7.333248619e-013,10)
+	(10,0.01732283465,0)
+ ..PLACEMENT_OUTLINE ! generated
+  ...HEIGHT 0
+  ...UNDERSIDE_SPACE 0
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1,-1)
+	(-1,1)
+	(1,1)
+	(1,-1)
+	(-1,-1)
+
+.PACKAGE_CELL "FI0001"
+ ..XY (3500,0)
+ ..PLACEMENT_LYR LYR_1
+ ..FACEMENT TOP
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !cmp_partno text [38]
+ ..TEXT "FIDUCIAL40"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (3475,-50)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 25
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !cmp_ref text [36]
+ ..TEXT "FI3"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (3600,-25)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+  ...DISPLAY_ATTR
+   ....TEXT_LYR SILKSCREEN_TOP
+   ....XY (3600,-25)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ ..PIN "1"
+  ...XY (3500,0)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 40"
+   ....PAD_NAME "Round 40 _1"
+    .....PAD_LYR LYR_1
+   ....PAD_NAME "Round 40 _1"
+    .....PAD_LYR SOLDERPASTE_TOP
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (3510,0,0)
+	(3500,0,-10)
+	(3510,-0.01732283465,0)
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (3510,0,0)
+	(3500,0,-10)
+	(3510,-0.01732283465,0)
+ ..PLACEMENT_OUTLINE ! generated
+  ...HEIGHT 0
+  ...UNDERSIDE_SPACE 0
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3499,-1)
+	(3499,1)
+	(3501,1)
+	(3501,-1)
+	(3499,-1)
+
+.PACKAGE_CELL "FI0001"
+ ..XY (0,5750)
+ ..PLACEMENT_LYR LYR_1
+ ..FACEMENT TOP
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !cmp_partno text [38]
+ ..TEXT "FIDUCIAL40"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-25,5700)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 25
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !cmp_ref text [36]
+ ..TEXT "FI2"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-100,5725)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+  ...DISPLAY_ATTR
+   ....TEXT_LYR SILKSCREEN_TOP
+   ....XY (-100,5725)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ ..PIN "1"
+  ...XY (0,5750)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 40"
+   ....PAD_NAME "Round 40 _1"
+    .....PAD_LYR LYR_1
+   ....PAD_NAME "Round 40 _1"
+    .....PAD_LYR SOLDERPASTE_TOP
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,5750,0)
+	(0,5750,-10)
+	(10,5749.982677,0)
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,5750,0)
+	(0,5750,-10)
+	(10,5749.982677,0)
+ ..PLACEMENT_OUTLINE ! generated
+  ...HEIGHT 0
+  ...UNDERSIDE_SPACE 0
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1,5749)
+	(-1,5751)
+	(1,5751)
+	(1,5749)
+	(-1,5749)
+
+.PACKAGE_CELL "FI0001"
+ ..XY (0,0)
+ ..PLACEMENT_LYR LYR_1
+ ..FACEMENT TOP
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !cmp_partno text [38]
+ ..TEXT "FIDUCIAL40"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-25,-50)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 25
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !cmp_ref text [36]
+ ..TEXT "FI1"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (-100,-25)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+  ...DISPLAY_ATTR
+   ....TEXT_LYR SILKSCREEN_TOP
+   ....XY (-100,-25)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ ..PIN "1"
+  ...XY (0,0)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 40"
+   ....PAD_NAME "Round 40 _1"
+    .....PAD_LYR LYR_1
+   ....PAD_NAME "Round 40 _1"
+    .....PAD_LYR SOLDERPASTE_TOP
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,0,0)
+	(0,0,-10)
+	(10,-0.01732283465,0)
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYARC_PATH
+   ....WIDTH 8
+   ....XYR (10,0,0)
+	(0,0,-10)
+	(10,-0.01732283465,0)
+ ..PLACEMENT_OUTLINE ! generated
+  ...HEIGHT 0
+  ...UNDERSIDE_SPACE 0
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1,-1)
+	(-1,1)
+	(1,1)
+	(1,-1)
+	(-1,-1)
+
+.DRAWING_CELL "FR4SNA" ! unknown cell type
+ ..XY (9025,6450)
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "INNER LAYER"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,4755)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "OUTER LAYER"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,4555)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "MANUFACTURING ACCORDING TO THIS DRAWING AND"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9025,6450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "OUR SPEC. P1 24510 PATTERN CLASS 1"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,6155)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "SPEC. MIL-P-55110"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,5955)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "BASE MATERIAL SHALL BE GLASS/EPOXY"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,5655)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "ACC. TO MIL-P-13949G TYPE GF."
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,5455)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "LAYERS TOTAL. BOARD THICKNESS 1.6mm +/-10%"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9425,5155)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "COPPER THICKNESS ON"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,4955)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "0.0175mm"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (10925,4755)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "0.035mm"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (12325,4755)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "0.0175mm"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (10925,4555)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "0.035mm"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (12325,4555)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "ALL FREE COPPER AREAS AND PLATED"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,4255)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "THROUGH HOLES SHALL BE HOT AIR LEVELLED."
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,4055)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "CHEMICAL PLATED NICKEL/GOLD THICKNESS"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,3755)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "ELECTRICAL TEST SHALL BE DONE."
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,3055)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "LEGEND PRINTING ACC. TO OUR SPEC. P1 24517"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,2455)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "WET FILM TYPE B ACC. TO OUR SPEC. P1 24516"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,2755)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,5765) (9135,5645) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,5645) (9015,5645) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,5645) (9015,5765) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,5765) (9135,5765) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,5265) (9135,5265) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,5265) (9135,5145) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,5145) (9015,5145) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,5145) (9015,5265) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,4365) (9135,4365) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,4365) (9135,4245) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,4245) (9015,4245) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,4245) (9015,4365) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,3865) (9135,3865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,3865) (9135,3745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,3745) (9015,3745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,3745) (9015,3865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,3165) (9135,3165) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,3165) (9135,3045) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,3045) (9015,3045) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,3045) (9015,3165) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,2865) (9135,2865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,2865) (9135,2745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,2745) (9015,2745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,2745) (9015,2865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,2565) (9135,2565) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,2565) (9135,2445) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,2445) (9015,2445) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,2445) (9015,2565) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10715,4865) (10835,4865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10835,4865) (10835,4745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10835,4745) (10715,4745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10715,4745) (10715,4865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10715,4665) (10835,4665) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10835,4665) (10835,4545) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10835,4545) (10715,4545) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10715,4545) (10715,4665) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12115,4865) (12235,4865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12235,4865) (12235,4745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12235,4745) (12115,4745) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12115,4745) (12115,4865) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12115,4665) (12235,4665) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12235,4665) (12235,4545) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12235,4545) (12115,4545) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12115,4545) (12115,4665) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,5945) (9135,5945) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,5945) (9135,6065) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,6065) (9015,6065) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,6065) (9015,5945) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,6145) (9135,6145) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,6265) (9135,6265) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9015,6145) (9015,6265) 
+ !drill_dwg graphics [55]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 55"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (9135,6145) (9135,6265) 
+ !? text [55]
+ ..TEXT "Ni 3-5 MICRONS Au 0.1-0.25 MICRONS MUST BE APPLIED"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,3555)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "BEFORE EVENTUAL SOLDER AND INSULATION MASK."
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9225,3355)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "APERTURE TABLE CELSIUS TECH"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9216.397638,2144.192913)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "VB APERTURE 99-04-26"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (9216.397638,1944.192913)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+
+.PACKAGE_CELL "P00239"
+ ..XY (1750,50)
+ ..PLACEMENT_LYR LYR_1
+ ..FACEMENT TOP
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS LOCKED
+ !cmp_partno text [38]
+ ..TEXT "CON_PB1034/431/0"
+  ...TEXT_TYPE PARTNO
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (1700,-600)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 25
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !cmp_ref text [36]
+ ..TEXT "P1"
+  ...TEXT_TYPE REF_DES
+  ...DISPLAY_ATTR
+   ....TEXT_LYR ASSEMBLY
+   ....XY (1750,-350)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+  ...DISPLAY_ATTR
+   ....TEXT_LYR SILKSCREEN_TOP
+   ....XY (1750,-350)
+   ....ROTATION 0
+   ....HORZ_JUST CENTER
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 50
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ ..PIN "A1"
+  ...XY (3300,-50)
+  ...NETNAME "XSIG010001"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A2"
+  ...XY (3200,-50)
+  ...NETNAME "XSIG010001"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A3"
+  ...XY (3100,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A4"
+  ...XY (3000,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A5"
+  ...XY (2900,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A6"
+  ...XY (2800,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A7"
+  ...XY (2700,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A8"
+  ...XY (2600,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A9"
+  ...XY (2500,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A10"
+  ...XY (2400,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A11"
+  ...XY (2300,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A12"
+  ...XY (2200,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A13"
+  ...XY (2100,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A14"
+  ...XY (2000,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A15"
+  ...XY (1900,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A16"
+  ...XY (1800,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A17"
+  ...XY (1700,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A18"
+  ...XY (1600,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A19"
+  ...XY (1500,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A20"
+  ...XY (1400,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A21"
+  ...XY (1300,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A22"
+  ...XY (1200,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A23"
+  ...XY (1100,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A24"
+  ...XY (1000,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A25"
+  ...XY (900,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A26"
+  ...XY (800,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A27"
+  ...XY (700,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A28"
+  ...XY (600,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A29"
+  ...XY (500,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A30"
+  ...XY (400,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A31"
+  ...XY (300,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "A32"
+  ...XY (200,-50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B1"
+  ...XY (3300,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B2"
+  ...XY (3200,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B3"
+  ...XY (3100,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B4"
+  ...XY (3000,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B5"
+  ...XY (2900,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B6"
+  ...XY (2800,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B7"
+  ...XY (2700,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B8"
+  ...XY (2600,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B9"
+  ...XY (2500,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B10"
+  ...XY (2400,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B11"
+  ...XY (2300,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B12"
+  ...XY (2200,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B13"
+  ...XY (2100,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B14"
+  ...XY (2000,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B15"
+  ...XY (1900,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B16"
+  ...XY (1800,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B17"
+  ...XY (1700,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B18"
+  ...XY (1600,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B19"
+  ...XY (1500,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B20"
+  ...XY (1400,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B21"
+  ...XY (1300,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B22"
+  ...XY (1200,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B23"
+  ...XY (1100,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B24"
+  ...XY (1000,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B25"
+  ...XY (900,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B26"
+  ...XY (800,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B27"
+  ...XY (700,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B28"
+  ...XY (600,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B29"
+  ...XY (500,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B30"
+  ...XY (400,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B31"
+  ...XY (300,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "B32"
+  ...XY (200,50)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C1"
+  ...XY (3300,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C2"
+  ...XY (3200,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C3"
+  ...XY (3100,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C4"
+  ...XY (3000,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C5"
+  ...XY (2900,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C6"
+  ...XY (2800,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C7"
+  ...XY (2700,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C8"
+  ...XY (2600,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C9"
+  ...XY (2500,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C10"
+  ...XY (2400,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C11"
+  ...XY (2300,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C12"
+  ...XY (2200,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C13"
+  ...XY (2100,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C14"
+  ...XY (2000,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C15"
+  ...XY (1900,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C16"
+  ...XY (1800,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C17"
+  ...XY (1700,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C18"
+  ...XY (1600,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C19"
+  ...XY (1500,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C20"
+  ...XY (1400,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C21"
+  ...XY (1300,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C22"
+  ...XY (1200,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C23"
+  ...XY (1100,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C24"
+  ...XY (1000,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C25"
+  ...XY (900,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C26"
+  ...XY (800,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C27"
+  ...XY (700,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C28"
+  ...XY (600,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C29"
+  ...XY (500,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C30"
+  ...XY (400,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C31"
+  ...XY (300,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ ..PIN "C32"
+  ...XY (200,150)
+  ...NETNAME "UnConnected_Net"
+  ...PIN_OPTIONS NONE
+  ...ROTATION 0
+  ...PADSTACK "Pad Round 63,Hole Rnd 39.3701"
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3600,-300) (3600,-50) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3600,-300) (3600,-50) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3500,-300) (3600,-300) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3500,-300) (3600,-300) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3400,-50) (3600,-50) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3400,-50) (3600,-50) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3400,-100) (3400,-50) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3400,-100) (3400,-50) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (100,-100) (3400,-100) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (100,-100) (3400,-100) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (100,-100) (100,-50) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (100,-100) (100,-50) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-50) (100,-50) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-50) (100,-50) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (0,-550) (0,-300) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (0,-550) (0,-300) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-300) (0,-300) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-300) (0,-300) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-300) (-100,-50) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-300) (-100,-50) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3500,-550) (3500,-300) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3500,-550) (3500,-300) 
+ !cmp_outline graphics [33]
+ ..ASSEMBLY_OUTLINE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (0,-550) (3500,-550) 
+ ..SILKSCREEN_OUTLINE
+  ...SIDE MNT_SIDE
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (0,-550) (3500,-550) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3500,-550) (3500,-300) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3500,-300) (3600,-300) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3600,-300) (3600,-50) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3400,-50) (3600,-50) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3400,-100) (3400,-50) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (100,-100) (3400,-100) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (100,-100) (100,-50) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-50) (100,-50) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-300) (-100,-50) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-300) (0,-300) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (0,-550) (0,-300) 
+ !? graphics [63]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 63"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (0,-550) (3500,-550) 
+ ..MOUNTING_HOLE ! ellipse
+  ...XY (0,-150)
+  ...PADSTACK ",Hole Rnd 110.236"
+  ...ROTATION 0
+  ...NETNAME "UnConnected_Net"
+ ..MOUNTING_HOLE ! ellipse
+  ...XY (3500,-150)
+  ...PADSTACK ",Hole Rnd 110.236"
+  ...ROTATION 0
+  ...NETNAME "UnConnected_Net"
+ ..PLACEMENT_OUTLINE ! generated
+  ...HEIGHT 437
+  ...UNDERSIDE_SPACE 0
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-100,-550)
+	(-100,150)
+	(3600,150)
+	(3600,-550)
+	(-100,-550)
+
+.DRAWING_CELL "A3" ! unknown cell type
+ ..XY (-2300,-4500)
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12000,-3600)
+	(13000,-3600)
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12000,-3400)
+	(13000,-3400)
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12000,-3200)
+	(13000,-3200)
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12210,-3200)
+	(12210,-3800)
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12790,-3200)
+	(12790,-3800)
+ !? text [60]
+ ..TEXT "CelsiusTech"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (8575,-4400)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 150
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "A3"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (10875,-4400)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 150
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "skriftligt medgivande fran agaren."
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (-2499.901575,-4550)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST TOP
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "distribution to a third party is prohibited unless"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (-2979.980315,-4550)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST TOP
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (5825,-4325) (7600,-4325) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (5825,-4500)
+	(5825,-3800)
+	(11400,-3800)
+	(13000,-3800)
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (6375,-3800) (6375,-4500) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (5825,-4150) (13000,-4150) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (6375,-3975) (7600,-3975) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (7175,-3800) (7175,-4500) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (7600,-4500) (7600,-3800) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (10800,-4500) (10800,-3800) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (11200,-4150) (11200,-4500) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12000,-3975) (13000,-3975) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (13000,6675) (13000,-4500) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-2300,6675) (-2300,-4500) 
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-2300,-4500) (13000,-4500) 
+ !? text [60]
+ ..TEXT "DRAWN"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (5875,-4125)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "CHECK"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (5875,-4300)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "FINAL"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (5875,-4475)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "DATE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (6425,-3950)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "SIGN"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (7225,-3950)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "DOC. TYPE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (10875,-4025)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "SCALE  1/1"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (12050,-3175)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "BL/SH"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (12075,-4125)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "REVISION"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (12075,-3950)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "NAME"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (7675,-3950)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-2300,6675) (13000,6675) 
+ !? text [55]
+ ..TEXT "PRINTED BOARD"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (8150,-3950)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (8150,-4125)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [55]
+ ..TEXT "EP"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 55"
+   ....XY (11675,-4025)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_1 graphics [60]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 60"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (12000,-3200) (12000,-4150) 
+ !? text [60]
+ ..TEXT "Informationsklass:"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (-2896.30315,383.4055118)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [60]
+ ..TEXT "Intern"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 60"
+   ....XY (-2709.69685,875.7913386)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+
+.DRAWING_CELL "A4RUB" ! unknown cell type
+ ..XY (-1700,-4000)
+ ..ROTATION 0
+ ..COMPONENT_OPTIONS NONE
+ !? text [1]
+ ..TEXT "PRIMARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 1"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [1]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 1"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [12]
+ ..TEXT "SECONDARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 12"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [12]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 12"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [12]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 12"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [1]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 1"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [58]
+ ..TEXT "COMPONENT PLACEMENT"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 58"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [58]
+ ..TEXT "PRIMARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 58"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [58]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 58"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1700,-4000) (5475,-4000) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1700,-3650) (5475,-3650) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1700,-3300) (5475,-3300) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1150,-3475) (75,-3475) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1150,-3300) (-1150,-4000) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-350,-3300) (-350,-4000) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1700,-3825) (75,-3825) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (75,-3300) (75,-4000) 
+ !? text [61]
+ ..TEXT "DRAWN"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-1650,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "CHECK"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-1650,-3800)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "FINAL"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-1650,-3975)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "DATE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-1100,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "SIGN"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-300,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "NAME"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (150,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "CelsiusTech"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (1050,-3900)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 150
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3275,-3300) (3275,-4000) 
+ !? text [61]
+ ..TEXT "DOC. TYPE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (3350,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "A4"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (3350,-3900)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 150
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (3675,-4000) (3675,-3650) 
+ !? text [61]
+ ..TEXT "BL/SH"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (4550,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (4475,-2700) (5475,-2700) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (4475,-2900) (5475,-2900) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (4475,-3100) (5475,-3100) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (4475,-3475) (5475,-3475) 
+ !? text [61]
+ ..TEXT "REVISION"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (4550,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (4475,-3650) (4475,-2700) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (4685,-3300) (4685,-2700) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (5265,-3300) (5265,-2700) 
+ !? text [61]
+ ..TEXT "SCALE  1/1"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (4525,-2675)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (-1700,-3300) (-1700,-4000) 
+ !user_2 graphics [61]
+ ..GRAPHIC
+  ...USER_LYR "User Layer 61"
+  ...POLYLINE_PATH
+   ....WIDTH 8
+   ....XY (5475,-4000) (5475,-2700) 
+ !? text [2]
+ ..TEXT "LAYER 2"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 2"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [2]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 2"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [2]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 2"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [3]
+ ..TEXT "LAYER 3"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 3"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [3]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 3"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [3]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 3"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [4]
+ ..TEXT "LAYER 4"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 4"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [4]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 4"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [4]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 4"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [5]
+ ..TEXT "LAYER 5"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 5"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [5]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 5"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [5]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 5"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [6]
+ ..TEXT "LAYER 6"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 6"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [6]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 6"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [6]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 6"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [7]
+ ..TEXT "LAYER 7"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 7"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [7]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 7"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [7]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 7"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [8]
+ ..TEXT "LAYER 8"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 8"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [8]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 8"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [8]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 8"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [9]
+ ..TEXT "LAYER 9"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 9"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [9]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 9"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [9]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 9"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [10]
+ ..TEXT "LAYER 10"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 10"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [10]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 10"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [10]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 10"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [11]
+ ..TEXT "LAYER 11"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 11"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [11]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 11"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [11]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 11"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [59]
+ ..TEXT "COMPONENT PLACEMENT"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 59"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [59]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 59"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [59]
+ ..TEXT "SECONDARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 59"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [49]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 49"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [50]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 50"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [50]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 50"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [49]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 49"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "skriftligt medgivande fran agaren."
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-1775,-4050)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "eller utlamnande till tredje man far icke ske utan"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-1875,-4050)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "Alla rattigheter forbehalls. Reproduktion, kopiering"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-1975,-4050)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "consent in writing has been given by the owner."
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-2100,-4050)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "distribution to a third party is prohibited unless"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-2200,-4050)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "All rights reserved. Reproduction, copying or"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-2300,-4050)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 60
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [51]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 51"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [51]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 51"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [51]
+ ..TEXT "SOLDER PASTE MASK PRIMARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 51"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [49]
+ ..TEXT "SOLDER MASK PRIMARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 49"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [52]
+ ..TEXT "SOLDER PASTE MASK"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 52"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [52]
+ ..TEXT "SECONDARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 52"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [53]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 53"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [53]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 53"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [53]
+ ..TEXT "SILKSCREEN PRIMARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 53"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [54]
+ ..TEXT "MASTER DRAWING"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 54"
+   ....XY (625,-3625)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [54]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 54"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [54]
+ ..TEXT "SILKSCREEN SECONDARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 54"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [50]
+ ..TEXT "SOLDER MASK SECONDARY SIDE"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 50"
+   ....XY (625,-3450)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [52]
+ ..TEXT "MF"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 52"
+   ....XY (4150,-3525)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "Informationsklass:"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-2197.484252,851.0629921)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [61]
+ ..TEXT "Intern"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 61"
+   ....XY (-2037.149606,1298.984252)
+   ....ROTATION 90
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [51]
+ ..TEXT "PAD SIZE 100% (NOT REDUCED)"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 51"
+   ....XY (625,-3200)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+ !? text [52]
+ ..TEXT "PAD SIZE 100% (NOT REDUCED)"
+  ...TEXT_TYPE USER_TYPE
+  ...DISPLAY_ATTR
+   ....USER_LYR "User Layer 52"
+   ....XY (625,-3200)
+   ....ROTATION 0
+   ....HORZ_JUST LEFT
+   ....VERT_JUST BOTTOM
+   ....FONT "VeriBest Gerber 0"
+   ....HEIGHT 100
+   ....WIDTH 0
+   ....STROKE_WIDTH 8
+   ....TEXT_OPTIONS NONE
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1150,1150)
+	(-1150,1500)
+	(-650,1500)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1350,1150)
+	(-1350,1700)
+	(-950,1700)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3868.5,691.2992126)
+	(3718.5,841.2992126)
+	(4018.5,1141.299213)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (4781.5,-258.7007874)
+	(4906.5,-433.7007874)
+	(5031.5,-258.7007874)
+	(4781.5,-258.7007874)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3718.5,4417)
+	(3893.5,4292)
+	(3718.5,4167)
+	(3718.5,4417)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-118.5,0)
+	(150,0)
+	(150,-218.7007874)
+	(-118.5,-218.7007874)
+	(-118.5,0)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3350,-218.7007874)
+	(3650,-218.7007874)
+	(3650,0)
+	(3350,0)
+	(3350,-218.7007874)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_2
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_3
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_4
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_5
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_6
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_7
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_8
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_9
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_10
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_11
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3450,-75)
+	(3550,-75)
+	(3575,-100)
+	(3575,-200)
+	(3550,-225)
+	(3450,-225)
+	(3425,-200)
+	(3425,-100)
+	(3450,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_2
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_3
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_4
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_5
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_6
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_7
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_8
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_9
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_10
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_11
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-50,-75)
+	(50,-75)
+	(75,-100)
+	(75,-200)
+	(50,-225)
+	(-50,-225)
+	(-75,-200)
+	(-75,-100)
+	(-50,-75)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-150,0)
+	(-150,-250)
+	(150,-250)
+	(150,-75)
+	(75,0)
+	(-150,0)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-150,0)
+	(-150,-250)
+	(150,-250)
+	(150,-75)
+	(75,0)
+	(-150,0)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3650,-250)
+	(3650,-75)
+	(3650,0)
+	(3425,0)
+	(3350,-75)
+	(3350,-250)
+	(3650,-250)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3650,-250)
+	(3650,-75)
+	(3650,0)
+	(3425,0)
+	(3350,-75)
+	(3350,-250)
+	(3650,-250)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,-258.6614173)
+	(-60.5,-258.6614173)
+	(-60.5,6040.338583)
+	(-218.5,6040.338583)
+	(-218.5,-258.6614173)
+!smask_bot graphics [50]
+.SOLDER_MASK
+ ..SIDE BOTTOM
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,-258.6614173)
+	(-60.5,-258.6614173)
+	(-60.5,6040.338583)
+	(-218.5,6040.338583)
+	(-218.5,-258.6614173)
+!smask_bot graphics [50]
+.SOLDER_MASK
+ ..SIDE BOTTOM
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3718.5,-258.6614173)
+	(3560.5,-258.6614173)
+	(3560.5,6040.338583)
+	(3718.5,6040.338583)
+	(3718.5,-258.6614173)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3718.5,-258.6614173)
+	(3560.5,-258.6614173)
+	(3560.5,6040.338583)
+	(3718.5,6040.338583)
+	(3718.5,-258.6614173)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_2
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_3
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_4
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_5
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_6
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_7
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_8
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_9
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_10
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_11
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3638.5,6001.338583)
+	(3668.5,5971.338583)
+	(3668.5,5911.338583)
+	(3638.5,5881.338583)
+	(3578.5,5881.338583)
+	(3548.5,5911.338583)
+	(3548.5,5971.338583)
+	(3578.5,6001.338583)
+	(3638.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_2
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_3
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_4
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_5
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_6
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_7
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_8
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_9
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_10
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_11
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-78.5,6001.338583)
+	(-48.5,5971.338583)
+	(-48.5,5911.338583)
+	(-78.5,5881.338583)
+	(-138.5,5881.338583)
+	(-168.5,5911.338583)
+	(-168.5,5971.338583)
+	(-138.5,6001.338583)
+	(-78.5,6001.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3031.5,6041.338583)
+	(3031.5,5866.338583)
+	(3231.5,5866.338583)
+	(3231.5,6041.338583)
+	(3031.5,6041.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3031.5,6041.338583)
+	(3031.5,5866.338583)
+	(3231.5,5866.338583)
+	(3231.5,6041.338583)
+	(3031.5,6041.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_2
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_3
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_4
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_5
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_6
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_7
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_8
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_9
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_10
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_11
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (281.5,5866.338583)
+	(1156.5,5866.338583)
+	(1156.5,6041.338583)
+	(281.5,6041.338583)
+	(281.5,5866.338583)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,6000.338583)
+	(3560.5,6000.338583)
+	(3560.5,6040.338583)
+	(-60.5,6040.338583)
+	(-60.5,6000.338583)
+!smask_bot graphics [50]
+.SOLDER_MASK
+ ..SIDE BOTTOM
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,6000.338583)
+	(3560.5,6000.338583)
+	(3560.5,6040.338583)
+	(-60.5,6040.338583)
+	(-60.5,6000.338583)
+!smask_bot graphics [50]
+.SOLDER_MASK
+ ..SIDE BOTTOM
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,-218.6614173)
+	(3560.5,-218.6614173)
+	(3560.5,-258.6614173)
+	(-60.5,-258.6614173)
+	(-60.5,-218.6614173)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3560.5,-258.6614173)
+	(-60.5,-258.6614173)
+	(-60.5,-218.6614173)
+	(3560.5,-218.6614173)
+	(3560.5,-258.6614173)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,5566.338583)
+	(47.5,5566.338583)
+	(265.5,5784.338583)
+	(265.5,6040.5)
+	(-60.5,6040.338583)
+	(-60.5,5566.338583)
+!smask_bot graphics [50]
+.SOLDER_MASK
+ ..SIDE BOTTOM
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,5566.338583)
+	(47.5,5566.338583)
+	(265.5,5784.338583)
+	(265.5,6040.5)
+	(-60.5,6040.338583)
+	(-60.5,5566.338583)
+!smask_bot graphics [50]
+.SOLDER_MASK
+ ..SIDE BOTTOM
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3233.5,6040.338583)
+	(3233.5,5784.181102)
+	(3452.5,5566.338583)
+	(3560.5,5566.338583)
+	(3560.5,6040.338583)
+	(3233.5,6040.338583)
+!smask_top graphics [49]
+.SOLDER_MASK
+ ..SIDE TOP
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3233.5,6040.338583)
+	(3233.5,5784.181102)
+	(3452.5,5566.338583)
+	(3560.5,5566.338583)
+	(3560.5,6040.338583)
+	(3233.5,6040.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-218.5,-258.6614173)
+	(-60.5,-258.6614173)
+	(-60.5,6040.338583)
+	(-218.5,6040.338583)
+	(-218.5,-258.6614173)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-218.5,-258.6614173)
+	(-60.5,-258.6614173)
+	(-60.5,6040.338583)
+	(-218.5,6040.338583)
+	(-218.5,-258.6614173)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3718.5,-258.6614173)
+	(3718.5,6040.338583)
+	(3560.5,6040.338583)
+	(3560.5,-258.6614173)
+	(3718.5,-258.6614173)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3718.5,-258.6614173)
+	(3718.5,6040.338583)
+	(3560.5,6040.338583)
+	(3560.5,-258.6614173)
+	(3718.5,-258.6614173)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-60.5,5566.338583)
+	(47.5,5566.338583)
+	(265.5,5784.338583)
+	(265.5,6040.5)
+	(-60.5,6040.338583)
+	(-60.5,5566.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (-60.5,5566.338583)
+	(47.5,5566.338583)
+	(265.5,5784.338583)
+	(265.5,6040.5)
+	(-60.5,6040.338583)
+	(-60.5,5566.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_1
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3560.5,5566.338583)
+	(3452.5,5566.338583)
+	(3233.5,5784.181102)
+	(3233.5,6040.338583)
+	(3560.5,6040.338583)
+	(3560.5,5566.338583)
+.OBSTRUCT TRACE_VIA
+ ..ROUTE_LYR LYR_12
+ ..POLYLINE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...XY (3560.5,5566.338583)
+	(3452.5,5566.338583)
+	(3233.5,5784.181102)
+	(3233.5,6040.338583)
+	(3560.5,6040.338583)
+	(3560.5,5566.338583)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,-308.6614173) (-218.5,-1358.661417) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-268.5,-258.6614173) (-1219.5,-258.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2406.5,6366.299213) (2406.5,6216.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2156.5,6216.299213) (2156.5,6366.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2131.5,6341.299213) (2081.5,6241.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2081.5,6341.299213) (2031.5,6241.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2556.5,6216.299213) (2006.5,6216.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2006.5,6216.299213) (2006.5,6366.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2006.5,6366.299213) (2556.5,6366.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2556.5,6366.299213) (2556.5,6216.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-618.5,4916.299213) (-618.5,4766.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-868.5,4766.299213) (-868.5,4916.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-893.5,4891.299213) (-943.5,4791.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-943.5,4891.299213) (-993.5,4791.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-468.5,4766.299213) (-1018.5,4766.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1018.5,4766.299213) (-1018.5,4916.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1018.5,4916.299213) (-468.5,4916.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-468.5,4916.299213) (-468.5,4766.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,4841.299213) (-318.5,4866.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,4841.299213) (-318.5,4816.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-318.5,4866.299213) (-318.5,4816.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4368.5,4916.299213) (4368.5,4766.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4118.5,4766.299213) (4118.5,4916.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4518.5,4766.299213) (3968.5,4766.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3968.5,4766.299213) (3968.5,4916.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3968.5,4916.299213) (4518.5,4916.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4518.5,4916.299213) (4518.5,4766.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3818.5,4866.299213) (3718.5,4841.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3718.5,4841.299213) (3818.5,4816.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3818.5,4816.299213) (3818.5,4866.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2006.5,6291.299213) (1856.5,6291.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (1856.5,6291.299213) (1856.5,6041.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (1856.5,6041.299213) (1831.5,6141.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (1831.5,6141.299213) (1881.5,6141.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (1881.5,6141.299213) (1856.5,6041.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-468.5,4841.299213) (-218.5,4841.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3968.5,4841.299213) (3718.5,4841.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1050,1150) (-1050,750) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1000,1150) (-1000,750) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1200,800) (-550,800) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1050,800) (-1150,825) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1150,825) (-1150,775) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1150,775) (-1050,800) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-1000,800) (-900,825) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-900,825) (-900,775) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-900,775) (-1000,800) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (600,-950) (-400,-950) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (0,-250) (0,-1000) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (0,-950) (100,-925) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (100,-925) (100,-975) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (100,-975) (0,-950) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-220,-950) (-320,-925) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-320,-925) (-320,-975) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-320,-975) (-220,-950) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3600,-150) (4050,-150) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4000,0) (4000,-800) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4000,-150) (3975,-50) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3975,-50) (4025,-50) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4000,-150) (4025,-50) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3681.5,-258.7007874) (5130.5,-258.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4906.5,-433.7007874) (4906.5,-583.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4831.5,-733.7007874) (4981.5,-733.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4981.5,-733.7007874) (4981.5,-583.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4981.5,-583.7007874) (4831.5,-583.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4831.5,-583.7007874) (4831.5,-733.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4000,-258.7007874) (3975,-358.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3975,-358.7007874) (4025,-358.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4025,-358.7007874) (4000,-258.7007874) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3893.5,4292) (4093.5,4292) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4093.5,4217) (4093.5,4367) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4093.5,4367) (4243.5,4367) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4243.5,4367) (4243.5,4217) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4243.5,4217) (4093.5,4217) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3993.5,4791.299213) (4093.5,4791.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4043.5,4791.299213) (4043.5,4891.299213) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (6768.5,741.2992126) (4168.5,741.2992126) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4168.5,741.2992126) (4268.5,766.2992126) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4268.5,766.2992126) (4268.5,716.2992126) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (4268.5,716.2992126) (4168.5,741.2992126) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (265.5,6040.5) (265.5,5784.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2955.5,-958.5) (3500,-958.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3500,-200) (3500,-1008.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-819.5,5116.5) (-819.5,6040.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-269.5,6040.5) (-869.5,6040.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-619.5,5116.5) (-619.5,5941.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-159.5,5941.5) (-669.5,5941.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-494.5,6241.5) (-109.5,6241.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-109.5,5991.5) (-109.5,6291.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-209.5,6266.5) (-109.5,6241.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-109.5,6241.5) (-209.5,6216.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-209.5,6216.5) (-209.5,6266.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-844.5,5940.5) (-819.5,6040.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-819.5,6040.5) (-794.5,5940.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-794.5,5940.5) (-844.5,5940.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-644.5,5841.5) (-619.5,5941.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-619.5,5941.5) (-594.5,5841.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-594.5,5841.5) (-644.5,5841.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3400,-933.5) (3500,-958.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3500,-958.5) (3400,-983.5) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3400,-983.5) (3400,-933.5) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,6040.338583) (-60.5,6040.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3718.5,6040.338583) (3560.5,6040.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3156.5,6241.338583) (3608.5,6241.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3608.5,5991.338583) (3608.5,6291.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (2806.5,6441.338583) (3718.5,6441.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3718.5,6090.338583) (3718.5,6491.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3618.5,6466.338583) (3718.5,6441.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3718.5,6441.338583) (3618.5,6416.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3618.5,6416.338583) (3618.5,6466.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3508.5,6266.338583) (3608.5,6241.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3608.5,6241.338583) (3508.5,6216.338583) 
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3508.5,6216.338583) (3508.5,6266.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-108.5,5566.338583) (-218.5,5566.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (265.5,5941.5) (265.5,6040.5) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,5566.338583) (-60.5,5566.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,5566.338583) (47.5,5566.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (47.5,5566.338583) (265.5,5784.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3718.5,5566.338583) (3608.5,5566.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3233.5,5941.338583) (3233.5,6040.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3233.5,6040.338583) (3233.5,5784.181102) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3560.5,5566.338583) (3718.5,5566.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3452.5,5566.338583) (3560.5,5566.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3233.5,5784.181102) (3452.5,5566.338583) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,-258.6614173) (-60.5,-218.6614173) 
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-60.5,6040.338583) (-60.5,6000.338583) 
+.BOARD_OUTLINE
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (-218.5,-258.6598425)
+	(3718.5,-258.6598425)
+	(3718.5,6040.340157)
+	(-218.5,6040.340157)
+	(-218.5,-258.6598425)
+.ROUTE_OUTLINE
+ ..POLYLINE_PATH
+  ...WIDTH 8
+  ...XY (3678.5,-218.6598425)
+	(-178.5,-218.6598425)
+	(-178.5,6000.340157)
+	(3678.5,6000.340157)
+	(3678.5,-218.6598425)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 100
+  ...XY (-1150,1150)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 200
+  ...XY (-1200,1150)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 15
+  ...XY (6028.5,891.2992126)
+!dim_1 graphics [56]
+.GRAPHIC
+ ..USER_LYR "User Layer 56"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 15
+  ...XY (6583.5,891.2992126)
+!? graphics [50]
+.GRAPHIC
+ ..USER_LYR "User Layer 50"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 100
+  ...XY (0,-150)
+!? graphics [50]
+.GRAPHIC
+ ..USER_LYR "User Layer 50"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 100
+  ...XY (3500,-150)
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 150
+  ...XY (0,-150)
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..CIRCLE_SHAPE
+  ...SHAPE_OPTIONS NOT_FILLED
+  ...RADIUS 150
+  ...XY (3500,-150)
+.MOUNTING_HOLE ! ellipse
+ ..XY (3608.5,5941.338583)
+ ..PADSTACK ",Hole Rnd 78.7402"
+ ..ROTATION 0
+ ..NETNAME "UnConnected_Net"
+.MOUNTING_HOLE ! ellipse
+ ..XY (-108.5,5941.338583)
+ ..PADSTACK ",Hole Rnd 78.7402"
+ ..ROTATION 0
+ ..NETNAME "UnConnected_Net"
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYARC_PATH
+  ...WIDTH 8
+  ...XYR (3233.5,5941.340157,0)
+	(3608.5,5941.340157,-375)
+	(3608.5,5566.340157,0)
+!dim_2 graphics [57]
+.GRAPHIC
+ ..USER_LYR "User Layer 57"
+ ..POLYARC_PATH
+  ...WIDTH 8
+  ...XYR (-108.5,5566.340157,0)
+	(-108.5,5941.340157,-375)
+	(266.5,5941.340157,0)
+!? text [56]
+.TEXT "A"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (2542.444882,6241.299213)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "0.2"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (2366.53937,6241.299213)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "B"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-482.5551181,4791.299213)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "0.2"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-658.4606299,4791.299213)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "A"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (4504.444882,4791.299213)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "0.2"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (4328.53937,4791.299213)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "HOLES"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-1100,1550)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "LAND"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-1300,1750)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "0.05"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-850,850)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "MIN"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-850,650)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "5.57"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (150,-925)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "2.76"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (3950,-700)
+  ...ROTATION 90
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "A"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (4967.444882,-708.7007874)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "CONTOUR CHAMFERS"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5093.5,1141.299213)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "SHARP EDGES REMOVED"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5093.5,966.2992126)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "0.3 MAX x45 +/- 10"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5093.5,791.2992126)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "INITIAL DIMENSION FOR BL"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5150,-1200)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "TOL. +/-0.1 UNLESS"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5150,-1500)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "OTHERWISE STATED"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5150,-1700)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "SEEN FROM PRIMARY SIDE"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5150,-2000)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "B"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (4229.444882,4242)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "12.5"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (4018.5,792.2834646)
+  ...ROTATION 90
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "X"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5135.944882,-1125)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "+"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (5135.944882,-1125)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "X"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (3875,-714.0551181)
+  ...ROTATION 90
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "+"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (3875,-714.0551181)
+  ...ROTATION 90
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "X"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (585.9448819,-850)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "+"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (585.9448819,-850)
+  ...ROTATION 0
+  ...HORZ_JUST CENTER
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [55]
+.TEXT "H14"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 55"
+  ...XY (1675,-2815)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [55]
+.TEXT "H14"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 55"
+  ...XY (1675,-2965)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [1]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 1"
+  ...XY (530.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [2]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 2"
+  ...XY (530.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [3]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 3"
+  ...XY (530.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [4]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 4"
+  ...XY (530.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [5]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 5"
+  ...XY (530.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [6]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 6"
+  ...XY (530.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [1]
+.TEXT "P"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 1"
+  ...XY (3105.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [12]
+.TEXT "S"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 12"
+  ...XY (3155.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [56]
+.TEXT "BL"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-1144.5,-233.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "BL"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-244.5,-1333.5)
+  ...ROTATION 90
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "94.47"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (2957.417323,-883.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST CENTER
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "160 0/-0.2"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-894.5,5141.5)
+  ...ROTATION 90
+  ...HORZ_JUST LEFT
+  ...VERT_JUST CENTER
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "157.5"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-694.5,5141.5)
+  ...ROTATION 90
+  ...HORZ_JUST LEFT
+  ...VERT_JUST CENTER
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "2.8"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (-469.5,6316.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST CENTER
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [7]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 7"
+  ...XY (1105.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [8]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 8"
+  ...XY (1105.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [9]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 9"
+  ...XY (1105.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [10]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 10"
+  ...XY (1105.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [11]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 11"
+  ...XY (1105.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [12]
+.TEXT "EPXXXXX"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 12"
+  ...XY (1105.5,5891.5)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+.NCDRILL_ORIGIN
+ ..XY (0,0)
+!? text [12]
+.TEXT "P1"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 12"
+  ...XY (275,-200)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 75
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [12]
+.TEXT "A1"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 12"
+  ...XY (3325,-200)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 75
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS MIRRORED
+!? text [56]
+.TEXT "100 0/-0.2"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (2822.952756,6516.338583)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST CENTER
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [56]
+.TEXT "97.2"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 56"
+  ...XY (3181.5,6316.338583)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST CENTER
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [2]
+.TEXT "2"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 2"
+  ...XY (-193.5,5516.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [3]
+.TEXT "3"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 3"
+  ...XY (-193.5,5391.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [4]
+.TEXT "4"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 4"
+  ...XY (-193.5,5266.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [5]
+.TEXT "5"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 5"
+  ...XY (-193.5,5141.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [6]
+.TEXT "6"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 6"
+  ...XY (-193.5,4991.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [7]
+.TEXT "7"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 7"
+  ...XY (-193.5,4866.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [8]
+.TEXT "8"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 8"
+  ...XY (-193.5,4741.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [9]
+.TEXT "9"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 9"
+  ...XY (-193.5,4616.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [10]
+.TEXT "10"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 10"
+  ...XY (-193.5,4491.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [11]
+.TEXT "11"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 11"
+  ...XY (-193.5,4316.338583)
+  ...ROTATION 270
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+.BOARD_ORIGIN
+ ..XY (0,0)
+!? text [1]
+.TEXT "PLACERING AV H\37777777705LEN I OVANKANT"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 1"
+  ...XY (500,5600)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [1]
+.TEXT "FR\37777777705N FALL TILL FALL."
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 1"
+  ...XY (500,5200)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE
+!? text [1]
+.TEXT "OCH DIMENSION KAN VAREJERA"
+ ..TEXT_TYPE USER_TYPE
+ ..DISPLAY_ATTR
+  ...USER_LYR "User Layer 1"
+  ...XY (500,5400)
+  ...ROTATION 0
+  ...HORZ_JUST LEFT
+  ...VERT_JUST BOTTOM
+  ...FONT "VeriBest Gerber 0"
+  ...HEIGHT 100
+  ...WIDTH 0
+  ...STROKE_WIDTH 8
+  ...TEXT_OPTIONS NONE

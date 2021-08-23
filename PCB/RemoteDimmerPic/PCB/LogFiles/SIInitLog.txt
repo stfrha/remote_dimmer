@@ -1,0 +1,27 @@
+
+=======================================================================
+SI Initialization Report
+Thu Feb 01 10:35:52 2001
+=======================================================================
+
+Simulation cannot be run on this board.
+    There are no supply voltages given for any of the nets.
+      Check supply voltage settings in Net Properties.
+
+IBIS Models Assignment
+======================
+
+    	component has no Part.
+    	component has no Part.
+    FI1	Part Number: FIDUCIAL40
+       has no simulation model.
+    FI2	Part Number: FIDUCIAL40
+       has no simulation model.
+    FI3	Part Number: FIDUCIAL40
+       has no simulation model.
+    FI4	Part Number: FIDUCIAL40
+       has no simulation model.
+    FI5	Part Number: FIDUCIAL40
+       has no simulation model.
+    FI6	Part Number: FIDUCIAL40
+       has no simulation model.

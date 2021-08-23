@@ -1,0 +1,7 @@
+
+Attempting to read Graphics Settings file <Graphics Settings.hkp>
+
+The full pathname is <D:\LayoutTemplates\TEMPLATE\Work\CellEditorFiles\CellDB\Config\Graphics Settings.hkp>
+
+
+Successful completion

@@ -1,0 +1,82 @@
+ --------------------------------------
+|     VeriBest Gerber Plotting Log     |
+|               Started                |
+|       Wed May 09 14:36:26 2001       |
+ --------------------------------------
+
+
+Processing TopPlace.gdo
+    Number of Apertures     = 2
+    Number of Moves         = 362
+    Number of Draws         = 703
+    Number of Arcs          = 22
+    Number of Flashes       = 0
+    Number of Comments      = 4
+    Number of Drawn Pads    = 0
+    Number of Filled Shapes = 0
+    Number of Dcode Warnings= 0
+    Number of Dcode Errors  = 0
+    Total Draw Length       = 73.164 (IN)
+    Total Move Length       = 118.011 (IN)
+
+Processing Layer2.gdo
+    Number of Apertures     = 22
+    Number of Moves         = 581
+    Number of Draws         = 1059
+    Number of Arcs          = 0
+    Number of Flashes       = 166
+    Number of Comments      = 4
+    Number of Drawn Pads    = 0
+    Number of Filled Shapes = 0
+    Number of Dcode Warnings= 0
+    Number of Dcode Errors  = 0
+    Total Draw Length       = 71.5097 (IN)
+    Total Move Length       = 175.906 (IN)
+
+Processing Layer1.gdo
+    Number of Apertures     = 6
+    Number of Moves         = 86
+    Number of Draws         = 22
+    Number of Arcs          = 0
+    Number of Flashes       = 82
+    Number of Comments      = 4
+    Number of Drawn Pads    = 0
+    Number of Filled Shapes = 0
+    Number of Dcode Warnings= 0
+    Number of Dcode Errors  = 0
+    Total Draw Length       = 14.1045 (IN)
+    Total Move Length       = 50.2922 (IN)
+
+Processing DrillMask.gdo
+    Number of Apertures     = 5
+    Number of Moves         = 76
+    Number of Draws         = 0
+    Number of Arcs          = 0
+    Number of Flashes       = 76
+    Number of Comments      = 4
+    Number of Drawn Pads    = 0
+    Number of Filled Shapes = 0
+    Number of Dcode Warnings= 0
+    Number of Dcode Errors  = 0
+    Total Draw Length       = 0 (IN)
+    Total Move Length       = 41.9636 (IN)
+
+Processing BottomPlace.gdo
+    Number of Apertures     = 2
+    Number of Moves         = 642
+    Number of Draws         = 1272
+    Number of Arcs          = 14
+    Number of Flashes       = 0
+    Number of Comments      = 4
+    Number of Drawn Pads    = 0
+    Number of Filled Shapes = 0
+    Number of Dcode Warnings= 0
+    Number of Dcode Errors  = 0
+    Total Draw Length       = 69.3957 (IN)
+    Total Move Length       = 144.994 (IN)
+
+ --------------------------------------
+|     VeriBest Gerber Plotting Log     |
+|               Finished               |
+|       Wed May 09 14:36:28 2001       |
+ --------------------------------------

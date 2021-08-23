@@ -1,0 +1,24 @@
+
+                                  NC Drill Log
+                                  ------------
+
+                        08:23 AM Wednesday, June 14, 2000
+         Job Name: D:\libraries\CentralLibrary\LayoutTemplates\TEMPLATE
+
+
+Extracting miscellaneous data from the component design...
+
+Extracting Drill Hole and Contour data from the component design...
+
+Optimizing Holes...
+
+Parsing Parameter File...
+
+Generating Punch Files...
+
+Generating x-y summary listing...
+
+Creating Drill Charts...
+
+Drill files created.
+

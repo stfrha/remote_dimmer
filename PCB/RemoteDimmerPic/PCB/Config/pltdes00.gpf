@@ -1,0 +1,120 @@
+.FILETYPE GerberPlotSetupFile
+.VERSION "VB99.0"
+.CREATOR "Expedition PCB Gerber Output"
+.DATE "Wednesday, May 09, 2001 02:36 PM"
+
+.DataOffset 0 0
+.DataCopies 1 1
+ ..OriginOffset 0 0
+
+.DCodeToApertureFile "f:\\veribest\\2000\\VBExpPCB\\Config\\VBExpPCB\\GerberD-Codes.dac"
+.GerberMachineFormatFile "Config\\GerberMachineFile1.gmf"
+
+.GerberOutputFile "TopPlace.gdo"
+ ..ProcessFile Yes
+ ..GerberOutputPath "F:\\FRHA\\RemoteDimmer\\PCB\\RemoteDimmerPic\\PCB\\Output\\Gerber\\TopPlace.gdo"
+ ..BoardItem BoardOutline
+ ..CellType Buried
+ ..CellType Connector
+ ..CellType DiscreteAxial
+ ..CellType DiscreteChip
+ ..CellType DiscreteOther
+ ..CellType DiscreteRadial
+ ..CellType EdgeConnector
+ ..CellType General
+ ..CellType Graphic
+ ..CellType ICBareDie
+ ..CellType ICBGA
+ ..CellType ICDIP
+ ..CellType ICFlipChip
+ ..CellType ICLCC
+ ..CellType ICOther
+ ..CellType ICPGA
+ ..CellType ICPLCC
+ ..CellType ICSIP
+ ..CellType ICSOIC
+ ..CellType Jumper
+ ..CellType Mechanical
+ ..CellType TestPoint
+ ..CellItemsSide Top
+   ...CellItem AssemblyOutline
+   ...CellItem AssemblyReferenceDesignator
+   ...CellItem InsertionOutline
+   ...CellItem PlacementOutline
+
+.GerberOutputFile "Layer2.gdo"
+ ..ProcessFile Yes
+ ..GerberOutputPath "F:\\FRHA\\RemoteDimmer\\PCB\\RemoteDimmerPic\\PCB\\Output\\Gerber\\Layer2.gdo"
+ ..ConductiveLayer 2
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+   ...ProcessUnconnectedPads Yes
+ ..BoardItem BoardOutline
+ ..UserLayer "User Layer 2"
+
+.GerberOutputFile "Layer1.gdo"
+ ..ProcessFile Yes
+ ..GerberOutputPath "F:\\FRHA\\RemoteDimmer\\PCB\\RemoteDimmerPic\\PCB\\Output\\Gerber\\Layer1.gdo"
+ ..ConductiveLayer 1
+   ...ConductiveItem EtchedText
+   ...ConductiveItem Fiducials
+   ...ConductiveItem PartPadsSMD
+   ...ConductiveItem PartPadsTest
+   ...ConductiveItem PartPadsThru
+   ...ConductiveItem PlaneData
+   ...ConductiveItem ResistorAreas
+   ...ConductiveItem Traces
+   ...ConductiveItem ViaHoles
+   ...ConductiveItem ViaPads
+   ...ProcessUnconnectedPads Yes
+ ..BoardItem BoardOutline
+
+.GerberOutputFile "DrillMask.gdo"
+ ..ProcessFile Yes
+ ..GerberOutputPath "F:\\FRHA\\RemoteDimmer\\PCB\\RemoteDimmerPic\\PCB\\Output\\Gerber\\DrillMask.gdo"
+ ..ConductiveLayer 2
+   ...ConductiveItem ViaHoles
+ ..BoardItem DrillDrawingThru
+ ..BoardItem MountingHoles
+ ..BoardItem PartHoles
+ ..UserLayer "Drill Drawing 2"
+
+.GerberOutputFile "BottomPlace.gdo"
+ ..ProcessFile Yes
+ ..GerberOutputPath "F:\\FRHA\\RemoteDimmer\\PCB\\RemoteDimmerPic\\PCB\\Output\\Gerber\\BottomPlace.gdo"
+ ..BoardItem BoardOutline
+ ..CellType Buried
+ ..CellType Connector
+ ..CellType DiscreteAxial
+ ..CellType DiscreteChip
+ ..CellType DiscreteOther
+ ..CellType DiscreteRadial
+ ..CellType EdgeConnector
+ ..CellType General
+ ..CellType Graphic
+ ..CellType ICBareDie
+ ..CellType ICBGA
+ ..CellType ICDIP
+ ..CellType ICFlipChip
+ ..CellType ICLCC
+ ..CellType ICOther
+ ..CellType ICPGA
+ ..CellType ICPLCC
+ ..CellType ICSIP
+ ..CellType ICSOIC
+ ..CellType Jumper
+ ..CellType Mechanical
+ ..CellType TestPoint
+ ..CellItemsSide Bottom
+   ...CellItem AssemblyOutline
+   ...CellItem AssemblyReferenceDesignator
+   ...CellItem InsertionOutline
+   ...CellItem PlacementOutline

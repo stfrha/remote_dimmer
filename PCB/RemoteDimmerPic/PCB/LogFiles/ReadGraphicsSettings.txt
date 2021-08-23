@@ -1,0 +1,7 @@
+
+Attempting to read Graphics Settings file <Graphics Settings.hkp>
+
+The full pathname is <F:\FRHA\RemoteDimmer\PCB\RemoteDimmerPic\PCB\Config\Graphics Settings.hkp>
+
+
+Successful completion

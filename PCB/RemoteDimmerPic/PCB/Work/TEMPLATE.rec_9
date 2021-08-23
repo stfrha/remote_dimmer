@@ -1,0 +1,13 @@
+* Version 1.0: Started on Thursday, August 24, 2000 13:17:20
+* Current design file is: D:\libraries\CentralLibrary\LayoutTemplates\TEMPLATE\TEMPLATE.pcb
+*
+w 0 0 0 2 3 <181,229><1123,911><-1,-1>
+*
+* Set Mouse Buttons For New Mapping
+c 0 33156
+v 0 2 TEMPLATE <0, 0, 0, 0>, 0
+*
+* Exit
+c 0 57665
+d 0 1040 0 2 b 264
+* 

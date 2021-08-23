@@ -1,0 +1,16 @@
+
+                          PCB ASCII to Cell Library Log
+                          -----------------------------
+
+                      09:36 AM Thursday, November 23, 2000
+              Job Name: D:\LayoutTemplates\TEMPLATE\Work\ASCII.lmc
+
+
+
+Current Units : TH
+
+Processing cell 'FR4SNA'
+
+Successfully converted 1 cell.
+CellDB file 'D:\LayoutTemplates\TEMPLATE\Work\CellDBLibs\ASCII.cel' was created successfully.
+

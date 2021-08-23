@@ -1,0 +1,21 @@
+SECTION Integration
+KEY 1400Translation "1"
+KEY ProjectFile "F:\FRHA\RemoteDimmer\PCB\RemoteDimmerPic\RemoteDimmerPic.prj"
+KEY CADBackAnno "0"
+ENDSECTION
+SECTION DesignData
+KEY Platform "NT"
+KEY UstationVersion "05.05.01.64 "
+KEY DesignVersion "99.00.00"
+KEY DesignFileLastBlock "185"
+KEY DesignFileLastByte "442"
+KEY CellDisplay "0"
+KEY BuriedComponents "0"
+KEY DesignFileCompress "1"
+ENDSECTION
+SECTION Planes
+LIST PlaneSections
+ENDLIST
+KEY AdvEditorModifiedDesign "1"
+KEY ProcessPlanesAfterAdvEditor "0"
+ENDSECTION

@@ -1,0 +1,8 @@
+Path_ID	Path_Name
+1	RemoteDimmer
+2	RemoteDimmer!ELIRM 87521
+3	RemoteDimmer!TRAFO BV201
+4	RemoteDimmer!BT139-500 TRIAC1
+5	RemoteDimmer!PIC16F843
+6	
+7	RemoteDimmer!OPTOTRIAC2

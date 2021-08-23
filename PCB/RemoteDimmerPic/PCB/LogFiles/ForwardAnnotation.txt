@@ -1,0 +1,213 @@
+
+                               Forward Annotation
+                               ------------------
+
+                        02:26 PM Wednesday, May 09, 2001
+   Job Name: F:\FRHA\REMOTEDIMMER\PCB\REMOTEDIMMERPIC\PCB\REMOTEDIMMERPIC.PCB
+
+
+     Version:  99.00.04
+
+     The schematic source is a Common Data Base.
+
+     The AllowAlphaRefDes status indicates that reference
+      designators containing all alpha characters should be deleted
+      and the relevant symbols repackaged.
+
+     The PDBs listed in the project file will be searched to satisfy the parts
+      requirements of the CDB only for parts not already found in the
+      Target PDB.
+
+     The FLATNETNAMEs status indicates that the present set
+      of schematic netnames should be used to update the
+      FLATNETNAMEs.
+
+     The present Common DataBase is up to date with the schematic
+      source files.
+
+     Common Data Base has been read
+
+     Target PDB Name: Work\Layout_Temp\PartsDB.pdb
+
+     Number of Part Numbers: 20
+          Part Numb: CAP0805 -> Vend Part: CAP0805 
+          Part Numb: RM1101 -> Vend Part: RM1101 
+          Part Numb: MKS4,22.5_B10.5 -> Vend Part: MKS4,22.5_B10.5 
+          Part Numb: LT5085/01/0 -> Vend Part: LT5085/01/0 
+          Part Numb: PC355_SO4_100 -> Vend Part: PC355_SO4_100 
+          Part Numb: XX1060 -> Vend Part: XX1060 
+          Part Numb: CON_PB8302/303/0 -> Vend Part: CON_PB8302/303/0 
+          Part Numb: BAS32L -> Vend Part: BAS32L 
+          Part Numb: RES0805 -> Vend Part: RES0805 
+          Part Numb: CE1705_10X20 -> Vend Part: CE1705_10X20 
+          Part Numb: LM317_SOT223 -> Vend Part: LM317_SOT223 
+          Part Numb: CON_PB8302/304/0 -> Vend Part: CON_PB8302/304/0 
+          Part Numb: TP -> Vend Part: TP 
+          Part Numb: CE9005_6.3X6 -> Vend Part: CE9005_6.3X6 
+          Part Numb: 4N46_DIP6M3 -> Vend Part: 4N46_DIP6M3 
+          Part Numb: 1N6470_MELF -> Vend Part: 1N6470_MELF 
+          Part Numb: 7805_TO220 -> Vend Part: 7805_TO220 
+          Part Numb: CON_PB8302/107/0 -> Vend Part: CON_PB8302/107/0 
+          Part Numb: IRF3205_TO220_S -> Vend Part: IRF3205_TO220_S 
+          Part Numb: LTC1066-1_SOL18_50 -> Vend Part: LTC1066-1_SOL18_50 
+
+     Number of Part Names: 0
+
+     Number of Part Labels: 0
+
+
+     Checking for value differences between symbol properties and PartsDB properties
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP21: Symbol / PartsDB property mismatch
+      Resolved PartNumber = LT5085/01/0
+      Symbol Property: Description = inductor
+     PartsDB Property: Description = Choke
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP64: Symbol / PartsDB property mismatch
+      Resolved PartNumber = BAS32L
+      Symbol Property: Description = DIODE
+     PartsDB Property: Description = 
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP33: Symbol / PartsDB property mismatch
+      Resolved PartNumber = BAS32L
+      Symbol Property: Description = DIODE
+     PartsDB Property: Description = 
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP32: Symbol / PartsDB property mismatch
+      Resolved PartNumber = BAS32L
+      Symbol Property: Description = DIODE
+     PartsDB Property: Description = 
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP31: Symbol / PartsDB property mismatch
+      Resolved PartNumber = BAS32L
+      Symbol Property: Description = DIODE
+     PartsDB Property: Description = 
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP30: Symbol / PartsDB property mismatch
+      Resolved PartNumber = BAS32L
+      Symbol Property: Description = DIODE
+     PartsDB Property: Description = 
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP37: Symbol / PartsDB property mismatch
+      Resolved PartNumber = LM317_SOT223
+      Symbol Property: Description = <NO_DESCRIP>
+     PartsDB Property: Description = Adjustable Regulator
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP37: Symbol / PartsDB property mismatch
+      Resolved PartNumber = LM317_SOT223
+      Symbol Property: Part Name = LM340_FUSK
+     PartsDB Property: Part Name = LM317_SOT223
+
+WARNING Block RemoteDimmer Page 1, Symbol XCMP65: Symbol / PartsDB property mismatch
+      Resolved PartNumber = 1N6470_MELF
+      Symbol Property: Description = ZENER
+     PartsDB Property: Description = Transient suppressor
+
+WARNING Block RemoteDimmer!BT139-500 TRIAC1 Page 1, Symbol XCMP1: Symbol / PartsDB property mismatch
+      Resolved PartNumber = IRF3205_TO220_S
+      Symbol Property: Description = N-channel mosfet
+     PartsDB Property: Description = Mosfet transistor
+
+WARNING Block RemoteDimmer!OPTOTRIAC2 Page 1, Symbol XCMP1: Symbol / PartsDB property mismatch
+      Resolved PartNumber = 4N46_DIP6M3
+      Symbol Property: Description = Optocoupler
+     PartsDB Property: Description = 
+
+     Checking the validity of the packaging of prepackaged schematic
+      symbols.  Only the first error in symbols having the same
+      Reference Designator will be reported.
+
+     The packaging of all prepackaged schematic symbols is consistent
+      with the Parts DataBase data for the cross mapping of
+      symbol pin names to Part Number pin numbers.
+      Symbols that were not prepackaged will now be packaged correctly.
+      
+     No errors in Existing Schematic Packaging.
+
+     The Common DataBase has been read and will be packaged.
+     Clustering 64 Symbols:
+              64  *************
+              50  **************************************************
+     Clustering is Complete
+
+     Packager Assignments successfully completed
+
+
+
+     36 nets were found containing 137 pins
+     51 components were found
+
+     After augmentation of supply pins, there are 36 nets where 0 nets have only one pin.
+
+     Creating a formatted Schematic Netlist (LogFiles\SchematicNetlist.txt)...
+     A formatted Schematic Netlist has been created.
+
+     The Logic DataBase has been compiled from the Schematic Design.
+      Use Netload to bring the Component Design into sync.
+
+     This Logic Data was Compiled with 11 warnings.
+      Erroneous results may occur if not fixed.
+
+                                     NetLoad
+                                     -------
+
+                        02:26 PM Wednesday, May 09, 2001
+   Job Name: F:\FRHA\REMOTEDIMMER\PCB\REMOTEDIMMERPIC\PCB\REMOTEDIMMERPIC.PCB
+
+
+     Version:  99.00.07
+
+     Netloading the Layout.  Unused components will be changed to spares.
+
+     Unconnected pins will be set to net "(Net0)".
+
+     WARNING:  "D1" is being changed to a spare since it is
+      no longer in the schematic.
+
+     The following 1 components have not been placed:
+
+        D7
+
+     Netload completed successfully with 1 warning(s).
+     
+     Back Annotating...
+
+  Updating Logic Database...
+
+     Version:  99.00.05
+     There have been 1 reference designator changes.
+
+     The Common DataBase has been successfully updated.
+
+     Writing a list of routed plane pins to LogFiles\rtdplane.txt.
+
+     The Logic DataBase has been updated and the Common DataBase has
+      automatically been brought into sync with the Logic DataBase.
+      Please proceed with your design.
+
+     Finished updating the Logic Database.
+
+     Creating a formatted Schematic Netlist (LogFiles\AfterBakAnnoNetlist.txt)...
+     A formatted Schematic Netlist has been created.
+
+     Creating a new netlist text file (LogFiles\KeyinNetList.txt)
+      from the Logic Database (Work\Layout_Temp\LogicDB.lgc)...
+  A new netlist text file has been generated.
+
+Initial Netload phase complete.
+
+
+
+
+                 Beginning Netload on the Layout Design.
+           ---------------------------------------------------
+	Broke back a trace from the point (57429400, 15240000).
+	Broke back a trace from the point (57429400, 15240000).
+	Broke back a trace from the point (54330600, 15240000).
+	Broke back a trace from the point (54330600, 15240000).
+
+Forward-Annotation on the Layout Design has been successfully completed.
+
+There were 0 reassignments of nets.
+There were 4 traces broken back.
+There were 0 nets removed from the Layout Design.
